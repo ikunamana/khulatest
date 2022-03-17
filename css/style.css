@@ -1969,6 +1969,8 @@ h3{
         height: 60px;
         width: 414px;
         background-color: #068b2c;
+        display: flex;
+        justify-content: space-around;
     }
     
 }
