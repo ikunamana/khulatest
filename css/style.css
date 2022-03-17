@@ -1968,11 +1968,12 @@ h3{
         top: 0;
         height: 60px;
         width: 414px;
-        background-color: #068b2c;
+        background-color: #05631f;
         display: flex;
         justify-content: space-around;
         position: fixed;
         align-items: center;
+        color: white;
     }
     
 }
