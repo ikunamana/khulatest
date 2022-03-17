@@ -1306,6 +1306,7 @@ button{
          -o-transition-duration: 300ms;
             transition-duration: 300ms;
     cursor: url("../images/khula.jpg") default;
+    z-index: 3000;
 
 }
 .added:hover .imgarrow{
