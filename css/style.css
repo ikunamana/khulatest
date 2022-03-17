@@ -1372,8 +1372,8 @@ button{
     to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 }
 .bluredlogo{
-    -webkit-filter: blur(30px);
-            filter: blur(30px);
+    /* -webkit-filter: blur(30px);
+            filter: blur(30px); */
     -webkit-animation-name: logorotate;
             animation-name: logorotate;
     -webkit-animation-duration: 150s;
@@ -1387,8 +1387,8 @@ button{
     z-index: -100;
 }
 .bluredlogo1{
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
+    /* -webkit-filter: blur(40px);
+            filter: blur(40px); */
     margin-left: 300px;
     -webkit-animation-name: logorotate;
             animation-name: logorotate;
@@ -1405,8 +1405,8 @@ button{
     float: left;
 }
 .bluredlogo2{
-    -webkit-filter: blur(45px);
-            filter: blur(45px);
+    /* -webkit-filter: blur(45px);
+            filter: blur(45px); */
     margin-left: 800px;
     -webkit-animation-name: logorotate;
             animation-name: logorotate;
