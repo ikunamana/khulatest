@@ -1930,7 +1930,134 @@ h3{
 
     
 }
+@media screen and (max-width: 428px){
+    body{
+        background-color: #245e0c5d;
+    }
+    .aboutus{
+        margin-top: 20px;
+        width: 414;
+        padding-right: 0px;
+        padding: 10px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
+    }
+    .footercontainer{
+        margin-bottom: 45px;
+    }
+    .footer{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 414px; 
+        backdrop-filter: blur(10px);
+        height: -webkit-fit-content; 
+        height: -moz-fit-content; 
+        height: fit-content;  
+        overflow: hidden;
+        -o-object-fit: contain;
+           object-fit: contain;
+           bottom: 30px;
+    }
+    .footerleft{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 414px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-top: 10px;
+    }
+    .footerright{
+        width: 414px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        padding-top: 30px;
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+    .sociallogo{
+        padding-top: 10px;
+    }
+    .ruka{
+        width: 380px;
+        height: 300px;
+    }
+    .googleruka{
+        margin-top: 30px;
+        width: 380px;
+    }
+    .misamarrti{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        overflow-x: hidden;
+        -o-object-fit: scale-down;
+           object-fit: scale-down;
+    }
+    .hedermain{
+        width: 414px;
+        -o-object-fit: scale-down;
+           object-fit: scale-down;
+        display: none;
+    }
+    .signcont{
+        flex-direction: column;
+    }
+    .signform{
+        width: 400px;
+        top: 0;
+        left: 15px;
+        margin: auto;
+        backdrop-filter: blur(10px) !important;
+        bottom: 0px;
+    }
+
+    .shesvla{
+        top: 0;
+    }
+    .registrationdiv{
+        top: 0;
+    }
+    .signinpage{
+        width: 400px;
+        top: 0;
+        margin: auto;
+        flex-direction: column;
+    }
+    .regform{
+        position: absolute;
+        top: 0;
+        left: 7px;
+        width: 400px;
+        margin: auto;
+        bottom: 0px;
+        z-index: -1;
+        margin-top: 75px;
+        backdrop-filter: blur(10px) !important;
+
+    }
+    .mogesalmebit{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+
+    
+}
 .mobile-menu{
     width: 414px;
     background-color: #2463085d;
