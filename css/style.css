@@ -1924,7 +1924,12 @@ h3{
     .links{
         display: none;
     }
-
+    .contactpage{
+        width: 414px;
+    }
+    .contactdiv{
+        width: 380px;
+    }
     
 }
 @media screen and (max-width: 428px){
@@ -2049,6 +2054,7 @@ h3{
     .links{
         display: none;
     }
+
 
     
 }
