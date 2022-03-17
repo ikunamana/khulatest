@@ -1446,26 +1446,26 @@ button{
 
 }
 .commentform input{
-        width: 400px;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid rgba(221, 221, 221, 0.356);
-        border-radius: 4px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        -webkit-transition-duration: 300ms;
-             -o-transition-duration: 300ms;
-                transition-duration: 300ms;
-}
+    width: 98%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(6, 202, 16, 0.39);
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}  
 
 .commentform input::-moz-selection{
-    border: 3px solid rgba(9, 136, 51, 0.473);
-    transition-duration: 30ms;
-    border-color: aqua;
-    border-right: blue;
-
-}
+    width: 98%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(6, 202, 16, 0.39);
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}  
 
 .commentform input::selection{
     border: 3px solid rgba(9, 136, 51, 0.473);
@@ -1929,7 +1929,7 @@ h3{
     }
     .commentform{
         margin-top: 80px;
-        width: 380px;
+        width: 280px;
     }
     
 }
