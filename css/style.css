@@ -1612,7 +1612,6 @@ footer a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
     -ms-flex-pack:distribute;
         justify-content:space-around;
     -webkit-box-align: center;
@@ -1936,7 +1935,7 @@ h3{
     }
     .signcont{
         flex-direction: column;
-        
+        height: 400px;
     }
     .signform{
         width: 400px;
@@ -1950,6 +1949,7 @@ h3{
         top: 150px;
         left: 15px;
         margin: auto;
+        flex-direction: column;
     }
     .regform{
         position: absolute;
