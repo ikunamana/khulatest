@@ -1667,7 +1667,6 @@ footer a{
     border-radius: 4px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    z-index: 1;
     /* background-color: rgb(255, 255, 255); */
 }
 .regform input{
@@ -1679,7 +1678,6 @@ footer a{
     border-radius: 4px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    z-index: -5;
     /* background-color: rgb(255, 255, 255); */
 }
 .langpro{
@@ -1908,11 +1906,12 @@ h3{
     .regform{
         position: absolute;
         top: 0;
-        left: 15px;
+        left: 7px;
         width: 400px;
         margin: auto;
         bottom: 0px;
-        z-index: 1;
+        z-index: -1;
+        margin-top: 40px;
     }
     .mogesalmebit{
         display: none;
