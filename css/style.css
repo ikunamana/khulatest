@@ -1929,8 +1929,8 @@ h3{
         width: 414px;
     }
     .commentform{
-        margin-top: 80px;
         width: 280px;
+        top:-100px;
     }
     
 }
