@@ -1910,6 +1910,9 @@ h3{
     .regform{
         position: absolute;
         top: 0px;
+        width: 400px;
+        margin: auto;
+        bottom: 0px;
     }
     .mogesalmebit{
         display: none;
