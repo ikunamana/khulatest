@@ -1579,7 +1579,6 @@ footer a{
     transform: translateY(0);
     transition-duration: 1s;
     transform-origin:top;
-
 }
 
 .shesvla{
@@ -1668,7 +1667,6 @@ footer a{
     border-radius: 4px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    z-index: -1;
 
     /* background-color: rgb(255, 255, 255); */
 }
@@ -1681,7 +1679,6 @@ footer a{
     border-radius: 4px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    z-index: -1;
 
     /* background-color: rgb(255, 255, 255); */
 }
@@ -1915,6 +1912,7 @@ h3{
         width: 400px;
         margin: auto;
         bottom: 0px;
+        z-index: 1;
     }
     .mogesalmebit{
         display: none;
