@@ -1894,21 +1894,12 @@ h3{
         backdrop-filter: blur(10px);
         bottom: 0px;
     }
-    .regform{
-        width: 400px;
-        top: 0;
-        left: 15px;
-        margin: auto;
-        backdrop-filter: blur(10px);
-        bottom: 0px;
-        position: absolute;
-    }
+
     .shesvla{
         top: 0;
     }
     .registrationdiv{
         top: 0px;
-        position: absolute;
     }
     .signinpage{
         width: 400px;
@@ -1918,7 +1909,6 @@ h3{
     }
     .regform{
         position: absolute;
-        backdrop-filter: blur(10px);
         top: 0px;
     }
     .mogesalmebit{
