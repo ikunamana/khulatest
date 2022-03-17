@@ -776,7 +776,6 @@ button{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -893,9 +892,7 @@ button{
     display: -ms-flexbox;
     display: flex;
 }
-.allproduct{
-    width: 700px;
-}
+
 .fasii{
     font-size: large;
     font-weight: 900;
@@ -1948,6 +1945,12 @@ h3{
     .productform{
         width: 380px;
     }
+    .productimg{
+        width: 380px;
+    }
+    .productimg1{
+        width: 380px;
+    }
     .section1{
         flex-direction: column;
     }
@@ -1955,6 +1958,7 @@ h3{
         width: 414px;
         flex-direction: column;
         overflow-x: hidden;
+        top: 40px
     }
     
 }
