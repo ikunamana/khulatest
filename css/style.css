@@ -1604,7 +1604,6 @@ footer a{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1934,6 +1933,10 @@ h3{
         -o-object-fit: scale-down;
            object-fit: scale-down;
         display: none;
+    }
+    .signcont{
+        flex-direction: column;
+        
     }
     .signform{
         width: 400px;
