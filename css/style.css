@@ -1959,7 +1959,6 @@ h3{
 
 .mobile-menu{
     width: 414px;
-    border-radius: 4px;
     background-color: #4cee065d;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
