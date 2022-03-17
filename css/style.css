@@ -1309,6 +1309,7 @@ h3{
     .hedermain{
         width: 414px;
         object-fit: scale-down;
+        display: none;
     }
     .signform{
         width: 400px;
