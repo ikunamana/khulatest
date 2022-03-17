@@ -1615,6 +1615,7 @@ footer a{
     -webkit-transform-origin: bottom;
         -ms-transform-origin: bottom;
             transform-origin: bottom;
+            backdrop-filter: blur(10px);
 
 
 }
@@ -1626,6 +1627,7 @@ footer a{
     height: -moz-fit-content;
     height: fit-content;
     padding: 30px;
+    backdrop-filter: blur(10px);
     /* margin-bottom: 100px; */
     border-radius: 8px;
     -webkit-animation-name: logoanima;
@@ -1897,7 +1899,7 @@ h3{
         top: 0;
     }
     .registrationdiv{
-        top: 0;
+        top: 0px;
         position: absolute;
     }
     .signinpage{
