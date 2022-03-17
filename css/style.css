@@ -1893,6 +1893,14 @@ h3{
         margin: auto;
         backdrop-filter: blur(10px);
         bottom: 0px;
+    }
+    .regform{
+        width: 400px;
+        top: 0;
+        left: 15px;
+        margin: auto;
+        backdrop-filter: blur(10px);
+        bottom: 0px;
         position: absolute;
     }
     .shesvla{
