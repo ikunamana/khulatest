@@ -1893,6 +1893,13 @@ h3{
         bottom: 0;
 
     }
+    .shesvla{
+        top: 0;
+    }
+    .registrationdiv{
+        top: 0;
+        position: absolute;
+    }
     .signinpage{
         width: 400px;
         top: 0;
