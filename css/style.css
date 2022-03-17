@@ -1886,7 +1886,7 @@ h3{
     }
     .signform{
         width: 400px;
-        top: 150px;
+        top: 0;
         left: 15px;
         margin: auto;
         backdrop-filter: blur(10px);
@@ -1900,8 +1900,9 @@ h3{
         flex-direction: column;
     }
     .regform{
-        position: fixed;
+        position: absolute;
         backdrop-filter: blur(10px);
+        top: 0;
     }
     .mogesalmebit{
         display: none;
