@@ -1310,6 +1310,12 @@ h3{
         width: 414px;
         object-fit: scale-down;
     }
+    .signform{
+        width: 400px;
+        top: 15px;
+        left: 15px;
+        margin: auto;
+    }
     
 
     
@@ -1321,7 +1327,8 @@ h3{
     background-color: #4cee065d;
     backdrop-filter: blur(30px);
     position: fixed;
-    bottom: 10px;
+    bottom: 0;
+    right: 0;
     margin: auto;
 }
 .mobile-nav{
