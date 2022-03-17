@@ -1933,6 +1933,9 @@ h3{
         width: 280px;
         top:-100px;
     }
+    .contactdiv{
+        height: 360px ;
+    }
     .added{
         z-index: 3000;
         height: 100px ;
