@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khula • ხულა</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shekveta.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="loading">
+        <img id="loading-image" src="../images/loader.gif" alt="loading..">
+    </div>
+<div class="contfull" id="contfull">
+    <div id="conts" class="container">
+        
+            <div id="headermain" class="links">
+                <a href="./../../../index.html">MAIN PAGE</a>
+
+                <div class="dropdown">
+                <a class="dropname" href="./products.html">PRODUCTS/a>
+                <div class="dropdown-content">
+                    <ul class="ulup"> 
+                        <li><a href="./product/sulguni.html">SULGUNI</a><br></li>
+                        <li><a href="./product/imeruli.html">IMERETIAN</a><br></li>
+                        <li><a href="./product/karkhnuli.html">KARKHULI</a><br></li>
+                        <li><a href="./product/tchetchili.html">TCHETCHILI</a><br></li>
+                        <li><a href="./product/milk.html">MILK</a><br></li>
+                        <li><a href="./product/matsoni.html">MATSONI</a><br></li>
+
+                    </ul>
+                    <hr class="khazi"> 
+                    <br>
+                    <ul>
+                        <li><a href="./product/nuts.html">NUTS</a><br></li>
+                        <li><a href="./product/honey.html">HONEY</a><br></li>
+                        <li><a href="./product/lobio.html">BEENS</a><br></li>
+                        <li><a href="./product/eggs.html">EGGS</a><br></li>
+                        <li><a href="./product/mtchadisPkvili.html">CORN FLOUR</a><br></li>
+                        <li><a href="./product/churchkhela.html">CHURCHKHELA</a><br></li>
+                    </ul>
+            </div>
+            </div>
+            
+            
+            <div>
+            <button id="shekvetabtn" onclick="function shekvetamtavari()">ORDER</button>
+        </div>
+            <a href="./misamarti.html">ADRESS</a>
+                <a href="./index.html">CONTACT</a>
+            </div>
+    </div>
+
+    <div id="maindiv1" class="maindiv1">
+        
+        <div id="shekvetadiv" class="shekvetadiv">
+            <div>
+            <span  onclick="function daxurva()" class="close" id="close" >&times;</span>
+        </div>
+            <form action="./succses.html">
+                <label  for="product">CHOOSE THE PRODUCT</label><br>
+                <select  onchange="myFunction()" name="product" id="product" required>
+                <option value="16.90">IMERETIAN</option>
+                <option data-price="22.90" value="sulguni">SULGUNI</option>
+                <option value="29.90">NUTS</option>
+                <option value="4.90">CHURCHKHELA</option>
+                <option value="4.90">MILK</option>
+                <option value="29.90">HONEY</option>
+                <option value="4.00">MATSONI</option>
+                <option value="3.50">CORN FLOUR</option>
+                <option value="0.60">EGGS</option>
+                <option value="13.90">BEENS</option>
+                <option value="27.90">TCHETCHILI</option>
+                <option value="19.90">KARKHNULI</option>
+            </select>
+            <p class="fasii" id="fasi"> </p><br><hr><br><br>
+            <label for="tsona">QUANTITY</label>
+            <input title="QUANTITY" onkeyup="myFunction()" maxlength="2" type="number" value="" id="tsona" name="tsona" placeholder="QUANTITY" required>
+            <label for="tel">PHONE NUMBER</label>
+            <input type="number" id="tel" name="telephoni" placeholder="PHONE NUMBER" required>
+            <label for="misamarrti">ADRESS</label>
+            <input type="text" id="misamarrti" name="misamarrti" placeholder="YOUR ADRESS" required>
+            <label for="tel">COMMENT</label>
+            <input type="text" id="comment" name="comment" placeholder="COMMENT">
+            <p class="fasii" id="jami"></p>
+            <input type="submit" value="ORDER">
+         </form>   
+        </div>
+    </div>
+    </div>
+
+   
+        <div><img  class="bluredlogo" width="300px" src="../images/264960237_106552825212202_972583597574527585_n.jpg" alt="bluredlogo"> </div>
+        <div><img   class="bluredlogo1" width="250px" src="../images/264960237_106552825212202_972583597574527585_n.jpg" alt="bluredlogo"> </div>
+        <div><img   class="bluredlogo2" width="400px" src="../images/264960237_106552825212202_972583597574527585_n.jpg" alt="bluredlogo"> </div>
+    
+    <div class="contactpage">
+        <div class="contactdiv">
+            <h4>INFORMATION</h4><br><br>
+            <strong>E-mail:</strong><p>khulageorgia@khula.ge</p><br><br><br><hr><br><br><br>
+            <strong>Phone:</strong><p>+995 595 11 58 59</p><br><br><br><hr><br><br><br>
+            <span><img class="sociallogo" width="200px" src="../images/social.png" alt="footerlogo">
+            </span>
+
+        </div>
+        <div class="commentform">
+            <h4>LEAVE A MESSAGE</h4><br><br>
+            <form  action="./succses.html">
+                <label class="saxeli1" for="saxeli">NAME</label>
+                <input title="NAME" type="text" id="saxeli" name="saxeli" placeholder="YOUR NAME" required><br>
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="მიუთითეთ თქვენი E-mail" required>
+                <label for="tel">MESSAGE</label>
+                <textarea type="text" id="comment" name="comment" placeholder="INPUT MESSAGE"></textarea>
+                <input type="submit" value="SEND"></form>
+        </div>
+        
+
+    </div>
+
+
+  <!-- footer -->
+  <br><br><br><hr><hr><hr>
+  <div class="footercontainer">
+<div class="footer">
+  <div class="aboutus">
+      <h3>ABOUT US</h3>
+      <br>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis est quisquam et cumque nam laborum neque impedit minus, ex dicta atque itaque odit voluptates repudiandae commodi quidem rem voluptatibus voluptatum.</p>
+             <div class="footerlogo">
+      <img class="sociallogo" width="200px" src="../images/social.png" alt="footerlogo">
+  </div>
+</div>
+  <div class="footerleft">
+      <h3>ALL</h3>
+      <a href="./index.html">TERMS AND CONDITIONS</a>
+      <a href="./index.html">PRIVACY POLICY </a>
+      <a href="./index.html">FAQ</a>
+      <a href="./index.html">ORDERING INSTRUCTIONS</a>
+      <a href="./index.html">REPORT</a>
+
+  </div>
+
+  <div class="footerright">
+      <h3>LINKS</h3>
+      <a href="./index.html">SUBSCRIBE</a>
+      <a href="./index.html">ONLINE HELP</a>
+      <a href="./index.html">FEEDBACK</a>
+      <a href="./index.html">SITEMAP</a>
+      <a href="./index.html">HISTORY</a>
+
+  </div>
+
+</div>
+<div class="companyname">
+  <strong>Khula • ხულა</strong><br> <p>ALL RIGHTS RESERVED</p><br><p>2021-2022</p>
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fuxplanet.org%2Fusing-loading-animation-on-websites-and-apps-examples-and-snippets-to-use-cab0097be9f1&psig=AOvVaw1f9NKZl7WMOIt0a4kgpDBe&ust=1643455290892000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDK-52q1PUCFQAAAAAdAAAAABAD" alt="" srcset="">
+</div>
+</div>
+
+  <script src="./shekveta.js"></script>
+  <script>
+      $(window).on('load', function() {
+          $('#loading').hide();});
+      
+  </script>
+
+</body>
+</html>
