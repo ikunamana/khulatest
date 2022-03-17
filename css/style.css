@@ -1644,61 +1644,7 @@ footer a{
 
 /* //card// */
 
-@media screen and (max-width: 414px){
-    .aboutus{
-        margin-top: 20px;
-        width: 414;
-        padding-right: 0px;
-        padding: 10px;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
 
-    }
-    .footer{
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 414px; 
-        height: 700px;  
-        overflow: hidden;
-        -o-object-fit: contain;
-           object-fit: contain;
-    }
-    .footerleft{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 414px;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        padding-top: 10px;
-    }
-    .footerright{
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 414px;
-        -webkit-box-align:center;
-            -ms-flex-align:center;
-                align-items:center;
-        text-align: center;
-        padding-top: 30px;
-        margin-left: 0px;
-        padding-bottom: 10px;
-    }
-    .sociallogo{
-        padding-top: 10px;
-    }
-    
-}
 
 .tsona{
     margin-top: 20px;
