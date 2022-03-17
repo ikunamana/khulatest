@@ -1954,6 +1954,7 @@ h3{
     .allproduct{
         width: 414px;
         flex-direction: column;
+        overflow-x: hidden;
     }
     
 }
