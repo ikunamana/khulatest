@@ -1813,6 +1813,9 @@ h3{
                 align-items: center;
 
     }
+    .footercontainer{
+        margin-bottom: 45px;
+    }
     .footer{
         -ms-flex-pack: distribute;
             justify-content: space-around;
