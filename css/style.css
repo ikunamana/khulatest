@@ -1927,7 +1927,8 @@ h3{
     .contactpage{
         width: 414px;
     }
-    .contactdiv{
+    .commentform{
+        margin-top: 80px;
         width: 380px;
     }
     
