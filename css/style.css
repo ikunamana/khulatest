@@ -1923,6 +1923,7 @@ h3{
     bottom: 0;
     right: 0;
     margin: auto;
+    z-index: 9999;
 }
 .mobile-nav{
     width: 400px;
