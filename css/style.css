@@ -1338,6 +1338,7 @@ h3{
     border-radius: 4px;
     background-color: #4cee065d;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     position: fixed;
     bottom: 0;
     right: 0;
