@@ -1945,6 +1945,13 @@ h3{
         width: 414px;
         flex-direction: column;
     }
+    .section1{
+        flex-direction: column;
+    }
+    .allproduct{
+        width: 414px;
+        flex-direction: column;
+    }
     
 }
 @media screen and (max-width: 428px){
