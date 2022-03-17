@@ -1932,6 +1932,10 @@ h3{
         width: 280px;
         top:-100px;
     }
+    .added{
+        z-index: 3000;
+        height: 100px ;
+    }
     
 }
 @media screen and (max-width: 428px){
