@@ -1964,6 +1964,12 @@ h3{
         justify-content: space-around;
         top: 40px
     }
+    .mobile-top{
+        top: 0;
+        height: 60px;
+        width: 414px;
+        background-color: #068b2c34;
+    }
     
 }
 @media screen and (max-width: 428px){
