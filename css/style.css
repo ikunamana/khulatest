@@ -1826,6 +1826,7 @@ h3{
             -ms-flex-direction: column;
                 flex-direction: column;
         width: 414px; 
+        backdrop-filter: blur(10px);
         height: -webkit-fit-content; 
         height: -moz-fit-content; 
         height: fit-content;  
@@ -1889,6 +1890,8 @@ h3{
         top: 150px;
         left: 15px;
         margin: auto;
+        backdrop-filter: blur(10px);
+
     }
     .signinpage{
         width: 400px;
@@ -1900,6 +1903,7 @@ h3{
     }
     .regform{
         position: absolute;
+        backdrop-filter: blur(10px);
     }
     .mogesalmebit{
         display: none;
