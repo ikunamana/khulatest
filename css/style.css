@@ -1974,6 +1974,7 @@ h3{
         position: fixed;
         align-items: center;
         color: white;
+        z-index: 999999;
     }
     
 }
