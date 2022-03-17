@@ -32,19 +32,19 @@
     width: 100%;
 }
 @-webkit-keyframes logoanim{
-    from{padding-right:500px;}
+    from{padding-right:414px;}
     to{padding-right:160px;}
 }
 @keyframes logoanim{
-    from{padding-right:500px;}
+    from{padding-right:414px;}
     to{padding-right:160px;}
 }
 @-webkit-keyframes logoanimleft{
-    from{padding-left: 500px;}
+    from{padding-left: 414px;}
     to{padding-left: 160px;}
 }
 @keyframes logoanimleft{
-    from{padding-left: 500px;}
+    from{padding-left: 414px;}
     to{padding-left: 160px;}
 }
 
