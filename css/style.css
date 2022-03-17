@@ -1909,7 +1909,7 @@ h3{
     .regform{
         position: absolute;
         backdrop-filter: blur(10px);
-        top: 0;
+        top: 0px;
     }
     .mogesalmebit{
         display: none;
