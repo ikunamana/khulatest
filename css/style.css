@@ -1945,6 +1945,9 @@ h3{
         width: 414px;
         flex-direction: column;
     }
+    .productform{
+        width: 380px;
+    }
     .section1{
         flex-direction: column;
     }
