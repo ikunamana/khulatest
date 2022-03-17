@@ -1581,9 +1581,9 @@ footer a{
             animation-name: logoanima;
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
     -webkit-transition-duration: 1s;
          -o-transition-duration: 1s;
             transition-duration: 1s;
