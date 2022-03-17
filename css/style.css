@@ -1803,6 +1803,9 @@ h3{
 }
 
 @media screen and (max-width: 414px){
+    body{
+        background-color: #245e0c5d;
+    }
     .aboutus{
         margin-top: 20px;
         width: 414;
