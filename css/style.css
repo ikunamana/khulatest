@@ -1890,7 +1890,7 @@ h3{
         left: 15px;
         margin: auto;
         backdrop-filter: blur(10px);
-        bottom: 0;
+        bottom: 0px;
 
     }
     .shesvla{
@@ -1903,7 +1903,6 @@ h3{
     .signinpage{
         width: 400px;
         top: 0;
-        left: 15px;
         margin: auto;
         flex-direction: column;
     }
