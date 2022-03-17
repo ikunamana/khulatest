@@ -1890,6 +1890,7 @@ h3{
         left: 15px;
         margin: auto;
         backdrop-filter: blur(10px);
+        bottom: 0;
 
     }
     .signinpage{
