@@ -1684,6 +1684,19 @@ footer a{
 
     /* background-color: rgb(255, 255, 255); */
 }
+.regform input{
+    width: 98%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(6, 202, 16, 0.39);
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: -1;
+
+    /* background-color: rgb(255, 255, 255); */
+}
 .langpro{
     display: -webkit-box;
     display: -ms-flexbox;
