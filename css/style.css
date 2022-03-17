@@ -1293,6 +1293,7 @@ button{
 }
 .contactdiv{
     display:block;
+    height: 360px;
     background-color: #014d1fa6;
     padding: 30px;
     border-top-right-radius: 8px;
