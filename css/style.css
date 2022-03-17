@@ -1604,6 +1604,7 @@ footer a{
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
+    flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1886,6 +1887,7 @@ h3{
         overflow: hidden;
         -o-object-fit: contain;
            object-fit: contain;
+           bottom: 30px;
     }
     .footerleft{
         display: -webkit-box;
