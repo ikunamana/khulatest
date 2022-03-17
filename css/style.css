@@ -1477,8 +1477,8 @@ button{
 
 }
 textarea{
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 98%;
+    max-width: 98%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
