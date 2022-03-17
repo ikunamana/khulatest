@@ -1893,7 +1893,7 @@ h3{
         margin: auto;
         backdrop-filter: blur(10px);
         bottom: 0px;
-
+        position: absolute;
     }
     .shesvla{
         top: 0;
