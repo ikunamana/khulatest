@@ -1372,8 +1372,8 @@ button{
     to{-webkit-transform: rotate(360deg);transform: rotate(360deg);}
 }
 .bluredlogo{
-    /* -webkit-filter: blur(30px);
-            filter: blur(30px); */
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
     -webkit-animation-name: logorotate;
             animation-name: logorotate;
     -webkit-animation-duration: 150s;
@@ -1387,8 +1387,8 @@ button{
     z-index: -100;
 }
 .bluredlogo1{
-    /* -webkit-filter: blur(40px);
-            filter: blur(40px); */
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
     margin-left: 300px;
     -webkit-animation-name: logorotate;
             animation-name: logorotate;
@@ -1405,8 +1405,8 @@ button{
     float: left;
 }
 .bluredlogo2{
-    /* -webkit-filter: blur(45px);
-            filter: blur(45px); */
+    -webkit-filter: blur(45px);
+            filter: blur(45px);
     margin-left: 800px;
     -webkit-animation-name: logorotate;
             animation-name: logorotate;
@@ -1887,7 +1887,7 @@ h3{
         top: 0;
         left: 15px;
         margin: auto;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px) !important;
         bottom: 0px;
     }
 
@@ -1912,6 +1912,8 @@ h3{
         bottom: 0px;
         z-index: -1;
         margin-top: 75px;
+        backdrop-filter: blur(10px) !important;
+
     }
     .mogesalmebit{
         display: none;
@@ -1926,8 +1928,8 @@ h3{
 .mobile-menu{
     width: 414px;
     background-color: #4cee065d;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
     position: fixed;
     bottom: 0;
     right: 0;
