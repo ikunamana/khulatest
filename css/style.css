@@ -1958,6 +1958,7 @@ h3{
         width: 414px;
         flex-direction: column;
         overflow-x: hidden;
+        justify-content: space-around;
         top: 40px
     }
     
