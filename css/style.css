@@ -1971,6 +1971,7 @@ h3{
         background-color: #068b2c;
         display: flex;
         justify-content: space-around;
+        position: fixed;
     }
     
 }
