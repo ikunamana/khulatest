@@ -1922,6 +1922,7 @@ h3{
     .regform{
         position: absolute;
         top: 0px;
+        left: 15px;
         width: 400px;
         margin: auto;
         bottom: 0px;
