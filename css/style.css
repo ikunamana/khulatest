@@ -1902,7 +1902,7 @@ h3{
         flex-direction: column;
     }
     .regform{
-        position: absolute;
+        position: fixed;
         backdrop-filter: blur(10px);
     }
     .mogesalmebit{
