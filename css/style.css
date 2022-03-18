@@ -2015,6 +2015,9 @@ h3{
         height: fit-content;
         margin-left: 0%;
     }
+    .close1{
+        transform: rotate(180deg);
+    }
 }
 @media screen and (max-width: 428px){
     .aboutus{
