@@ -1985,6 +1985,9 @@ h3{
         justify-content: space-around;
         font-size: smaller;
     }
+    .arrowimgclose{
+        display: none;
+    }
 }
 @media screen and (max-width: 428px){
     .aboutus{
