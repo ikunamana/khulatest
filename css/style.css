@@ -1984,10 +1984,13 @@ h3{
         flex-direction: column;
         justify-content: space-around;
         font-size: smaller;
+        padding-top: 5px;
     }
     .arrowimgclose{
         display: none;
+        padding-left: 8px;
     }
+    
 }
 @media screen and (max-width: 428px){
     .aboutus{
