@@ -37,11 +37,18 @@ function btt() {
 
     }
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
-        mobiletop.style.flexDirection = "row"
-        mobiletop.style.height = "50px"
+        mobiletop.style.height = "60px"
+        nameofcompany.display.size = "16px"
+        nameofcompany.display.filter = "blur(6px)"
+        nameofpage.display.size ="30px"
+        nameofpage.display.position = "relative"
+
 
     } else {
-        mobiletop.style.flexDirection = "column"
+        nameofcompany.display.filter = "blur(0px)"
+        nameofcompany.display.size = "default"
+        nameofpage.display.size ="default"
+        nameofpage.display.position = "absolute"
         mobiletop.style.height = "80px"
 
     }
