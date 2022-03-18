@@ -32,7 +32,5 @@ var arrow = document.getElementById("hiddenarrow")
             menuimg.style.display="block";
             spanmenu.style.display = "block"
             arrowimgclose.style.display = "none"
-
-           
         }
     }
