@@ -1978,7 +1978,7 @@ h3{
         color: black;
         z-index: 999999;
         box-shadow: 3px 8px 15px -11px black;
-
+        transition-duration: 300ms;
     }
     .home{
         display: flex;
