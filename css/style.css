@@ -2009,8 +2009,8 @@ h3{
         padding-top: 15px;
         padding-left: 15px;
         bottom: 0;
-        width: 380px;
-        height: 420px;
+        width: 414px;
+        height: fit-content;
         margin-left: 0%;
     }
 }
