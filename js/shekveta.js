@@ -11,7 +11,7 @@ btnsh.onclick = function (shekvetamtavari){
     contfull.style.pointerEvents = "none"
     contfull.style.overflowY = "hidden"
     contfull.style.objectFit = "cover"
-
+    mobilemenu.style.opacity = "0.7"
 }
 
 span.onclick = function (daxurva){
@@ -21,6 +21,7 @@ span.onclick = function (daxurva){
     contfull.style.pointerEvents = "auto"
     contfull.style.overflowY = "auto"
     contfull.style.objectFit = "auto"
+    mobilemenu.style.opacity = "1"
 
 }
 
@@ -32,6 +33,7 @@ window.onclick = function(event) {
         contfull.style.pointerEvents = "auto"
         contfull.style.overflowY = "auto"
         contfull.style.objectFit = "auto"
+        mobilemenu.style.opacity = "1"
 
     }
 }
