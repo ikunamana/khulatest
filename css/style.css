@@ -2107,9 +2107,8 @@ h3{
     
 }
 .mobile-menu{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
+    height: 70px;
+    border-radius: 50px;
     background-color: #068b2c65;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
@@ -2132,6 +2131,9 @@ h3{
         justify-content: space-around;
     padding: 8px;
     transition-duration: 300ms;
+    animation-name: opacanim;
+    animation-duration: 300ms;
+    animation-delay: 300ms;
 
 }
 .mobile-nav img{

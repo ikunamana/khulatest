@@ -19,7 +19,7 @@ var arrow = document.getElementById("hiddenarrow")
         }
     }
     function mobilemenu1(){
-        if(mobilemenu.style.width === "70px"){
+        if(mobilemenu.style.height === "70px"){
             mobilenav.style.display = "flex";
             mobilemenu.style.width = "350px";
             menuimg.style.display="none";
