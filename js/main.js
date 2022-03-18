@@ -36,6 +36,15 @@ function btt() {
         headermain.style.height = "80px";
 
     }
+    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
+        mobiletop.style.flexDirection = "row"
+        mobiletop.style.height = "50px"
+
+    } else {
+        mobiletop.style.flexDirection = "column"
+        mobiletop.style.height = "80px"
+
+    }
 };
 
 // sign in Animation
