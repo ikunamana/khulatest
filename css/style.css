@@ -2002,7 +2002,7 @@ h3{
     }
     .maindiv1{
         width: 414px;
-        height: fit-content;
+        height: 600px;
         overflow: hidden;
     }
 }
