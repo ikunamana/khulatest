@@ -2013,6 +2013,7 @@ h3{
         left: 0;
         width: 400px;
         height: fit-content;
+        margin-left: 0%;
     }
 }
 @media screen and (max-width: 428px){
