@@ -1990,7 +1990,13 @@ h3{
         display: none;
         padding-left: 8px;
     }
-    
+    ion-tab-bar{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        --bacground: rgba(7, 90, 5, 0.507);
+        
+    }
 }
 @media screen and (max-width: 428px){
     .aboutus{
