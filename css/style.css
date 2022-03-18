@@ -765,7 +765,6 @@ button{
 }
 
 
-}
 
 @keyframes slideIn{
     from{bottom: -900px;  opacity: 1;}
@@ -2027,7 +2026,6 @@ h3{
     }
     
     
-    }
 }
 @media screen and (max-width: 428px){
     .aboutus{
