@@ -90,6 +90,6 @@ const dro = new Date().getHours();
         document.getElementById("mogesalmebit").innerHTML = misalmeba;
         
 // hidden contact div //
-function playSound(clicksound){
-    document.getElementById(clicksound).play();
+function playSound(click){
+    document.getElementById(click).play();
 }
