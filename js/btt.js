@@ -23,8 +23,6 @@ var arrow = document.getElementById("hiddenarrow")
             mobilenav.style.display = "flex";
             mobilemenu.style.width = "350px";
             menuimg.style.display="none";
-
-
            
         } else{
             mobilenav.style.display = "none";
