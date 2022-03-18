@@ -2002,7 +2002,7 @@ h3{
     }
     .maindiv1{
         width: 414px;
-        height: 600px;
+        height: 100%;
         overflow: hidden;
     }
     .shekvetadiv{
@@ -2010,8 +2010,7 @@ h3{
         padding-left: 15px;
         bottom: 0;
         width: 380px;
-
-        height: 600px;
+        height: 420px;
         margin-left: 0%;
     }
 }
