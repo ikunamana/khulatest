@@ -38,16 +38,16 @@ function btt() {
     }
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
         mobiletop.style.height = "60px"
-        nameofcompany.display.size = "16px"
-        nameofcompany.display.filter = "blur(6px)"
+        nameofcomp.display.fontSize = "16px"
+        nameofcomp.display.filter = "blur(6px)"
         nameofpage.display.size ="30px"
         nameofpage.display.position = "relative"
 
 
     } else {
-        nameofcompany.display.filter = "blur(0px)"
-        nameofcompany.display.size = "default"
-        nameofpage.display.size ="default"
+        nameofcomp.display.filter = "blur(0px)"
+        nameofcomp.display.size = "30px"
+        nameofpage.display.size ="16px"
         nameofpage.display.position = "absolute"
         mobiletop.style.height = "80px"
 
