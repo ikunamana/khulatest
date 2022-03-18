@@ -191,6 +191,41 @@
     <strong>Khula • ხულა</strong><br> <p>ALL RIGHTS RESERVED</p><br><p>2021-2022</p>
     </div>
 </footer>
+<div id="maindiv1" class="maindiv1">
+    <div id="shekvetadiv" class="shekvetadiv">
+        <div>
+            <span  onclick="function daxurva()" class="close" id="close" >&times;</span>
+        </div>
+            <form action="./ka/succses.html">
+                <label  for="product">აირჩიეთ პროდუქტი</label><br>
+                    <select  onchange="myFunction()" name="product" id="product" required>
+                        <option value="16.90">იმერული</option>
+                        <option data-price="22.90" value="sulguni">სულგუნი</option>
+                        <option value="29.90">კაკალი</option>
+                        <option value="4.90">ჩურჩხელა</option>
+                        <option value="4.90">რძე</option>
+                        <option value="29.90">თაფლი</option>
+                        <option value="4.00">მაწონი</option>
+                        <option value="3.50">მჭადის ფქვილი</option>
+                        <option value="0.60">კვერცხი</option>
+                        <option value="13.90">ლობიო</option>
+                        <option value="27.90">ჩეჩილი</option>
+                        <option value="19.90">ქარხნული</option>
+                    </select>
+                <p class="fasii" id="fasi"> </p><br><hr><br><br>
+                <label class="tsona" for="tsona">რაოდენობა</label>
+                <input title="რაოდენობა" onkeyup="myFunction()" maxlength="2" type="number" value="" id="tsona" name="tsona" placeholder="მიუთითეთ სასურველი რაოდენობა" required>
+                <label for="tel">ტელ. ნომერი</label>
+                <input type="number" id="tel" name="telephoni" placeholder="მიუთითეთ ტელეფონის ნომერი" required>
+                <label for="misamarrti">მისამართი</label>
+                <input type="text" id="misamarrti" name="misamarrti" placeholder="მიუთითეთ საცხოვრებელი მისამართი" required>
+                <label for="tel">კომეტარი</label>
+                <input type="text" id="comment" name="comment" placeholder="დაამატეთ სასურველი ტექსტი">
+                <p class="fasii" id="jami"></p>
+                <input type="submit" value="გადახდა">
+             </form>   
+    </div>
+</div>
 <script src="../js/btt.js"></script>
 <script src="../js/main.js"></script>
 <script>
