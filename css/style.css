@@ -2109,13 +2109,14 @@ h3{
 .mobile-menu{
     width: 70px;
     height: 70px;
-    border-radius: 50px;
-    background-color: #068b2c65;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 0px;
+    background-color: #ffffec;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
     position: fixed;
-    bottom: 50px;
-    right: 30px;
+    bottom: 0px;
+    right: 0px;
     margin: auto;
     z-index: 9999;
     display: flex;
