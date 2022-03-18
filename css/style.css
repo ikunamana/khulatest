@@ -2015,8 +2015,11 @@ h3{
         height: fit-content;
         margin-left: 0%;
     }
-    .close1{
+    .close{
         transform: rotate(180deg);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 @media screen and (max-width: 428px){
