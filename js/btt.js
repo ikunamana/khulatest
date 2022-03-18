@@ -23,11 +23,15 @@ var arrow = document.getElementById("hiddenarrow")
             mobilenav.style.display = "flex";
             mobilemenu.style.width = "380px";
             menuimg.style.display="none";
+            spanmenu.style.display = "none"
+            arrowimgclose.style.display = "block"
            
         } else{
             mobilenav.style.display = "none";
             mobilemenu.style.width = "70px";
             menuimg.style.display="block";
+            spanmenu.style.display = "block"
+            arrowimgclose.style.display = "none"
 
            
         }
