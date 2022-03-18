@@ -1970,8 +1970,7 @@ h3{
         height: 80px;
         width: 414px;
         background-color: #ebf4c3;
-        display: flex;
-        flex-direction: column;
+        display: block;
         justify-content: space-around;
         position: fixed;
         align-items: center;
