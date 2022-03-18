@@ -11,7 +11,7 @@ btnsh.onclick = function (shekvetamtavari){
     contfull.style.pointerEvents = "none"
     contfull.style.overflowY = "hidden"
     contfull.style.objectFit = "cover"
-    mobilemenu.style.opacity = "0.7"
+    mobilemenu.style.opacity = "0.5"
 }
 
 span.onclick = function (daxurva){
