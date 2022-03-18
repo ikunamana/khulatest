@@ -38,11 +38,11 @@ function btt() {
     }
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
         mobiletop.style.height = "60px"
-        mobiletop.style.display = "inline"
+        mobiletop.style.flexDirection = "row"
 
 
     } else {
-        mobiletop.style.display = "block"
+        mobiletop.style.flexDirection = "column"
         mobiletop.style.height = "80px"
     }
 };
