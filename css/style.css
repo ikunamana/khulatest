@@ -1966,10 +1966,11 @@ h3{
     }
     .mobile-top{
         top: 0;
-        height: 60px;
+        height: 80px;
         width: 414px;
         background-color: #ebf4c3;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         position: fixed;
         align-items: center;
