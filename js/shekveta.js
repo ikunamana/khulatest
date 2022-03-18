@@ -19,14 +19,19 @@ span.onclick = function (daxurva){
     contfull.style.transform = "scale(1)"
     mtavari.style.position = "fixed"
     contfull.style.pointerEvents = "auto"
+    contfull.style.overflowY = "auto"
+    contfull.style.objectFit = "auto"
 
 }
 
 window.onclick = function(event) {
     if (event.target == maindiv1) {
-    maindiv1.style.display = "none"
-    contfull.style.transform = "scale(1)"
-    contfull.style.pointerEvents = "auto"
+        maindiv1.style.display = "none";
+        contfull.style.transform = "scale(1)"
+        mtavari.style.position = "fixed"
+        contfull.style.pointerEvents = "auto"
+        contfull.style.overflowY = "auto"
+        contfull.style.objectFit = "auto"
 
     }
 }
