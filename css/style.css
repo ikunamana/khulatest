@@ -1884,9 +1884,8 @@ h3{
         flex-direction: column;
     }
     .signform{
-        margin-top: 30px;
         width: 400px;
-        top: 0;
+        top: 50px;
         left: 15px;
         margin: auto;
         backdrop-filter: blur(10px) !important;
@@ -1907,7 +1906,7 @@ h3{
     }
     .regform{
         position: absolute;
-        top: 0;
+        margin-top: 50px;
         left: 7px;
         width: 400px;
         margin: auto;
