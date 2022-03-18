@@ -2123,7 +2123,7 @@ h3{
     height: 70px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 0px;
-    background-color: #ffffec;
+    background-color: #f1f1a38a;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
     position: fixed;
