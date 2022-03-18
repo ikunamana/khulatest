@@ -21,7 +21,7 @@ var arrow = document.getElementById("hiddenarrow")
     function mobilemenu1(){
         if(mobilemenu.style.width === "70px"){
             mobilenav.style.display = "flex";
-            mobilemenu.style.width = "350px";
+            mobilemenu.style.width = "380px";
             menuimg.style.display="none";
            
         } else{
