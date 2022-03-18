@@ -1968,7 +1968,7 @@ h3{
         top: 0;
         height: 60px;
         width: 414px;
-        background-color: #004414;
+        background-color: hsla(119, 89%, 19%, 0.507);
         display: flex;
         justify-content: space-around;
         position: fixed;
@@ -1994,8 +1994,8 @@ h3{
         position: absolute;
         bottom: 0;
         width: 100%;
-        --bacground: rgba(7, 90, 5, 0.507);
-        
+        --bacground: hsla(119, 89%, 19%, 0.507);
+
     }
 }
 @media screen and (max-width: 428px){
