@@ -1983,6 +1983,7 @@ h3{
         align-items: center;
         flex-direction: column;
         justify-content: space-around;
+        font-size: smaller;
     }
 }
 @media screen and (max-width: 428px){
