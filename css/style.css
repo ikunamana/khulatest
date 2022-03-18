@@ -2017,9 +2017,8 @@ h3{
     }
     .close{
         transform: rotate(180deg);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        margin-top: -90px;
+        margin-left: 45%;
     }
 }
 @media screen and (max-width: 428px){
