@@ -38,17 +38,11 @@ function btt() {
     }
     if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
         mobiletop.style.height = "60px"
-        nameofcomp.display.fontSize = "16px"
-        nameofcomp.display.filter = "blur(6px)"
-        nameofpage.display.fontSize ="30px"
-        nameofpage.display.position = "relative"
+        mobiletop.style.display = "inline"
 
 
     } else {
-        nameofcomp.display.filter = "blur(0px)"
-        nameofcomp.display.fontSize = "30px"
-        nameofpage.display.fontSize ="16px"
-        nameofpage.display.position = "absolute"
+        mobiletop.style.display = "block"
         mobiletop.style.height = "80px"
     }
 };
