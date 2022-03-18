@@ -2005,6 +2005,13 @@ h3{
         height: 600px;
         overflow: hidden;
     }
+    .shekvetadiv{
+        padding-top: 15px;
+        padding-left: 15px;
+        bottom: 0;
+        width: 380px;
+        height: 600px;
+    }
 }
 @media screen and (max-width: 428px){
     .aboutus{
