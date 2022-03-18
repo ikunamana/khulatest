@@ -40,17 +40,16 @@ function btt() {
         mobiletop.style.height = "60px"
         nameofcomp.display.fontSize = "16px"
         nameofcomp.display.filter = "blur(6px)"
-        nameofpage.display.size ="30px"
+        nameofpage.display.fontSize ="30px"
         nameofpage.display.position = "relative"
 
 
     } else {
         nameofcomp.display.filter = "blur(0px)"
-        nameofcomp.display.size = "30px"
-        nameofpage.display.size ="16px"
+        nameofcomp.display.fontSize = "30px"
+        nameofpage.display.fontSize ="16px"
         nameofpage.display.position = "absolute"
         mobiletop.style.height = "80px"
-
     }
 };
 
