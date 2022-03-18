@@ -1984,6 +1984,7 @@ h3{
         flex-direction: column;
         justify-content: space-around;
         font-size: smaller;
+        height: 50px;
     }
 }
 @media screen and (max-width: 428px){
