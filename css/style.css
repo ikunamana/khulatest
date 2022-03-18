@@ -632,7 +632,7 @@ input[type=submit]:hover{
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: fixed;
-    z-index: 10001;
+    z-index: 8888;
     left: 0;
     top: 0;
     width: 100%;
@@ -809,7 +809,7 @@ button{
 }
 
 .maindiv1 input[type=text], select{
-    min-width: 740px;
+    min-width: 98%;
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
@@ -827,7 +827,7 @@ button{
     margin-bottom: 15px;
 }
 .maindiv1  input[type=number]{
-    width: 740px;
+    width: 98%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -838,7 +838,7 @@ button{
 }
 
 .maindiv1 input[type=submit]{
-    width: 740px;
+    width: 98%;
     background-color: grey;
     color: aliceblue;
     padding: 14px 20px;
@@ -1999,6 +1999,11 @@ h3{
         width: 100%;
         --bacground: hsla(119, 89%, 19%, 0.507);
 
+    }
+    .maindiv1{
+        width: 414px;
+        height: fit-content;
+        overflow: hidden;
     }
 }
 @media screen and (max-width: 428px){
