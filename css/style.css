@@ -1978,7 +1978,12 @@ h3{
         box-shadow: 3px 8px 15px -11px black;
 
     }
-    
+    .home{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 @media screen and (max-width: 428px){
     .aboutus{
