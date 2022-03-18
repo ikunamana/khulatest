@@ -2145,9 +2145,7 @@ h3{
         justify-content: space-around;
     padding: 8px;
     transition-duration: 300ms;
-    animation-name: opacanim;
-    animation-duration: 300ms;
-    animation-delay: 300ms;
+    
 
 }
 .mobile-nav img{
