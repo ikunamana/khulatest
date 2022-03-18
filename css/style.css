@@ -1968,13 +1968,15 @@ h3{
         top: 0;
         height: 60px;
         width: 414px;
-        background-color: #538962;
+        background-color: #004414;
         display: flex;
         justify-content: space-around;
         position: fixed;
         align-items: center;
-        color: white;
+        color: black;
         z-index: 999999;
+        box-shadow: 3px 8px 15px -11px black;
+
     }
     
 }
@@ -2105,25 +2107,35 @@ h3{
     
 }
 .mobile-menu{
-    width: 414px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
     background-color: #068b2c65;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 50px;
+    right: 30px;
     margin: auto;
     z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 300ms;
 }
 .mobile-nav{
     width: -webkit-fill-available;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: none;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 8px;
+    transition-duration: 300ms;
+
 }
 .mobile-nav img{
     width: 30px;
+    transition-duration: 300ms;
+
 }

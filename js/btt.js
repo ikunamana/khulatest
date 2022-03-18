@@ -18,3 +18,19 @@ var arrow = document.getElementById("hiddenarrow")
             arrow.style.transform = "rotate(0)"
         }
     }
+    function mobilemenu1(){
+        if(mobilemenu.style.width === "70px"){
+            mobilenav.style.display = "flex";
+            mobilemenu.style.width = "350px";
+            menuimg.style.display="none";
+
+
+           
+        } else{
+            mobilenav.style.display = "none";
+            mobilemenu.style.width = "70px";
+            menuimg.style.display="block";
+
+           
+        }
+    }
