@@ -93,3 +93,8 @@ const dro = new Date().getHours();
 function playSound(click){
     document.getElementById(click).play();
 }
+
+function dropupmenu(){
+    var dropupmenu = document.getElementById("dropupitems");
+    dropupmenu.classList.toggle("dropupcontent1");
+}
