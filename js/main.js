@@ -64,7 +64,7 @@ var formsig = document.getElementById("formsig")
         registracia.style.transform = "scale(1)";
         mogesalmebit.style.marginRight = "700px";
     }
-    signclick.onclick = function(sign){
+    signclick.onclick === function(sign){
         // formsig.classList.toggle('classtogglesign');
         formreg.style.transform = "scale(0)";
         formreg.style.zIndex = "-1";
