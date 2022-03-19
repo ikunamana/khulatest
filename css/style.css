@@ -2177,7 +2177,6 @@ h3{
     position: absolute;
     bottom: 0px;
     width: 320px;
-    left: 100px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.6);
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 0.5px inset;
@@ -2193,7 +2192,7 @@ h3{
 .dropupmenu{
     width: 350px;
     z-index: 800;
-    right: 100px;
+    right: 20px;
     bottom: 170px;
     position: fixed;
 }
