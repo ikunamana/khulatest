@@ -2015,6 +2015,10 @@ h3{
         width: 400px;
         height: fit-content;
         margin-left: 0%;
+        background-color: #ebf4c38f;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
     }
     .close{
         margin-top: -17%;
@@ -2177,7 +2181,6 @@ h3{
     border: 0.5px solid rgba(68, 66, 178, 0.2);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(30px);
-
     border-radius: 20px;
     text-align: left;
     z-index: 100;
@@ -2189,7 +2192,7 @@ h3{
 .dropupmenu{
     width: 350px;
     z-index: 800;
-    right: 8px;
+    right: 5px;
     bottom: 170px;
     position: fixed;
 
