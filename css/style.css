@@ -2165,6 +2165,7 @@ h3{
     align-items: center;
     justify-content: space-around;
     transition-duration: 300ms;
+    transition: all 0.3s ease 0s;
 }
 .dropupbtnactive{
     width: 80px;
