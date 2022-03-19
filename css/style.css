@@ -2171,7 +2171,7 @@ h3{
     opacity: 0.9;
 }
 
-.dropup-content{
+.dropup-content1{
     position: absolute;
     bottom: 0px;
     width: 320px;
@@ -2184,10 +2184,29 @@ h3{
     border-radius: 20px;
     text-align: left;
     z-index: 100;
-    /* opacity: 1; */
+    opacity: 1;
     pointer-events: visible;
     transition: all 0.3s ease 0s;
     transform: rotateX(0deg) rotateY(0deg);
+}
+
+.dropupcontent{
+    position: absolute;
+    bottom: 0px;
+    width: 320px;
+    left: 100px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 0.5px inset;
+    border: 0.5px solid rgba(68, 66, 178, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    text-align: left;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+    transform: rotateX(-5deg) rotateY(-30deg) translateX(-30px);
 }
 .dropupmenu{
     width: 350px;
