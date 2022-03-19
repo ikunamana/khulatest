@@ -2190,7 +2190,7 @@ h3{
     transform: rotateX(0deg) rotateY(0deg);
 }
 
-.dropupcontent{
+.dropup-content{
     position: absolute;
     bottom: 0px;
     width: 320px;
