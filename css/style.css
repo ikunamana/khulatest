@@ -2026,8 +2026,6 @@ h3{
     transform: rotate(90deg);
     }
     
-    
-}
 @media screen and (max-width: 428px){
     .aboutus{
         margin-top: 20px;
@@ -2153,6 +2151,26 @@ h3{
 
 
     
+}
+.dropupbtn{
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #f1f1a38a;
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
+    position: fixed;
+    bottom: 70px;
+    right: 0px;
+    margin: auto;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 300ms;
+}
+
 }
 .mobile-menu{
     width: 70px;
