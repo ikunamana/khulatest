@@ -2025,7 +2025,7 @@ h3{
         margin-left: 45%;
     transform: rotate(90deg);
     }
-    
+
 @media screen and (max-width: 428px){
     .aboutus{
         margin-top: 20px;
@@ -2161,7 +2161,7 @@ h3{
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
     position: fixed;
-    bottom: 70px;
+    bottom: 90px;
     right: 0px;
     margin: auto;
     z-index: 9999;
@@ -2169,6 +2169,24 @@ h3{
     align-items: center;
     justify-content: space-around;
     transition-duration: 300ms;
+}
+.dropup-content{
+    position: absolute;
+    bottom: 0px;
+    width: 320px;
+    left: 100px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 0.5px inset;
+    border: 0.5px solid rgba(68, 66, 178, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    text-align: left;
+    opacity: 1;
+    pointer-events: visible;
+    transition: all 0.3s ease 0s;
+    transform: rotateX(0deg) rotateY(0deg);
+    z-index: 4;
 }
 
 }
