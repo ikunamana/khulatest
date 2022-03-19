@@ -2170,7 +2170,6 @@ h3{
 .dropup-content{
     position: absolute;
     bottom: 0px;
-    height: 220px;
     width: 320px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.6);
@@ -2179,7 +2178,7 @@ h3{
     backdrop-filter: blur(40px);
     border-radius: 20px;
     text-align: left;
-    opacity: 1;
+    /* opacity: 1; */
     pointer-events: visible;
     transition: all 0.3s ease 0s;
     transform: rotateX(0deg) rotateY(0deg);
