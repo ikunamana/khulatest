@@ -94,15 +94,15 @@ function playSound(click){
     document.getElementById(click).play();
 }
 
-// var dropbtn = getElementById("dropupbtn");
-// var dropupmenu = getElementById("dropupitems");
+var dropbtn = getElementById("dropupbtn");
+var dropupmenu = getElementById("dropupitems");
 
-// dropbtn.onclick = function dropupmenu(){
-//     dropuomenu.classList.toggle("dropupcontent1");
+dropbtn.onclick = function dropupmenu(){
+    dropuomenu.classList.remove("dropup-content");
 
-// }
-
-function dropupmenu(){
-    var dropupmenu = document.getElementById("dropupitems");
-    dropupmenu.classList.toggle("dropupcontent1");
 }
+
+// function dropupmenu(){
+//     var dropupmenu = document.getElementById("dropupitems");
+//     dropupmenu.classList.toggle("dropupcontent1");
+// }
