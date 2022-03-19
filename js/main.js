@@ -94,7 +94,15 @@ function playSound(click){
     document.getElementById(click).play();
 }
 
-function myFunction(dropmenu){
-    var dropupmenu = document.getElementById("dropupitems");
+var dropbtn = getElementById("dropupbtn");
+var dropupmenu = getElementById("dropupitems");
+
+dropbtn.onclick = function dropupmenu(){
     dropupmenu.classList.toggle("dropupcontent1");
+
 }
+
+// function dropmenu(){
+//     var dropupmenu = document.getElementById("dropupitems");
+//     dropupmenu.classList.toggle("dropupcontent1");
+// }
