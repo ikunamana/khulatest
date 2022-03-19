@@ -94,10 +94,11 @@ function playSound(click){
     document.getElementById(click).play();
 }
 
-var dropupmenu = getElementById("dropupitems");
+var dropbtn = document.getElementById("dropupbtn");
+var dropupmenu = document.getElementById("dropupitems");
 
-dropupbtn.onclick = function dropupmenu(){
-    dropuomenu.classList.remove("dropup-content");
+dropbtn.onclick = function dropupmenu(){
+    dropupomenu.classList.remove("dropup-content");
 
 }
 
