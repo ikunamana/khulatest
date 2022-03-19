@@ -2185,6 +2185,7 @@ h3{
     transform: rotateX(0deg) rotateY(0deg);
 }
 .dropupmenu{
+    width: 350px;
     z-index: 800;
     right: 40px;
     bottom: 170px;
