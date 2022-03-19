@@ -95,10 +95,10 @@ function playSound(click){
 }
 
 var dropbtn = document.getElementById("dropupbtn");
-var dropupmenu = document.getElementById("dropupitems");
+var dropupmenu1 = document.getElementById("dropupitems");
 
 dropbtn.onclick = function dropupmenu(){
-    dropupmenu.classList.add("dropupcontent1");
+    dropupmenu1.classList.add("dropupcontent1");
 
 }
 
