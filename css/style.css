@@ -2038,9 +2038,7 @@ h3{
                 align-items: center;
 
     }
-    .footercontainer{
-        margin-bottom: 45px;
-    }
+
     .footer{
         -ms-flex-pack: distribute;
             justify-content: space-around;
@@ -2059,7 +2057,6 @@ h3{
         overflow: hidden;
         -o-object-fit: contain;
            object-fit: contain;
-           bottom: 30px;
     }
     .footerleft{
         display: -webkit-box;
