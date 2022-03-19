@@ -2167,10 +2167,12 @@ h3{
     justify-content: space-around;
     transition-duration: 300ms;
 }
+
 .dropup-content a{
     color: black;
     opacity: 0.9;
 }
+
 .dropup-content{
     position: absolute;
     bottom: 0px;
@@ -2189,9 +2191,9 @@ h3{
     transform: rotateX(0deg) rotateY(0deg);
 }
 .dropupmenu{
-    width: 400px;
+    width: 350px;
     z-index: 800;
-    right: 50px;
+    right: 40px;
     bottom: 170px;
     position: fixed;
 }
