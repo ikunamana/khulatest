@@ -2025,7 +2025,7 @@ h3{
         margin-left: 45%;
     transform: rotate(90deg);
     }
-
+}
 @media screen and (max-width: 428px){
     .aboutus{
         margin-top: 20px;
@@ -2222,5 +2222,4 @@ h3{
 .mobile-nav img{
     width: 30px;
     transition-duration: 300ms;
-
 }
