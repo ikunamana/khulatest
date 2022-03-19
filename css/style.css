@@ -2025,7 +2025,7 @@ h3{
         margin-left: 45%;
     transform: rotate(90deg);
     }
-    input [type=submit]{
+    input[type=submit]{
         height: 45px;
     }
 }
