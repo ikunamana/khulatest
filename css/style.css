@@ -2025,6 +2025,9 @@ h3{
         margin-left: 45%;
     transform: rotate(90deg);
     }
+    input [type=submit]{
+        height: 45px;
+    }
 }
 @media screen and (max-width: 428px){
     .aboutus{
