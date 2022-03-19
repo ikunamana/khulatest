@@ -2148,9 +2148,6 @@ h3{
     .links{
         display: none;
     }
-
-
-    
 }
 .dropupbtn{
     width: 70px;
@@ -2188,7 +2185,9 @@ h3{
     transform: rotateX(0deg) rotateY(0deg);
     z-index: 4;
 }
-
+.dropupmenu{
+    position: fixed;
+}
 }
 .mobile-menu{
     width: 70px;
