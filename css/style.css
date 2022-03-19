@@ -2149,8 +2149,8 @@ h3{
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     background-color: #f1f1a38a;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    /* backdrop-filter: blur(30px); */
+    /* -webkit-backdrop-filter: blur(30px); */
     position: fixed;
     bottom: 90px;
     right: 0px;
@@ -2175,7 +2175,7 @@ h3{
     background: rgba(255, 255, 255, 0.6);
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 0.5px inset;
     border: 0.5px solid rgba(68, 66, 178, 0.2);
-    backdrop-filter: blur(40px) !important;
+    backdrop-filter: blur(40px);
     border-radius: 20px;
     text-align: left;
     opacity: 1;
