@@ -1830,7 +1830,6 @@ h3{
             -ms-flex-direction: column;
                 flex-direction: column;
         width: 414px; 
-        backdrop-filter: blur(10px);
         height: -webkit-fit-content; 
         height: -moz-fit-content; 
         height: fit-content;  
