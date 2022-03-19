@@ -2186,7 +2186,7 @@ h3{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease 0s;
-    transform: rotateX(-5deg) rotateY(0deg) translateX(40px);}
+    transform: rotateX(-5deg) rotateY(25deg) translateX(40px);}
 
 .dropupcontent1{
     position: absolute;
