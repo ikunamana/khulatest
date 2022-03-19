@@ -2149,8 +2149,8 @@ h3{
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     background-color: #f1f1a38a;
-    /* backdrop-filter: blur(30px); */
-    /* -webkit-backdrop-filter: blur(30px); */
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     position: fixed;
     bottom: 90px;
     right: 0px;
@@ -2170,6 +2170,7 @@ h3{
 .dropup-content{
     position: absolute;
     bottom: 0px;
+    height: 220px;
     width: 320px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.6);
