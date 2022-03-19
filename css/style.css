@@ -2188,7 +2188,7 @@ h3{
     z-index: 800;
     right: 8px;
     bottom: 170px;
-    position: fixed;
+    position: absolute;
 
 }
 
