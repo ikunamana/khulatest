@@ -2171,24 +2171,7 @@ h3{
     opacity: 0.9;
 }
 
-.dropupcontent1{
-    position: absolute;
-    bottom: 0px;
-    width: 320px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 0.5px inset;
-    border: 0.5px solid rgba(68, 66, 178, 0.2);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(30px);
-    border-radius: 20px;
-    text-align: left;
-    z-index: 100;
-    opacity: 1;
-    pointer-events: visible;
-    transition: all 0.3s ease 0s;
-    transform: rotateX(0deg) rotateY(0deg);
-}
+
 
 .dropup-content{
     position: absolute;
@@ -2207,6 +2190,25 @@ h3{
     pointer-events: none;
     transition: all 0.3s ease 0s;
     transform: rotateX(-5deg) rotateY(-30deg) translateX(-30px);
+}
+
+.dropupcontent1{
+    position: absolute;
+    bottom: 0px;
+    width: 320px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 0.5px inset;
+    border: 0.5px solid rgba(68, 66, 178, 0.2);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 20px;
+    text-align: left;
+    z-index: 100;
+    opacity: 1;
+    pointer-events: visible;
+    transition: all 0.3s ease 0s;
+    transform: rotateX(0deg) rotateY(0deg);
 }
 .dropupmenu{
     width: 350px;
