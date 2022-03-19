@@ -2183,9 +2183,9 @@ h3{
     pointer-events: visible;
     transition: all 0.3s ease 0s;
     transform: rotateX(0deg) rotateY(0deg);
-    z-index: 4;
 }
 .dropupmenu{
+    z-index: 800;
     right: 40px;
     bottom: 170px;
     position: fixed;
