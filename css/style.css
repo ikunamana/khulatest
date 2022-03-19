@@ -2186,6 +2186,8 @@ h3{
     z-index: 4;
 }
 .dropupmenu{
+    right: 20px;
+    bottom: 150px;
     width: 414px;
     position: fixed;
 }
