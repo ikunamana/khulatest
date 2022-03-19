@@ -2155,7 +2155,7 @@ h3{
     bottom: 90px;
     right: 0px;
     margin: auto;
-    z-index: 9999;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -2178,6 +2178,7 @@ h3{
     backdrop-filter: blur(40px);
     border-radius: 20px;
     text-align: left;
+    z-index: 100;
     /* opacity: 1; */
     pointer-events: visible;
     transition: all 0.3s ease 0s;
@@ -2188,7 +2189,7 @@ h3{
     z-index: 800;
     right: 8px;
     bottom: 170px;
-    position: absolute;
+    position: fixed;
 
 }
 
