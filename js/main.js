@@ -94,7 +94,7 @@ function playSound(click){
     document.getElementById(click).play();
 }
 
-function dropupmenu(){
+function myFunction(dropmenu){
     var dropupmenu = document.getElementById("dropupitems");
     dropupmenu.classList.toggle("dropupcontent1");
 }
