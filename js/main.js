@@ -98,7 +98,7 @@ var dropbtn = document.getElementById("dropupbtn");
 var dropupmenu = document.getElementById("dropupitems");
 
 dropbtn.onclick = function dropupmenu(){
-    dropupmenu.classList.toggle("dropupcontent1");
+    dropupmenu.classList.add("dropupcontent1");
 
 }
 
