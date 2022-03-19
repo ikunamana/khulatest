@@ -2155,8 +2155,8 @@ h3{
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
     background-color: #f1f1a38a;
-    backdrop-filter: blur(30px) !important;
-    -webkit-backdrop-filter: blur(30px) !important;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     position: fixed;
     bottom: 90px;
     right: 0px;
@@ -2192,9 +2192,10 @@ h3{
 .dropupmenu{
     width: 350px;
     z-index: 800;
-    right: 20px;
+    right: 8px;
     bottom: 170px;
     position: fixed;
+
 }
 
 .mobile-menu{
