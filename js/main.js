@@ -106,6 +106,7 @@ var dropupmenu1 = document.getElementById("dropupitems");
 
 dropbtn.onclick = function dropupmenu(){
     dropupmenu1.classList.toggle("dropupcontent1");
+    dropbtn.style.paddingLeft = "20px";
 }
 
 //------- END -------//
