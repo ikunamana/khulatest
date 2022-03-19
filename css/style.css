@@ -2171,8 +2171,7 @@ h3{
     width: 70px;
     height: 70px;
     border-radius: 40px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-start-start-radius: revert;
     border-top: none;
     border: 0.5px solid rgba(68, 66, 178, 0.2);
     background: rgba(255, 255, 255, 0.6);
