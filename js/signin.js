@@ -28,3 +28,36 @@ var formsig = document.getElementById("formsig")
     }
 
 //------- END -------//
+
+//------- GREETING ON S&R PAGE -------//
+
+const dro = new Date().getHours();
+    tarigi = new Date().getFullYear()
+    let misalmeba;
+        if (dro < 18 ){
+            misalmeba = "მოგესალმებით! </br> <br> Khula • ხულა" + tarigi;
+        }
+        else {
+            misalmeba = "საღამომშვიდობისა! </br> <br> Khula • ხულა" + tarigi;
+        }
+    document.getElementById("mogesalmebit").innerHTML = misalmeba;
+
+//------- END -------//
+
+//------- HIDDEN CONTACT DIV -------//
+
+var contactdiv = document.getElementById("hiddencontactdiv")
+var arrowdiv = document.getElementById("hiddencontact")
+var arrow = document.getElementById("hiddenarrow")
+    function contact(){
+        if(contactdiv.style.marginLeft === "-300px"){
+                contactdiv.style.marginLeft = "0px";
+                arrowdiv.style.marginLeft = "260px";
+                arrow.style.transform = "rotate(180deg)"
+        } else{
+                contactdiv.style.marginLeft = "-300px";
+                arrowdiv.style.marginLeft = "0px";
+                arrow.style.transform = "rotate(0)"
+            }
+        }
+//------- END -------//
