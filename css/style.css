@@ -208,8 +208,7 @@ html {
     transition: cubic-bezier(0.4, 0, 1, 1);
 }
 
-.info,
-.info1 {
+.info .info1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
