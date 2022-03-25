@@ -225,6 +225,23 @@ html {
     transition-duration: 1s;
 }
 
+.info1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10%;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
 .text {
     width: 40%;
     text-align: justify;
@@ -2245,6 +2262,9 @@ h3 {
     }
     .info {
         flex-direction: column;
+    }
+    .info1 {
+        flex-direction: column-reverse;
     }
 }
 
