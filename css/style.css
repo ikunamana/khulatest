@@ -2262,6 +2262,7 @@ h3 {
     }
     .info {
         flex-direction: column;
+        display: contents;
     }
     .info1 {
         flex-direction: column-reverse;
