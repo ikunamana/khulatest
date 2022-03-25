@@ -2266,6 +2266,15 @@ h3 {
     .info1 {
         flex-direction: column-reverse;
     }
+    .imagewrap {
+        width: 95%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .text {
+        width: 90%;
+        text-align: justify;
+    }
 }
 
 @media screen and (max-width: 428px) {
