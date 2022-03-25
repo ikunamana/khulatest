@@ -2276,6 +2276,10 @@ h3 {
         width: 90%;
         text-align: justify;
     }
+    .text1 {
+        width: 90%;
+        text-align: justify;
+    }
 }
 
 @media screen and (max-width: 428px) {
