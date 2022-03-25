@@ -2268,15 +2268,18 @@ h3 {
         flex-direction: column-reverse;
     }
     .imagewrap {
+        margin-top: 100px;
         width: 95%;
         margin-left: 0px;
         margin-right: 0px;
     }
     .text {
+        margin-top: 20px;
         width: 90%;
         text-align: justify;
     }
     .text1 {
+        margin-top: 20px;
         width: 90%;
         text-align: justify;
     }
