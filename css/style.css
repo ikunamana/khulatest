@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: Georgian;
-    src: url(../fonts/bpg_nino_mtavruli_normal.ttf);
+    src: url("../fonts/bpg_nino_mtavruli_normal.ttf");
 }
 
 .logotext {
@@ -118,7 +118,7 @@
 
 .khazi {
     display: none;
-    width: 0px;
+    width: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -137,7 +137,7 @@
 }
 
 .links {
-    top: 0px;
+    top: 0;
     height: 80px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -179,19 +179,19 @@ a:hover {
 
 @-webkit-keyframes opacanim {
     from {
-        opacity: 0%;
+        opacity: 0;
     }
     to {
-        opacity: 100%
+        opacity: 100%;
     }
 }
 
 @keyframes opacanim {
     from {
-        opacity: 0%;
+        opacity: 0;
     }
     to {
-        opacity: 100%
+        opacity: 100%;
     }
 }
 
@@ -329,7 +329,7 @@ li:hover a {
 }
 
 li a {
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 ul {
@@ -368,7 +368,7 @@ li:hover {
     display: block;
     position: inherit;
     margin-left: 10px;
-    padding-top: 0px;
+    padding-top: 0;
     -webkit-animation-name: opacAnim;
     animation-name: opacAnim;
     -webkit-animation-duration: 1s;
@@ -627,7 +627,7 @@ li:hover {
 input[type=text],
 select {
     width: 135%;
-    padding: 12px 12px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -672,7 +672,7 @@ input[type=name] {
 
 input[type=email] {
     width: 135%;
-    padding: 12px 12px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -761,7 +761,7 @@ input[type=submit]:hover {
 @-webkit-keyframes shekvetaanim {
     from {
         -webkit-transform: scaleY(0);
-        transform: scaleY(0)
+        transform: scaleY(0);
     }
     to {
         -webkit-transform: scaleY(1);
@@ -772,7 +772,7 @@ input[type=submit]:hover {
 @keyframes shekvetaanim {
     from {
         -webkit-transform: scaleY(0);
-        transform: scaleY(0)
+        transform: scaleY(0);
     }
     to {
         -webkit-transform: scaleY(1);
@@ -821,8 +821,8 @@ input[type=submit]:hover {
     -ms-flex-align: center;
     align-items: center;
     height: 380px;
-    -webkit-box-shadow: rgba(18, 7, 110, 0.411) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    box-shadow: rgba(18, 7, 110, 0.411) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    -webkit-box-shadow: rgba(18, 7, 110, 0.411) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
+    box-shadow: rgba(18, 7, 110, 0.411) 0 20px 25px -5px, rgba(0, 0, 0, 0.04) 0 10px 10px -5px;
 }
 
 .misamartebi hr {
@@ -890,7 +890,7 @@ button {
         opacity: 1;
     }
     to {
-        bottom: 0px;
+        bottom: 0;
         opacity: 1;
     }
 }
@@ -940,19 +940,19 @@ button {
 
 @-webkit-keyframes dissapear {
     from {
-        display: "block"
+        display: "block";
     }
     to {
-        display: "none"
+        display: "none";
     }
 }
 
 @keyframes dissapear {
     from {
-        display: "block"
+        display: "block";
     }
     to {
-        display: "none"
+        display: "none";
     }
 }
 
@@ -1075,8 +1075,8 @@ select {
 }
 
 .productform:hover {
-    -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0 1px 0px, rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 48px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0 1px 0px, rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 48px;
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
@@ -1246,7 +1246,7 @@ select {
 
 @-webkit-keyframes heightanimcart {
     0% {
-        padding-top: 0px;
+        padding-top: 0;
     }
     100% {
         padding-top: 190px;
@@ -1255,7 +1255,7 @@ select {
 
 @keyframes heightanimcart {
     0% {
-        padding-top: 0px;
+        padding-top: 0;
     }
     100% {
         padding-top: 190px;
@@ -1284,8 +1284,8 @@ select {
     padding: 4px;
     width: 400px;
     height: 300px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
     -webkit-transition-duration: 300ms;
     -o-transition-duration: 300ms;
     transition-duration: 300ms;
@@ -1418,8 +1418,8 @@ select {
 
 .ruka {
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 0 inset, rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 0 inset, rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
     -webkit-animation-name: heightAnim;
     animation-name: heightAnim;
     -webkit-animation-duration: 1 s;
@@ -1483,7 +1483,7 @@ select {
 }
 
 .added:hover .imgarrow {
-    opacity: .8;
+    opacity: 0.8;
     -webkit-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -1504,7 +1504,7 @@ select {
 
 @-webkit-keyframes arrow {
     0% {
-        padding-left: 0px;
+        padding-left: 0;
     }
     20% {
         padding-left: 1px;
@@ -1525,7 +1525,7 @@ select {
 
 @keyframes arrow {
     0% {
-        padding-left: 0px;
+        padding-left: 0;
     }
     20% {
         padding-left: 1px;
@@ -1552,7 +1552,7 @@ select {
     width: 30px;
     background-color: #014d1fa6;
     position: fixed;
-    margin-left: 0px;
+    margin-left: 0;
     float: inline-end;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
@@ -1598,7 +1598,7 @@ select {
     -webkit-animation-play-state: running;
     animation-play-state: running;
     animation-direction: reverse;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 400px;
     position: fixed;
     z-index: -100;
@@ -1665,7 +1665,7 @@ select {
 
 .commentform input {
     width: 98%;
-    padding: 12px 12px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 2px solid rgba(6, 202, 16, 0.39);
@@ -1676,7 +1676,7 @@ select {
 
 .commentform input::-moz-selection {
     width: 98%;
-    padding: 12px 12px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 2px solid rgba(6, 202, 16, 0.39);
@@ -1899,7 +1899,7 @@ footer a {
 
 .signform input {
     width: 98%;
-    padding: 12px 12px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 2px solid rgba(6, 202, 16, 0.39);
@@ -1911,7 +1911,7 @@ footer a {
 
 .regform input {
     width: 98%;
-    padding: 12px 12px;
+    padding: 12px;
     margin: 8px 0;
     display: inline-block;
     border: 2px solid rgba(6, 202, 16, 0.39);
@@ -2049,7 +2049,6 @@ h3 {
     .aboutus {
         margin-top: 20px;
         width: 414;
-        padding-right: 0px;
         padding: 10px;
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2090,7 +2089,7 @@ h3 {
         align-items: center;
         text-align: center;
         padding-top: 30px;
-        margin-left: 0px;
+        margin-left: 0;
         padding-bottom: 10px;
     }
     .sociallogo {
@@ -2128,7 +2127,7 @@ h3 {
         top: 50px;
         left: 15px;
         margin: auto;
-        bottom: 0px;
+        bottom: 0;
     }
     .shesvla {
         top: 0;
@@ -2148,7 +2147,7 @@ h3 {
         left: 7px;
         width: 400px;
         margin: auto;
-        bottom: 0px;
+        bottom: 0;
         z-index: -1;
         margin-top: 100px;
     }
@@ -2195,7 +2194,7 @@ h3 {
         flex-direction: column;
         overflow-x: hidden;
         justify-content: space-around;
-        top: 40px
+        top: 40px;
     }
     .mobile-top {
         padding-top: 10px;
@@ -2244,7 +2243,7 @@ h3 {
         left: 0;
         width: 400px;
         height: fit-content;
-        margin-left: 0%;
+        margin-left: 0;
         background-color: #ffffff8f;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
@@ -2270,8 +2269,8 @@ h3 {
     .imagewrap {
         margin-top: 100px;
         width: 95%;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .text {
         margin-top: 20px;
@@ -2289,7 +2288,6 @@ h3 {
     .aboutus {
         margin-top: 20px;
         width: 414;
-        padding-right: 0px;
         padding: 10px;
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2331,7 +2329,7 @@ h3 {
         align-items: center;
         text-align: center;
         padding-top: 30px;
-        margin-left: 0px;
+        margin-left: 0;
         padding-bottom: 10px;
     }
     .sociallogo {
@@ -2368,7 +2366,7 @@ h3 {
         top: 0;
         left: 15px;
         margin: auto;
-        bottom: 0px;
+        bottom: 0;
     }
     .shesvla {
         top: 0;
@@ -2388,7 +2386,7 @@ h3 {
         left: 7px;
         width: 400px;
         margin: auto;
-        bottom: 0px;
+        bottom: 0;
         z-index: -1;
         margin-top: 75px;
     }
@@ -2410,7 +2408,7 @@ h3 {
     -webkit-backdrop-filter: blur(30px);
     position: fixed;
     bottom: 90px;
-    right: 0px;
+    right: 0;
     margin: auto;
     z-index: 100;
     display: flex;
@@ -2424,8 +2422,8 @@ h3 {
     width: 70px;
     height: 70px;
     border-radius: 40px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     border-top: none;
     border: 0.5px solid rgba(68, 66, 178, 0.2);
     background: rgba(255, 255, 255, 0.6);
@@ -2450,13 +2448,13 @@ h3 {
 
 .dropup-content {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 320px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(40px);
     border-radius: 15px;
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0;
     text-align: left;
     z-index: 100;
     opacity: 0;
@@ -2467,14 +2465,14 @@ h3 {
 
 .dropupcontent1 {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 320px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(30px);
     border-radius: 15px;
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0;
     text-align: left;
     z-index: 100;
     opacity: 1;
@@ -2495,13 +2493,13 @@ h3 {
     width: 70px;
     height: 70px;
     border-top-left-radius: 40px;
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0;
     background-color: #f1f1a38a;
     backdrop-filter: blur(30px) !important;
     -webkit-backdrop-filter: blur(30px) !important;
     position: fixed;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     margin: auto;
     z-index: 9999;
     display: flex;
