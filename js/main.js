@@ -52,7 +52,7 @@ var shesvla = document.getElementById("shesvla");
 var registracia = document.getElementById("registracia");
 var signclick = document.getElementById("signinclick")
 var formsig = document.getElementById("formsig")
-    regclick.onclick = function (regist) {
+    regclick.onclick = function regist() {
         formreg.style.transform = "scale(1)";
         formreg.style.zIndex = "1";
         formsig.style.transform = "scale(0.8)";
@@ -62,7 +62,7 @@ var formsig = document.getElementById("formsig")
         registracia.style.transform = "scale(1)";
         mogesalmebit.style.marginRight = "700px";
     }
-    signclick.onclick = function(sign){
+    signclick.onclick = function sign(){
         // formsig.classList.toggle('classtogglesign');
         formreg.style.transform = "scale(0)";
         formreg.style.zIndex = "-1";
