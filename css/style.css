@@ -2287,7 +2287,7 @@ h3 {
 @media screen and (max-width: 428px) {
     .aboutus {
         margin-top: 20px;
-        width: 414;
+        width: 100%;
         padding: 10px;
         -webkit-box-align: center;
         -ms-flex-align: center;
@@ -2303,7 +2303,7 @@ h3 {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 414px;
+        width: 100%;
         backdrop-filter: blur(10px);
         height: -webkit-fit-content;
         height: -moz-fit-content;
@@ -2316,14 +2316,14 @@ h3 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 414px;
+        width: 100%;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         padding-top: 10px;
     }
     .footerright {
-        width: 414px;
+        width: 100%;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -2353,7 +2353,7 @@ h3 {
         object-fit: scale-down;
     }
     .hedermain {
-        width: 414px;
+        width: 100%;
         -o-object-fit: scale-down;
         object-fit: scale-down;
         display: none;
@@ -2362,9 +2362,8 @@ h3 {
         flex-direction: column;
     }
     .signform {
-        width: 400px;
+        width: 90%;
         top: 0;
-        left: 15px;
         margin: auto;
         bottom: 0;
     }
@@ -2375,7 +2374,7 @@ h3 {
         top: 0;
     }
     .signinpage {
-        width: 400px;
+        width: 100%;
         top: 0;
         margin: auto;
         flex-direction: column;
@@ -2383,8 +2382,7 @@ h3 {
     .regform {
         position: absolute;
         top: 0;
-        left: 7px;
-        width: 400px;
+        width: 90%;
         margin: auto;
         bottom: 0;
         z-index: -1;
