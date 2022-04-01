@@ -1,26 +1,4 @@
-﻿//------- MAKING AN ORDER -------//
-
-var maindiv = document.getElementById("maindiv");
-var btn = document.getElementById("shekvetabtn")
-var span = document.getElementById ("close");
-
-    btn.onclick = function(shekveta){
-        maindiv.style.display = "block";
-}
-
-    span.onclick = function (daxurva){
-        maindiv.style.display = "none";
-}
-
-window.onclick = function(event) {
-        if (event.target == maindiv) {
-                maindiv.style.display = "none";
-        }
-};
-
-//------- END -------//
-
-
+﻿
 //------- SCROLL FUNCTIONS -------//
 
 window.onscroll = function () { btt(); };
