@@ -1,8 +1,7 @@
 ﻿
 //------- SCROLL FUNCTIONS -------//
 
-window.onscroll = function () { btt(); };
-    function btt() {
+window.onscroll = function () {
         if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
                 headermain.style.boxShadow = "3px 8px 15px -11px black"; 
                 headermain.style.height = "50px";

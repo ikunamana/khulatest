@@ -2192,7 +2192,6 @@ h3 {
     .allproduct {
         width: 100%;
         display: flex;
-        flex-direction: column;
         overflow-x: hidden;
         justify-content: space-around;
         top: 40px;
