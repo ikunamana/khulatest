@@ -52,7 +52,7 @@ function populateProduktebi(obj) {
 
         // nameOfOProductII.textContent = `${komponenti.name}`;
         // actualPriceII.textContent = `${komponenti.price}`;
-        nameOfOProductII.innerHTML =  `${komponenti.name}` + "<br><hr><br>";
+        nameOfOProductII.innerHTML =  `${komponenti.name}` + "<br><hr><br><br>";
         actualPriceII.innerHTML = `${komponenti.price}` + "<br><br><br><br>";
 
         // myDiv.append(firstDiv);
