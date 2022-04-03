@@ -1,17 +1,28 @@
-{ "production": [{
+{
+    "production": [{
             "name": "ყველი იმერული",
             "price": 16.9,
-            "img": "../images/imeruli.jpg"
+            "img": "../images/im-kveli.jpg"
         },
         {
             "name": "ყველი ქარხნული",
             "price": 17.9,
-            "img": "../images/karkhnuli.jpg"
+            "img": "../images/kar-kveli.jpg"
         },
         {
             "name": "ჩეჩილი",
             "price": 26.9,
-            "img": "../images/tchetchili.jpg"
+            "img": "../images/chech-kveli.jpg"
+        },
+        {
+            "name": "ჩურჩხელა",
+            "price": 4.90,
+            "img": "../images/chech-kveli.jpg"
+        },
+        {
+            "name": "ლობიო",
+            "price": 14.90,
+            "img": "../images/lobio.jpg"
         }
     ]
 }

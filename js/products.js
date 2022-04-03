@@ -53,7 +53,7 @@ function populateProduktebi(obj) {
         nameOfOProductII.textContent = `${komponenti.name}`;
         actualPriceII.textContent = `${komponenti.price}`;
 
-        myDiv.append(firstDiv);
+        // myDiv.append(firstDiv);
         firstDiv.append(imgDiv);
         imgDiv.append(imgOfFirstDiv);
         firstDiv.append(secondDiv);
@@ -66,7 +66,7 @@ function populateProduktebi(obj) {
         btnshekvetaII.append(kalataDiv);
         kalataDiv.append(kalataimg);
         
-        section.append(myDiv);
+        section.append(firstDiv);
     }
 }
 
