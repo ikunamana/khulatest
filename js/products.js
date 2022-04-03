@@ -52,6 +52,8 @@ function populateProduktebi(obj) {
 
         nameOfOProductII.textContent = `${komponenti.name}`;
         actualPriceII.textContent = `${komponenti.price}`;
+        nameOfOProductII.innerHTML = "<br><hr><br>";
+        actualPriceII.innerHTML = "<br><br><br><br>";
 
         // myDiv.append(firstDiv);
         firstDiv.append(imgDiv);
