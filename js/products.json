@@ -1,7 +1,17 @@
-{
-    "name": "imeruli",
-    "fullname": "იმერული ყველი",
-    "price": 16.9,
-    "category": "ყველეული",
-    "surati1": "../images/nuts.jpg"
+    "production": [{
+            "name": "ყველი იმერული",
+            "price": 16.9,
+            "img": "../images/imeruli.jpg"
+        },
+        {
+            "name": "ყველი ქარხნული",
+            "price": 17.9,
+            "img": "../images/karkhnuli.jpg"
+        },
+        {
+            "name": "ჩეჩილი",
+            "price": 26.9,
+            "img": "../images/tchetchili.jpg"
+        }
+    ]
 }
