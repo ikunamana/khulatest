@@ -45,10 +45,10 @@ function populateProduktebi(obj) {
         kalataimg.setAttribute ("class", "cartimg");
         kalataimg.setAttribute("src","../images/cart1.png");
 
-        kalata.innerHTML("კალათა");
-        dasaxelebaII.innerHTML("<strong>დასახელება:</strong>");
-        btnshekveta.innerHTML("შეკვეთა");
-        fasiCharchoII.innerHTML("<strong>ფასი (ც):</strong>");
+        kalata.innerHTML = "კალათა";
+        dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
+        btnshekveta.innerHTML = "შეკვეთა";
+        fasiCharchoII.innerHTML = "<strong>ფასი (ც):</strong>";
 
         nameOfOProductII.textContent = `${komponenti.name}`;
         actualPriceII.textContent = `${komponenti.price}`;
