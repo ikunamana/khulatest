@@ -17,7 +17,7 @@ function populateProduktebi(obj) {
 
 
     for (const komponenti of produkti) {
-        const myDiv = document.createElement('div');
+        // const myDiv = document.createElement('div');
         const firstDiv = document.createElement('div');
         const imgDiv = document.createElement('div');
         const imgOfFirstDiv = document.createElement('img');
