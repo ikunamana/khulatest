@@ -33,7 +33,7 @@ function populateProduktebi(obj) {
         const kalataimg = document.createElement('img');
 
 
-        myDiv.setAttribute("class", "allproduct");
+        // myDiv.setAttribute("class", "allproduct");
         firstDiv.setAttribute("class", "productform");
         imgDiv.setAttribute("class", "productimg");
         imgOfFirstDiv.setAttribute("class", "productimg1");
