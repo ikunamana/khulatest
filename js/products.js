@@ -50,10 +50,10 @@ function populateProduktebi(obj) {
         btnshekveta.innerHTML = "შეკვეთა";
         fasiCharchoII.innerHTML = "<strong>ფასი (ც):</strong>";
 
-        nameOfOProductII.textContent = `${komponenti.name}`;
-        actualPriceII.textContent = `${komponenti.price}`;
-        nameOfOProductII.innerHTML = "<br><hr><br>";
-        actualPriceII.innerHTML = "<br><br><br><br>";
+        // nameOfOProductII.textContent = `${komponenti.name}`;
+        // actualPriceII.textContent = `${komponenti.price}`;
+        nameOfOProductII.innerHTML =  `${komponenti.name}` + "<br><hr><br>";
+        actualPriceII.innerHTML = `${komponenti.price}` + "<br><br><br><br>";
 
         // myDiv.append(firstDiv);
         firstDiv.append(imgDiv);
