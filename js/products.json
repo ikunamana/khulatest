@@ -23,6 +23,36 @@
             "name": "ლობიო",
             "price": 14.90,
             "img": "../images/lobio.jpg"
+        },
+        {
+            "name": "კვერცხი",
+            "price": 0.6,
+            "img": "../images/eggs.jpg"
+        },
+        {
+            "name": "თაფლი",
+            "price": 29.6,
+            "img": "../images/honey.jpg"
+        },
+        {
+            "name": "მაწონი",
+            "price": 3.9,
+            "img": "../images/matsoni.jpg"
+        },
+        {
+            "name": "მჭადის ფქვილი",
+            "price": 2.9,
+            "img": "../images/mchadis.jpg"
+        },
+        {
+            "name": "რძე",
+            "price": 3.9,
+            "img": "../images/matsoni.jpg"
+        },
+        {
+            "name": "კაკალი",
+            "price": 27.9,
+            "img": "../images/nuts.jpg"
         }
     ]
 }
