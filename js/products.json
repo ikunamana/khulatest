@@ -1,4 +1,4 @@
-    "production": [{
+{ "production": [{
             "name": "ყველი იმერული",
             "price": 16.9,
             "img": "../images/imeruli.jpg"
@@ -13,4 +13,5 @@
             "price": 26.9,
             "img": "../images/tchetchili.jpg"
         }
-    ];
+    ]
+}
