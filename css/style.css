@@ -2120,7 +2120,6 @@ h3 {
     }
     .signcont {
         flex-direction: column;
-        margin-top: 80px;
     }
     .signform {
         width: 400px;
@@ -2143,12 +2142,10 @@ h3 {
     }
     .regform {
         position: absolute;
-        top: 0;
+        top: 40px;
         width: 90%;
-        margin: auto;
         bottom: 0;
         z-index: -1;
-        margin-top: 75px;
     }
     .mogesalmebit {
         display: none;
