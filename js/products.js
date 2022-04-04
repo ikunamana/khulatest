@@ -1,4 +1,4 @@
-
+// json-ის დაკავშირება და ინფორმაციის წამოღება
 async function populate() {
 
     const requestURL = 'https://raw.githubusercontent.com/ikunamana/khulatest/main/js/products.json';
@@ -10,7 +10,7 @@ async function populate() {
     populateProduktebi(superHeroes);
 
 }
-
+// პროდუქტების სექციისა და ელემენტების შექმნა, პროდუქტის დივების გამრავლება
 function populateProduktebi(obj) {
     const section = document.getElementById('section');
     const produkti = obj['production'];
@@ -49,6 +49,8 @@ function populateProduktebi(obj) {
         dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
         btnshekveta.innerHTML = "შეკვეთა";
         fasiCharchoII.innerHTML = "<strong>ფასი (ც):</strong>";
+
+    // json-ის ინფორმაციის ჩაშენება html-ში
 
         // nameOfOProductII.textContent = `${komponenti.name}`;
         // actualPriceII.textContent = `${komponenti.price}`;
