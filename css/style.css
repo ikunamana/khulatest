@@ -1291,6 +1291,8 @@ select {
     transition-duration: 300ms;
     -webkit-animation-play-state: running;
     animation-play-state: running;
+    animation-name: opacanim;
+    animation-duration: 400ms;
 }
 
 .allproduct {
