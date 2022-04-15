@@ -28,9 +28,9 @@ function ready() {
 }
 
 function cartIsEmpty() {
-    var cartItems = document.getElementsByClassName('cart-items')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
-    if (cartItems.hasChildNodes()) {
+    if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
     } else {
         emptyCart.style.display = "flex";
