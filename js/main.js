@@ -36,12 +36,12 @@ function playSound(click){
 
 //------- I CALL IT DROPUP MENU -------//
 
-var dropbtn = document.getElementById("dropupbtn");
-var dropupmenu1 = document.getElementById("dropupitems");
+var dropbtn1 = document.getElementById("dropupbtn");
+var dropupmenu2 = document.getElementById("dropupitems");
 
 dropbtn.onclick = function dropupmenu(){
-    dropupmenu1.classList.toggle("dropupcontent1");
-    dropbtn.classList.toggle("dropupbtnactive");
+    dropupmenu2.classList.toggle("dropupcontent1");
+    dropbtn1.classList.toggle("dropupbtnactive");
 }
 
 //------- END -------//
