@@ -2059,6 +2059,7 @@ h3 {
     z-index: 800;
     left: 5px;
     bottom: 0px;
+    transition-duration: 1s;
     position: fixed;
 }
 
@@ -2229,6 +2230,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition-duration: 1s;
 }
 
 .cart-item {
