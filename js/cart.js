@@ -73,7 +73,7 @@ var minus = document.getElementsByClassName('minus')
 var inputQuantity = document.getElementsByClassName('item-quantity')
 var inputQuantityValue = document.getElementsByClassName('item-quantity').value
 
-plus.onclick = function inputQuantityPlusMinus() {
+plus.onclick = function inputQuantityPlus() {
     inputQuantity.value = inputQuantityValue + 1
 }
 
