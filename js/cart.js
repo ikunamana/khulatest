@@ -114,10 +114,6 @@ function addItemToCart(title, price, imageSrc) {
     <span class="cart-item-price "> ${price} </span>
     <div class="cart-item-quantity ">
         <input class="item-quantity " value="1 " type="number ">
-        <span>
-            <span class="plus">+</span>
-            <span class="minus">-</span>
-        </span>
         <button class="remove-button ">წაშლა</button>
     </div>`
     cartRow.innerHTML = cartRowContents;
@@ -152,11 +148,11 @@ dropbtn.onclick = function cartmenu() {
     updateCartTotal()
 }
 
-var plus = document.getElementById('plus')
-var minus = document.getElementsByClassName('minus')
-var inputQuantity = document.getElementById('item-quantity')
-var plus1 = 1
+// var plus = document.getElementById('plus')
+// var minus = document.getElementsByClassName('minus')
+// var inputQuantity = document.getElementById('item-quantity')
+// var plus1 = 1
 
-plus.onclick = function inputQuantityPlus() {
-    inputQuantity.value + plus1;
-}
+// plus.onclick = function inputQuantityPlus() {
+//     inputQuantity.value + plus1;
+// }
