@@ -38,16 +38,13 @@ function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    var cartItemNames = document.getElementsByClassName('cart-item-title')
+    var cartItemNames = document.getElementsByClassName('cart-item-name')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
             return
         }
     }
-
-
-
 
     var cartRowContents = `
     <div class="cart-item">
