@@ -29,13 +29,13 @@ function ready() {
 
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    var emptyCart = document.getElementsByClassName('cart-empty')
+    var emptyCart = document.getElementById('emptycart')
     if (cartItems.hasChildNodes()) {
         emptyCart.style.display = "none";
     } else {
         emptyCart.style.display = "flex";
-
     }
+    cartIsEmpty()
 }
 
 function orderClicked() {
@@ -44,8 +44,9 @@ function orderClicked() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    cartIsEmpty()
+
 }
-cartIsEmpty()
 
 
 function orderClear() {
@@ -64,7 +65,6 @@ function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove();
 }
-cartIsEmpty()
 
 
 function addToCartClicked(event) {
@@ -87,6 +87,8 @@ function addItemToCart(title, price, imageSrc) {
             alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
             return
         }
+        cartIsEmpty()
+
     }
 
     var cartRowContents = `
