@@ -156,7 +156,8 @@ var plus = document.getElementById('plus')
 var minus = document.getElementsByClassName('minus')
 var inputQuantity = document.getElementById('item-quantity')
 var inputQuantityValue = document.getElementById('item-quantity').value
+var plus1 = 1
 
 plus.onclick = function inputQuantityPlus() {
-    inputQuantity.value = Math.round(inputQuantityValue + 1);
+    inputQuantity.value = inputQuantityValue + plus1;
 }
