@@ -66,7 +66,7 @@ function addItemToCart(title, price, imageSrc) {
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
 
-dropbtn.onclick = function dropupmenu() {
+dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
 }
