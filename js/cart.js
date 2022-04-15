@@ -27,7 +27,7 @@ function ready() {
 }
 
 function cartIsEmpty()
-var empty = document.getElementsByClassName('cart-empty');
+const empty = document.getElementsByClassName('cart-empty');
 var cartItems = document.getElementsByClassName('cart-items')[0]
 while (cartItems.hasChildNodes()) {
     empty.style.display = "none";
