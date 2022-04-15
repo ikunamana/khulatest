@@ -26,7 +26,7 @@ function ready() {
 var clearButton = document.getElementsByClassName('order-clear');
 var cartItems = document.getElementsByClassName('cart-items')
 clearButton.onclick = function clearCartFun() {
-    cartItems.childElement.childElement.remove();
+    cartItems.childElement.remove();
 }
 
 function removeCartItem(event) {
