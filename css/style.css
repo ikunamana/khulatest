@@ -2225,7 +2225,13 @@ h3 {
     justify-content: space-around;
 }
 
-.cart-items {
+.cart-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart-item {
     display: flex;
     align-items: center;
     width: 45%;
