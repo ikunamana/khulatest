@@ -23,11 +23,7 @@ function ready() {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
-    // var clearCart = document.getElementsByClassName('order-clear');
-    // for (var i = 0; i < clearCart.length; i++) {
-    //     var clearCartBtn = clearCart[i];
-    //     clearCartBtn.addEventListener('click', clearCartFun);
-    // }
+
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 
@@ -71,7 +67,6 @@ function quantityChanged(event) {
     updateCartTotal()
     quantityChanged()
 }
-
 
 
 function removeCartItem(event) {
