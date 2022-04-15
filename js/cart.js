@@ -27,7 +27,7 @@ function removeCartItem(event) {
 function addToCartClicked(event) {
     var gilaki = event.target
     var product = gilaki.parentElement.parentElement.parentElement
-    var title = product.getElementsByClassName('cart-item-title')[0].innerText
+    var title = product.getElementsByClassName('shop-item-title')[0].innerText
     var price = product.getElementsByClassName('cart-item-price')[0].innerText
     var imageSrc = product.getElementsByClassName('productimg1')[0].src
     addItemToCart(title, price, imageSrc)

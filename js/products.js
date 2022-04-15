@@ -44,8 +44,8 @@ function populateProduktebi(obj) {
         kalataDiv.setAttribute("class", "cartdiv");
         kalataimg.setAttribute ("class", "cartimg");
         kalataimg.setAttribute("src","../images/cart1.png");
-        nameOfOProductII.setAttribute('class', "cart-item-title");
-        actualPriceII.setAttribute('class', 'cart-item-price' );
+        nameOfOProductII.setAttribute('class', "shop-item-title");
+        actualPriceII.setAttribute('class', "cart-item-price" );
 
         kalata.innerHTML = "კალათა";
         dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
