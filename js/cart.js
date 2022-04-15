@@ -44,7 +44,6 @@ function orderClicked() {
         cartItems.removeChild(cartItems.firstChild)
     }
     cartIsEmpty()
-
 }
 
 
@@ -64,6 +63,7 @@ function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove();
 }
+cartIsEmpty()
 
 
 function addToCartClicked(event) {
@@ -87,6 +87,7 @@ function addItemToCart(title, price, imageSrc) {
             alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
             return
         }
+
         cartIsEmpty()
     }
 
