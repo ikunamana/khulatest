@@ -16,16 +16,25 @@ function ready() {
         var gilaki = addToCartButtons[i];
         gilaki.addEventListener('click', addToCartClicked);
     }
-    var clearCart = document.getElementsByClassName('order-clear');
-    for (var i = 0; i < clearCart.length; i++) {
-        var clearCartBtn = clearCart[i];
-        clearCartBtn.addEventListener('click', clearCartFun);
-    }
-    document.getElementsByClassName('order-btn')[0].addEventListener('click', orderClicked)
+    // var clearCart = document.getElementsByClassName('order-clear');
+    // for (var i = 0; i < clearCart.length; i++) {
+    //     var clearCartBtn = clearCart[i];
+    //     clearCartBtn.addEventListener('click', clearCartFun);
+    // }
+    document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
+    document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
+
 }
 
 function orderClicked() {
     alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+}
+
+function orderClear() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
