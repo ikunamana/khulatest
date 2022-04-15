@@ -35,7 +35,6 @@ function cartIsEmpty() {
     } else {
         emptyCart.style.display = "flex";
     }
-    cartIsEmpty()
 }
 
 function orderClicked() {
