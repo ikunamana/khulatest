@@ -23,7 +23,7 @@ function ready() {
     }
 }
 
-function removeCartItem(event) {
+function clearCartFun(event) {
     var clearCartBtnClicked = event.target;
     var wasashleli = clearCartBtnClicked.parentElement;
     var clearCartItems = document.getElementsByClassName('cart-items')
