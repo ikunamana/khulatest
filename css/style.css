@@ -2185,6 +2185,12 @@ h3 {
     border: none;
 }
 
+.plus-minus {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
 .plus {
     font-size: 21px;
     font-weight: 700;
