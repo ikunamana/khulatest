@@ -2179,7 +2179,22 @@ h3 {
 }
 
 .cart-items input {
-    width: 30px;
+    width: 20px;
+    font-size: 17px;
+    background: none;
+    border: none;
+}
+
+.plus {
+    font-size: 21px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.minus {
+    font-size: 21px;
+    font-weight: 700;
+    padding-left: 10px;
 }
 
 .cart-inside button {
