@@ -13,8 +13,8 @@ function ready() {
 
     var addToCartButtons = document.getElementById('shekvetabtn')
     for (var i = 0; i < addToCartButtons.length; i++) {
-        var button = addToCartButtons[i]
-        button.addEventListener('click', addToCartClicked)
+        var gilaki = addToCartButtons[i]
+        gilaki.addEventListener('click', addToCartClicked)
     }
 }
 
@@ -24,7 +24,7 @@ function removeCartItem(event) {
 }
 
 function addToCartClicked(event) {
-    var button = event.target
+    var gilaki = event.target
     var product = button.parentElement.parentElement.parentElement.parentElement
     var title = product.getElementsByClassName('cart-item-title')[0].innerText
     var price = product.getElementsByClassName('cart-item-price')[0].innerText
@@ -43,7 +43,10 @@ function addItemToCart(title, price, imageSrc) {
         //         alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
         //         return
 
-    var cartRowContents = `
+
+}
+
+var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
         <span class="cart-item-name ">${title}</span>
@@ -53,11 +56,10 @@ function addItemToCart(title, price, imageSrc) {
     <input class="item-quantity " value="1 " type="number ">
     <button class="remove-button ">წაშლა</button>
     </div>`
-    cartRow.innerHTML = cartRowContents
-    cartItems.append(cartRow)
-    cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem)
+cartRow.innerHTML = cartRowContents
+cartItems.append(cartRow)
+cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem)
 
-}
 
 
 
