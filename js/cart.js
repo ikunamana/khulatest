@@ -11,7 +11,7 @@ function ready() {
         button.addEventListener('click', removeCartItem)
     }
 
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro')
+    var addToCartButtons = document.getElementById('shekvetabtn')
     for (var i = 0; i < addToCartButtons.length; i++) {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
