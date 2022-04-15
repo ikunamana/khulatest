@@ -2160,6 +2160,7 @@ h3 {
     object-fit: cover;
     border-top: #79de4f 5px;
     padding: 7px;
+    transition-duration: 1s;
 }
 
 .cart-inside input {
@@ -2237,6 +2238,7 @@ h3 {
     display: flex;
     align-items: center;
     width: 45%;
+    transition-duration: 1s;
 }
 
 .cart-column {
