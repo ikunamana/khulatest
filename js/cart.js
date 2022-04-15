@@ -56,9 +56,9 @@ function addItemToCart(title, price, imageSrc) {
     <input class="item-quantity " value="1 " type="number ">
     <button class="remove-button ">წაშლა</button>
     </div>`
-        cartRow.innerHTML = cartRowContents
-        cartItems.append(cartRow)
-        cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem)
+        cartRow.innerHTML = cartRowContents;
+        cartItems.append(cartRow);
+        cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
 
     }
 }
