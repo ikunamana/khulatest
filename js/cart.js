@@ -21,6 +21,15 @@ function ready() {
         var clearCartBtn = clearCart[i];
         clearCartBtn.addEventListener('click', clearCartFun);
     }
+    document.getElementsByClassName('order-btn')[0].addEventListener('click', orderClicked)
+}
+
+function orderClicked() {
+    alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
 }
 
 function clearCartFun(event) {
