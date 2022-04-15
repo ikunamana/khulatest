@@ -2504,6 +2504,12 @@ h3 {
         width: 90%;
         text-align: justify;
     }
+    .cart-content {
+        width: 390px;
+    }
+    .cart-content-active {
+        width: 390px;
+    }
 }
 
 @media screen and (max-width: 428px) {
