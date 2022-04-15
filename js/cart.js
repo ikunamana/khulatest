@@ -74,6 +74,7 @@ function addToCartClicked(event) {
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     addItemToCart(title, price, imageSrc);
 }
+cartIsEmpty()
 
 
 function addItemToCart(title, price, imageSrc) {
@@ -87,7 +88,6 @@ function addItemToCart(title, price, imageSrc) {
             return
         }
         cartIsEmpty()
-
     }
 
     var cartRowContents = `
