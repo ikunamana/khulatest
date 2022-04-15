@@ -39,7 +39,7 @@ function playSound(click){
 var dropbtn1 = document.getElementById("dropupbtn");
 var dropupmenu2 = document.getElementById("dropupitems");
 
-dropbtn1.onclick = function dropupmenu1(){
+dropbtn1.onclick = function dropupmenu9(){
     dropupmenu2.classList.toggle("dropupcontent1");
     dropbtn1.classList.toggle("dropupbtnactive");
 }
