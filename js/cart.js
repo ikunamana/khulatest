@@ -25,7 +25,9 @@ function ready() {
 
 function removeCartItem(event) {
     var clearCartBtnClicked = event.target;
-    clearCartBtnClicked.parentElement.remove();
+    var wasashleli = clearCartBtnClicked.parentElement;
+    var clearCartItems = document.getElementsByClassName('cart-items')
+    clearCartItems.childElement.remove();
 }
 
 function removeCartItem(event) {
