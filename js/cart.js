@@ -25,7 +25,7 @@ function ready() {
 
 function removeCartItem(event) {
     var clearCartBtnClicked = event.target;
-    clearCartBtnClicked.parentElement.childElement.remove();
+    clearCartBtnClicked.parentElement.remove();
 }
 
 function removeCartItem(event) {
