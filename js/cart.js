@@ -15,6 +15,8 @@ function ready() {
     for (var i = 0; i < addToCartButtons.length; i++) {
         var gilaki = addToCartButtons[i]
         gilaki.addEventListener('click', addToCartClicked)
+        var cartButton = document.getElementsByClassName('cart-button')
+        cartButton.style.backgroundColor = "green"
     }
 
 }
