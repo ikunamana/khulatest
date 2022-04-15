@@ -42,8 +42,8 @@ function addItemToCart(title, price, imageSrc) {
         //     if (cartItemNames[i].innerText == title) {
         //         alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
         //         return
-}
-var cartRowContents = `
+
+    var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
         <span class="cart-item-name ">${title}</span>
@@ -53,11 +53,11 @@ var cartRowContents = `
     <input class="item-quantity " value="1 " type="number ">
     <button class="remove-button ">წაშლა</button>
     </div>`
-cartRow.innerHTML = cartRowContents
-cartItems.append(cartRow)
-cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem)
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+    cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem)
 
-
+}
 
 
 
