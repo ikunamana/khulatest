@@ -70,10 +70,11 @@ function quantityChanged(event) {
 
 var plus = document.getElementsByClassName('plus')
 var minus = document.getElementsByClassName('minus')
-var inputQuantity = document.getElementsByClassName('item-quantity').value
+var inputQuantity = document.getElementsByClassName('item-quantity')
+var inputQuantityValue = document.getElementsByClassName('item-quantity').value
 
 plus.onclick = function inputQuantityPlusMinus() {
-    inputQuantity + 1
+    inputQuantity.value = inputQuantityValue + 1
 }
 
 function removeCartItem(event) {
