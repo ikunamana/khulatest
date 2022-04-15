@@ -69,6 +69,7 @@ function quantityChanged(event) {
         input.value = 1
     }
     updateCartTotal()
+    quantityChanged()
 }
 
 
@@ -79,6 +80,8 @@ function removeCartItem(event) {
 
     cartIsEmpty()
     updateCartTotal()
+    quantityChanged()
+
 }
 
 function addToCartClicked(event) {
@@ -90,6 +93,8 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc);
     cartIsEmpty()
     updateCartTotal()
+    quantityChanged()
+
 }
 
 
