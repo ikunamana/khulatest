@@ -26,7 +26,7 @@ function removeCartItem(event) {
 
 function addToCartClicked(event) {
     var gilaki = event.target
-    var product = gilaki.parentElement.parentElement.parentElement.parentElement
+    var product = gilaki.parentElement.parentElement
     var title = product.getElementsByClassName('cart-item-title')[0].innerText
     var price = product.getElementsByClassName('cart-item-price')[0].innerText
     var imageSrc = product.getElementsByClassName('productimg1')[0].src
@@ -43,8 +43,6 @@ function addItemToCart(title, price, imageSrc) {
         if (cartItemNames[i].innerText == title) {
             alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
             return
-
-
         }
     }
 
