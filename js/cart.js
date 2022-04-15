@@ -30,7 +30,7 @@ function ready() {
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')
     var emptyCart = document.getElementById('emptycart')
-    if (cartItems.hasChildNodes()) {
+    if (cartItems.childNodes.length > 0) {
         emptyCart.style.display = "none";
     } else {
         emptyCart.style.display = "flex";
