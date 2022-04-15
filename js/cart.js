@@ -1,36 +1,45 @@
 if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
+    document.addEventListener('DOMContentLoaded', ready);
 } else {
     ready()
 }
 
 function ready() {
-    var remCartItemButtons = document.getElementsByClassName('remove-button')
+    var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
-        var button = remCartItemButtons[i]
-        button.addEventListener('click', removeCartItem)
+        var button = remCartItemButtons[i];
+        button.addEventListener('click', removeCartItem);
     }
 
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro')
+    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
     for (var i = 0; i < addToCartButtons.length; i++) {
-        var gilaki = addToCartButtons[i]
-        gilaki.addEventListener('click', addToCartClicked)
+        var gilaki = addToCartButtons[i];
+        gilaki.addEventListener('click', addToCartClicked);
     }
+    var clearCart = document.getElementsByClassName('order-clear');
+    for (var i = 0; i < clearCart.length; i++) {
+        var button = clearCart[i];
+        button.addEventListener('click', clearCartFun);
+    }
+}
 
+function clearCartFun(event) {
+    var clearCartBtn = event.target;
+    clearCartBtn.childElement.childElement.remove();
 }
 
 function removeCartItem(event) {
-    var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.remove()
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.parentElement.remove();
 }
 
 function addToCartClicked(event) {
-    var gilaki = event.target
-    var product = gilaki.parentElement.parentElement.parentElement
-    var title = product.getElementsByClassName('shop-item-title')[0].innerText
-    var price = product.getElementsByClassName('shop-item-price')[0].innerText
-    var imageSrc = product.getElementsByClassName('productimg1')[0].src
-    addItemToCart(title, price, imageSrc)
+    var gilaki = event.target;
+    var product = gilaki.parentElement.parentElement.parentElement;
+    var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+    var price = product.getElementsByClassName('shop-item-price')[0].innerText;
+    var imageSrc = product.getElementsByClassName('productimg1')[0].src;
+    addItemToCart(title, price, imageSrc);
 }
 
 
