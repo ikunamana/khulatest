@@ -2105,31 +2105,12 @@ h3 {
     transition: all 0.3s ease 0s;
 }
 
-.cart-content-active {
-    bottom: 80px;
-    position: fixed;
-    min-width: 430px;
-    padding: 10px;
-    right: 30px;
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(30px);
-    border-radius: 15px;
-    border-bottom-right-radius: 0px;
-    text-align: left;
-    z-index: 100;
-    opacity: 1;
-    pointer-events: visible;
-    transition: all 0.3s ease 0s;
-    transform: rotateX(0deg) rotateY(0deg);
-}
-
 .cart-content {
-    bottom: 80px;
+    bottom: 0px;
     position: fixed;
     min-width: 430px;
     padding: 10px;
-    right: 30px;
+    left: 30px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(30px);
@@ -2141,6 +2122,25 @@ h3 {
     pointer-events: none;
     transition: all 0.3s ease 0s;
     transform: rotateX(-5deg) rotateY(25deg) translateX(40px);
+}
+
+.cart-content-active {
+    bottom: 0px;
+    position: fixed;
+    min-width: 430px;
+    padding: 10px;
+    left: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    text-align: left;
+    z-index: 100;
+    opacity: 1;
+    pointer-events: visible;
+    transition: all 0.3s ease 0s;
+    transform: rotateX(0deg) rotateY(0deg);
 }
 
 .cart-inside img {
