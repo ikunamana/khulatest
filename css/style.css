@@ -2505,10 +2505,13 @@ h3 {
         text-align: justify;
     }
     .cart-content {
-        width: 370px;
+        min-width: 370px;
     }
     .cart-content-active {
-        width: 370px;
+        min-width: 400px;
+    }
+    .cart-content {
+        transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
     }
 }
 
