@@ -32,6 +32,7 @@ function orderClicked() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    cartIsEmpty()
 }
 
 function orderClear() {
@@ -39,19 +40,24 @@ function orderClear() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    cartIsEmpty()
 }
 
-function clearCartFun(event) {
-    var clearCartBtnClicked = event.target;
-    var wasashleli = clearCartBtnClicked.parentElement;
-    var clearCartItems = document.getElementsByClassName('cart-items')
-    clearCartItems.childElement.remove();
+function cartIsEmpty()
+var empty = document.getElementsByClassName('cart-empty');
+var cartItems = document.getElementsByClassName('cart-items')[0]
+while (cartItems.hasChildNodes()) {
+    empty.style.display = "none";
 }
+
+
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove();
 }
+cartIsEmpty()
+
 
 function addToCartClicked(event) {
     var gilaki = event.target;
@@ -90,6 +96,8 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
 
 }
+cartIsEmpty()
+
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
 
