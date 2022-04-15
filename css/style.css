@@ -2188,6 +2188,10 @@ h3 {
     color: white;
 }
 
+.cart-items {
+    transition-duration: 1s;
+}
+
 .cart-items button {
     width: 70px;
     height: 30px;
