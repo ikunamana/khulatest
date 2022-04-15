@@ -28,8 +28,8 @@ function ready() {
 }
 
 function cartIsEmpty()
-var emptyCart = document.getElementsByClassName('cart-empty')
 var cartItems = document.getElementsByClassName('cart-items')[0]
+var emptyCart = document.getElementsByClassName('cart-empty')
 if (cartItems.hasChildNodes()) {
     emptyCart.style.display = "none";
 } else {
