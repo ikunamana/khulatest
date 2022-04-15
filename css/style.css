@@ -2505,11 +2505,11 @@ h3 {
         text-align: justify;
     }
     .cart-content {
-        min-width: 370px;
+        min-width: 400px;
         transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
     }
     .cart-content-active {
-        min-width: 400px;
+        min-width: 370px;
         transform: none;
     }
 }
