@@ -68,14 +68,6 @@ function quantityChanged(event) {
     quantityChanged()
 }
 
-var plus = document.getElementsByClassName('plus')
-var minus = document.getElementsByClassName('minus')
-var inputQuantity = document.getElementsByClassName('item-quantity')
-var inputQuantityValue = document.getElementsByClassName('item-quantity').value
-
-plus.onclick = function inputQuantityPlus() {
-    inputQuantity.value = inputQuantityValue + 1
-}
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
@@ -158,4 +150,13 @@ dropbtn.onclick = function cartmenu() {
     dropbtn.classList.toggle("cart-button-active");
     cartIsEmpty()
     updateCartTotal()
+}
+
+var plus = document.getElementsByClassName('plus')
+var minus = document.getElementsByClassName('minus')
+var inputQuantity = document.getElementsByClassName('item-quantity')
+var inputQuantityValue = document.getElementsByClassName('item-quantity').value
+
+plus.onclick = function inputQuantityPlus() {
+    inputQuantity.value = inputQuantityValue + 1
 }
