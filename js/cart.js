@@ -16,17 +16,16 @@ function ready() {
         var gilaki = addToCartButtons[i];
         gilaki.addEventListener('click', addToCartClicked);
     }
-    // var clearCart = document.getElementsByClassName('order-clear');
-    // for (var i = 0; i < clearCart.length; i++) {
-    //     var button = clearCart[i];
-    //     button.addEventListener('click', clearCartFun);
-    // }
+    var clearCart = document.getElementsByClassName('order-clear');
+    for (var i = 0; i < clearCart.length; i++) {
+        var clearCartBtn = clearCart[i];
+        clearCartBtn.addEventListener('click', clearCartFun);
+    }
 }
 
-var clearButton = document.getElementsByClassName('order-clear');
-var cartItems = document.getElementsByClassName('cart-items')
-clearButton.onclick = function clearCartFun() {
-    cartItems.childElement.remove();
+function removeCartItem(event) {
+    var clearCartBtnClicked = event.target;
+    clearCartBtnClicked.parentElement.childElement.remove();
 }
 
 function removeCartItem(event) {
