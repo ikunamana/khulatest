@@ -2510,7 +2510,7 @@ h3 {
     }
     .cart-content-active {
         min-width: 400px;
-        transform: rotateX(0deg) rotateY(0deg) translateX(0deg);
+        transform: none;
     }
 }
 
