@@ -105,3 +105,4 @@ dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
 }
+cartIsEmpty()
