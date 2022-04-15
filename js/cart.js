@@ -30,8 +30,11 @@ function ready() {
 function cartIsEmpty()
 var emptyCart = document.getElementsByClassName('cart-empty')
 var cartItems = document.getElementsByClassName('cart-items')[0]
-while (cartItems.hasChildNodes()) {
+if (cartItems.hasChildNodes()) {
     emptyCart.style.display = "none";
+} else {
+    emptyCart.style.display = "flex";
+
 }
 
 function orderClicked() {
