@@ -24,8 +24,8 @@ function ready() {
 }
 
 function clearCartFun(event) {
-    var clearCartBtn = event.target;
-    clearCartBtn.childElement.childElement.remove();
+    var cartItems = event.target;
+    cartItems.childElement.childElement.remove();
 }
 
 function removeCartItem(event) {
