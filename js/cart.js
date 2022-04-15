@@ -39,14 +39,17 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-title')
-    for (var i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
-            alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
-            return
-        }
+}
+for (var i = 0; i < cartItemNames.length; i++) {
+    if (cartItemNames[i].innerText == title) {
+        alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
+        return
+    }
+}
 
 
-        var cartRowContents = `
+
+var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
         <span class="cart-item-name ">${title}</span>
@@ -56,12 +59,12 @@ function addItemToCart(title, price, imageSrc) {
     <input class="item-quantity " value="1 " type="number ">
     <button class="remove-button ">წაშლა</button>
     </div>`
-        cartRow.innerHTML = cartRowContents;
-        cartItems.append(cartRow);
-        cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
+cartRow.innerHTML = cartRowContents;
+cartItems.append(cartRow);
+cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
 
-    }
-}
+
+
 
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
