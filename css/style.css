@@ -2104,7 +2104,6 @@ h3 {
     justify-content: space-around;
     transition-duration: 300ms;
     transition: all 0.3s ease 0s;
-    min-height: 150px;
 }
 
 .cart-content {
@@ -2146,6 +2145,7 @@ h3 {
     transition-duration: 200ms;
     transition: all 0.3s ease 0s;
     transform: rotateX(0deg) rotateY(0deg);
+    min-height: 150px;
 }
 
 .cart-inside img {
