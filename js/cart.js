@@ -16,6 +16,7 @@ function ready() {
         var gilaki = addToCartButtons[i]
         gilaki.addEventListener('click', addToCartClicked)
     }
+
 }
 
 function removeCartItem(event) {
