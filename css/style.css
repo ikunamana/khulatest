@@ -2050,12 +2050,12 @@ h3 {
 
 /* // cart // */
 
-#dropupbtn {
-    margin-bottom: 120px;
+#cartbtn {
+    bottom: 150px;
 }
 
 .cart-content-active {
-    bottom: 120px;
+    bottom: 170px;
     position: fixed;
     min-width: 430px;
     padding: 10px;
@@ -2074,7 +2074,7 @@ h3 {
 }
 
 .cart-content {
-    bottom: 120px;
+    bottom: 170px;
     position: fixed;
     min-width: 430px;
     padding: 10px;
