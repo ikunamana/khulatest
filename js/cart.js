@@ -25,7 +25,7 @@ function removeCartItem(event) {
 
 function addToCartClicked(event) {
     var button = event.target
-    var product = button.parentElement
+    var product = button.parentElement.parentElement.parentElement.parentElement
     var title = product.getElementsByClassName('cart-item-title')[0].innerText
     var price = product.getElementsByClassName('cart-item-price')[0].innerText
     var imageSrc = product.getElementsByClassName('productimg1')[0].src
