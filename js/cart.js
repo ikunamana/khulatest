@@ -32,6 +32,7 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc)
 }
 
+
 function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
@@ -57,6 +58,7 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem)
 }
+
 
 
 
