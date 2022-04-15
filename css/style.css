@@ -2120,6 +2120,7 @@ h3 {
     z-index: 0;
     opacity: 0;
     pointer-events: none;
+    transition-duration: 200ms;
     transition: all 0.3s ease 0s;
     transform: rotateX(-5deg) rotateY(25deg) translateX(40px);
 }
@@ -2139,6 +2140,7 @@ h3 {
     z-index: 100;
     opacity: 1;
     pointer-events: visible;
+    transition-duration: 200ms;
     transition: all 0.3s ease 0s;
     transform: rotateX(0deg) rotateY(0deg);
 }
