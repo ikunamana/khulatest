@@ -2054,6 +2054,14 @@ h3 {
     bottom: 200px;
 }
 
+.cart-menu {
+    width: 350px;
+    z-index: 800;
+    left: 5px;
+    bottom: 90px;
+    position: fixed;
+}
+
 .cart-button {
     width: 70px;
     height: 70px;
@@ -2063,8 +2071,31 @@ h3 {
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     position: fixed;
-    bottom: 50px;
+    bottom: 90px;
     left: 0;
+    margin: auto;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 300ms;
+    transition: all 0.3s ease 0s;
+}
+
+.cart-button-active {
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+    border: 0.5px solid rgba(68, 66, 178, 0.2);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    position: fixed;
+    bottom: 100px;
+    left: 15px;
     margin: auto;
     z-index: 100;
     display: flex;
