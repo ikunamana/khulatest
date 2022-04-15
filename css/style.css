@@ -2051,7 +2051,7 @@ h3 {
 /* // cart // */
 
 #cartbtn {
-    bottom: 200px;
+    bottom: 90px;
 }
 
 .cart-menu {
@@ -2106,11 +2106,11 @@ h3 {
 }
 
 .cart-content {
-    bottom: 0px;
+    bottom: 162px;
     position: fixed;
     min-width: 430px;
     padding: 10px;
-    left: 30px;
+    left: 0px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(30px);
@@ -2125,16 +2125,16 @@ h3 {
 }
 
 .cart-content-active {
-    bottom: 0px;
+    bottom: 162px;
     position: fixed;
     min-width: 430px;
-    padding: 10px;
-    left: 30px;
+    padding: 12px;
+    left: 14px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(30px);
     border-radius: 15px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     text-align: left;
     z-index: 100;
     opacity: 1;
