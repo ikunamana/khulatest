@@ -155,9 +155,8 @@ dropbtn.onclick = function cartmenu() {
 var plus = document.getElementById('plus')
 var minus = document.getElementsByClassName('minus')
 var inputQuantity = document.getElementById('item-quantity')
-var inputQuantityValue = document.getElementById('item-quantity').value
 var plus1 = 1
 
 plus.onclick = function inputQuantityPlus() {
-    inputQuantity.value = inputQuantityValue + plus1;
+    inputQuantity.value + plus1;
 }
