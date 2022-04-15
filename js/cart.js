@@ -17,6 +17,12 @@ function ready() {
 
         gilaki.addEventListener('click', addToCartClicked);
     }
+
+    var quantityInputs = document.getElementsByClassName('item-quantity')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
     // var clearCart = document.getElementsByClassName('order-clear');
     // for (var i = 0; i < clearCart.length; i++) {
     //     var clearCartBtn = clearCart[i];
@@ -55,7 +61,12 @@ function orderClear() {
     cartIsEmpty()
 }
 
-
+function quantityChanged(event) {
+    var input = EventTarget;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+}
 
 
 
@@ -103,6 +114,22 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartRow);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
 
+}
+
+function updateCartTotal() {
+    var allCartItems = document.getElementsByClassName('cart-items');
+    var cartRows = allCartItems.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i];
+        var priceElement = cartRow.getElementsByClassName('cart-item-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('item-quantity')[0]
+        var price = parseFloat(priceElement.innerText.replace('GEL', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
 
 var dropbtn = document.getElementById("cartbtn");
