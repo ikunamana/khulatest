@@ -50,6 +50,7 @@ function orderClicked() {
         cartItems.removeChild(cartItems.firstChild)
     }
     cartIsEmpty()
+    updateCartTotal()
 }
 
 
@@ -59,6 +60,7 @@ function orderClear() {
         cartItems.removeChild(cartItems.firstChild)
     }
     cartIsEmpty()
+    updateCartTotal()
 }
 
 function quantityChanged(event) {
@@ -66,6 +68,7 @@ function quantityChanged(event) {
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
     }
+    updateCartTotal()
 }
 
 
@@ -75,6 +78,7 @@ function removeCartItem(event) {
     buttonClicked.parentElement.parentElement.remove();
 
     cartIsEmpty()
+    updateCartTotal()
 }
 
 function addToCartClicked(event) {
@@ -85,6 +89,7 @@ function addToCartClicked(event) {
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     addItemToCart(title, price, imageSrc);
     cartIsEmpty()
+    updateCartTotal()
 }
 
 
@@ -98,6 +103,7 @@ function addItemToCart(title, price, imageSrc) {
             alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
             return
         }
+        updateCartTotal()
     }
 
     var cartRowContents = `
@@ -113,7 +119,7 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
-
+    updateCartTotal()
 }
 
 function updateCartTotal() {
