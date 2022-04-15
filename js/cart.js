@@ -62,9 +62,9 @@ function orderClear() {
 function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove();
-}
-cartIsEmpty()
 
+    cartIsEmpty()
+}
 
 function addToCartClicked(event) {
     var gilaki = event.target;
@@ -73,8 +73,8 @@ function addToCartClicked(event) {
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     addItemToCart(title, price, imageSrc);
+    cartIsEmpty()
 }
-cartIsEmpty()
 
 
 function addItemToCart(title, price, imageSrc) {
@@ -87,8 +87,6 @@ function addItemToCart(title, price, imageSrc) {
             alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
             return
         }
-
-        cartIsEmpty()
     }
 
     var cartRowContents = `
@@ -106,7 +104,6 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
 
 }
-cartIsEmpty()
 
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
@@ -114,5 +111,6 @@ var dropupmenu1 = document.getElementById("cart-content");
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
+    cartIsEmpty()
+
 }
-cartIsEmpty()
