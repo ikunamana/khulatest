@@ -158,5 +158,5 @@ var inputQuantity = document.getElementById('item-quantity')
 var inputQuantityValue = document.getElementById('item-quantity').value
 
 plus.onclick = function inputQuantityPlus() {
-    inputQuantity.value = Math.E(inputQuantityValue + 1);
+    inputQuantity.value = Math.round(inputQuantityValue + 1);
 }
