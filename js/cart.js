@@ -43,8 +43,9 @@ function orderClicked() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
-    cartIsEmpty()
 }
+cartIsEmpty()
+
 
 function orderClear() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
