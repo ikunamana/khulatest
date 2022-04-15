@@ -26,6 +26,13 @@ function ready() {
 
 }
 
+function cartIsEmpty()
+var empty = document.getElementsByClassName('cart-empty');
+var cartItems = document.getElementsByClassName('cart-items')[0]
+while (cartItems.hasChildNodes()) {
+    empty.style.display = "none";
+}
+
 function orderClicked() {
     alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -43,12 +50,7 @@ function orderClear() {
     cartIsEmpty()
 }
 
-function cartIsEmpty()
-var empty = document.getElementsByClassName('cart-empty');
-var cartItems = document.getElementsByClassName('cart-items')[0]
-while (cartItems.hasChildNodes()) {
-    empty.style.display = "none";
-}
+
 
 
 
