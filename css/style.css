@@ -2506,12 +2506,11 @@ h3 {
     }
     .cart-content {
         min-width: 370px;
+        transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
     }
     .cart-content-active {
         min-width: 400px;
-    }
-    .cart-content {
-        transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
+        transform: rotateX(0deg) rotateY(0deg) translateX(0deg);
     }
 }
 
