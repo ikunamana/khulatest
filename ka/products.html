@@ -76,34 +76,35 @@
                 <span class="cart-price cart-header cart-column ">ფასი</span>
                 <span class="cart-quantity cart-header cart-column ">რაოდენობა</span>
             </div>
-            <div class=" cart-inside ">
-                <div class="cart-items ">
-                    <img class="cart-item-image " src="../images/churchxela.jpg " alt=" ">
-                    <span class="cart-item-name ">ჩურჩხელა</span>
-                </div>
-                <span class="cart-item-price "> 15ლ </span>
-                <div class="cart-item-quantity ">
-                    <input class="item-quantity " value="1 " type="number ">
-                    <button class="remove-button ">წაშლა</button>
-                </div>
-            </div>
-            <div class=" cart-inside ">
-                <div class="cart-items ">
-                    <img class="cart-item-image " src="../images/im-kveli.jpg " alt=" ">
-                    <span class="cart-item-name ">იმერული ყველი</span>
-                </div>
-                <span class="cart-item-price "> 25ლ </span>
-                <div class="cart-item-quantity ">
-                    <input class="item-quantity " value="1 " type="number ">
-                    <button class="remove-button ">წაშლა</button>
+            <div class=" cart-items ">
+                <div class="cart-row ">
+                    <div class="cart-item">
+                        <img class="cart-item-image " src="../images/churchxela.jpg " alt=" ">
+                        <span class="cart-item-name ">ჩურჩხელა</span>
+                    </div>
+                    <span class="cart-item-price "> 15ლ </span>
+                    <div class="cart-item-quantity ">
+                        <input class="item-quantity " value="1 " type="number ">
+                        <button class="remove-button ">წაშლა</button>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="order-button-div">
-                <button class="order-clear">გასუფთავება</button>
-                <button class="order-button">შეკვეთა</button>
+            <div class="cart-row ">
+                <img class="cart-item-image " src="../images/im-kveli.jpg " alt=" ">
+                <span class="cart-item-name ">იმერული ყველი</span>
+            </div>
+            <span class="cart-item-price "> 25ლ </span>
+            <div class="cart-item-quantity ">
+                <input class="item-quantity " value="1 " type="number ">
+                <button class="remove-button ">წაშლა</button>
             </div>
         </div>
+        <hr>
+        <div class="order-button-div">
+            <button class="order-clear">გასუფთავება</button>
+            <button class="order-button">შეკვეთა</button>
+        </div>
+    </div>
     </div>
 
 
@@ -180,7 +181,7 @@
                         <strong>ფასი (ც):</strong>
                         <h2> 0.60 GEL</h2><br><br><br><br>
                         <div class="butshekv">
-                            <button id="shekvetabtn" onclick="shekvetamtavari()" class="btnshekvetapro">შეკვეთა</button>
+                            <button id="shekvetabtn" class="btnshekvetapro">შეკვეთა</button>
                             <div class="cartdiv">
                                 <p cursor="pointer">კალათა</p> <img class="cartimg" src="../images/cart1.png" alt="cart">
                             </div>

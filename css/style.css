@@ -2153,7 +2153,19 @@ h3 {
     padding: 7px;
 }
 
+.cart-items img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-top: #79de4f 5px;
+    padding: 7px;
+}
+
 .cart-inside input {
+    width: 30px;
+}
+
+.cart-items input {
     width: 30px;
 }
 
@@ -2174,7 +2186,28 @@ h3 {
     color: white;
 }
 
+.cart-items button {
+    width: 70px;
+    height: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: #a70000;
+    border-radius: 5px;
+    -webkit-transition-duration: 400ms;
+    -o-transition-duration: 400ms;
+    transition-duration: 400ms;
+    border: none;
+    opacity: 50%;
+    color: white;
+}
+
 .cart-inside button:hover {
+    opacity: 100%;
+}
+
+.cart-items button:hover {
     opacity: 100%;
 }
 
