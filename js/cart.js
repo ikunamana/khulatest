@@ -46,7 +46,7 @@ var dropbtn = document.getElementById("cartbtn");
 var redCircle = document.getElementById('redCircle');
 
 function cartBtnCheck() {
-    if (dropbtn.style.left !== "0px") {
+    if (dropbtn.style.left = "15px") {
         redCircle.style.transform = "scale(1)"
 
     } else {
