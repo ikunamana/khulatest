@@ -81,11 +81,11 @@ function populateProduktebi(obj) {
 
 
 
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready()
-}
+// if (document.readyState == 'loading') {
+//     document.addEventListener('DOMContentLoaded', ready);
+// } else {
+//     ready()
+// }
 
 function ready() {
     var remCartItemButtons = document.getElementsByClassName('remove-button');
@@ -94,7 +94,7 @@ function ready() {
         button.addEventListener('click', removeCartItem);
     }
 
-    var addToCartButtons = document.querySelectorAll(".btnshekvetapro");
+    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
     for (var i = 0; i < addToCartButtons.length; i++) {
         var gilaki = addToCartButtons[i];
 
