@@ -32,7 +32,7 @@ function ready() {
 function buttonDisabled() {
 
     var emptyCart = document.getElementById('emptycart')
-    var orderButton = document.getElementsByClassName('order-button')
+    var orderButton = document.getElementById('orderButton')
 
     if (emptyCart.style.display = "flex") {
         orderButton.classList.add('order-clear');
