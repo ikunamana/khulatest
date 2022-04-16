@@ -38,7 +38,6 @@ function cartIsEmpty() {
 
     } else {
         emptyCart.style.display = "flex";
-        orderButton.classList.toggle('order-clear')
 
     }
 }
