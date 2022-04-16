@@ -50,12 +50,12 @@ function cartIsEmpty() {
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
-
+        orderButton.style.pointerEvents = "none";
 
     } else {
         emptyCart.style.display = "flex";
         orderButton.classList.add('order-clear');
-
+        orderButton.style.pointerEvents = "auto";
     }
 }
 updateCartTotal()
