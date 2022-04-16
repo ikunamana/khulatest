@@ -55,8 +55,9 @@ function ready() {
 //     }
 // }
 
-var cartbtn = document.getElementById("cart-button");
+var cartbtn = document.getElementById('cartbtn');
 var redCircle = document.getElementById('redCircle');
+
 cartbtn.onclick = function cartBtnCheck() {
     redCircle.classList.toggle('scaleReduce');
 }
