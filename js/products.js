@@ -75,7 +75,7 @@ function populateProduktebi(obj) {
         kalataDiv.append(kalataimg);
         section.append(firstDiv);
     }
-
+}
         function ready() {
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
@@ -98,8 +98,8 @@ function populateProduktebi(obj) {
 
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
-        }
     }
+
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
