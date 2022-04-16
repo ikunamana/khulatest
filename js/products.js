@@ -108,7 +108,6 @@ function cartIsEmpty() {
     } else {
         emptyCart.style.display = "flex";
     }
-    cartIsEmpty()
 }
 
 function quantityChanged(event) {
@@ -217,9 +216,9 @@ var dropupmenu1 = document.getElementById("cart-content");
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-    cartIsEmpty()
-    updateCartTotal()
 }
+cartIsEmpty()
+    updateCartTotal()
 }
 
 populate();
