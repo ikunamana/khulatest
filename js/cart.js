@@ -42,10 +42,12 @@ function ready() {
 
 //     }
 // }
+
+function cartBtnCheck()
 var dropupmenu1 = document.getElementById("cart-content");
 var redCircle = document.getElementById('redCircle');
 
-function cartBtnCheck() {
+{
     if (dropupmenu1.style.pointerEvents = "visible") {
         redCircle.style.transform = "scale(0)"
 
