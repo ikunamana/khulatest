@@ -35,11 +35,10 @@ function cartIsEmpty() {
     var orderButton = document.getElementsByClassName('order-button')
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
-        orderButton.classList.toggle('order-clear')
 
     } else {
         emptyCart.style.display = "flex";
-        orderButton.classList.toggle('order-button')
+        orderButton.classList.toggle('order-clear')
 
     }
 }
