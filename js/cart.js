@@ -42,6 +42,8 @@ function cartIsEmpty() {
 
     }
 }
+updateCartTotal()
+
 
 function orderClicked() {
     alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
