@@ -32,11 +32,12 @@ var emptyCart = document.getElementById('emptycart')
 var orderButton = document.getElementsByClassName('order-button')
 
 function buttonDisabled() {
-    if (emptyCart.style.display = "flex")
+    if (emptyCart.style.display = "flex") {
         orderButton.classList.add('order-clear');
-} else {
-    orderButton.classList.remove('order-clear');
+    } else {
+        orderButton.classList.remove('order-clear');
 
+    }
 }
 
 function cartIsEmpty() {
