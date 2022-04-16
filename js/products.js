@@ -220,8 +220,7 @@ dropbtn.onclick = function cartmenu() {
 }}
 
 populate();
-cartIsEmpty()
-    updateCartTotal()
+
 
 
 
