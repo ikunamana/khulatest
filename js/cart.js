@@ -170,7 +170,7 @@ dropbtn.onclick = function cartmenu() {
 var dropbtn = document.getElementById("cartbtn");
 var redCircle = document.getElementById('redCircle');
 
-if (dropbtn.style.left > 0) {
+if (dropbtn.style.left !== "0px") {
     redCircle.style.transform = "scale(0)"
 } else {
     redCircle.style.transform = "scale(1)"
