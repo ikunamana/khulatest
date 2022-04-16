@@ -83,7 +83,7 @@ function populateProduktebi(obj) {
     }
 
 
-    addToCartButtons.onclick = function addToCartClicked(event) {
+   function addToCartClicked(event) {
         var gilaki = event.target;
         var product = gilaki.parentElement.parentElement.parentElement;
         var title = product.getElementsByClassName('shop-item-title')[0].innerText;
