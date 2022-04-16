@@ -105,6 +105,14 @@ function populateProduktebi(obj) {
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 
 }
+function quantityChanged(event) {
+    var input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+    quantityChanged()
+}
 
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -136,14 +144,7 @@ function orderClear() {
     updateCartTotal()
 }
 
-function quantityChanged(event) {
-    var input = event.target;
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1
-    }
-    updateCartTotal()
-    quantityChanged()
-}
+
 
 
 function removeCartItem(event) {
