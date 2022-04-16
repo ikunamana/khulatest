@@ -47,7 +47,7 @@ var redCircle = document.getElementById('redCircle');
 
 function cartBtnCheck() {
     if (dropupmenu1.style.visibility == "visible") {
-        redCircle.style.transform = "scale(1)"
+        redCircle.style.transform = "scale(0)"
 
     } else {
         redCircle.style.transform = "scale(0)"
