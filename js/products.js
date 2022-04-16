@@ -93,7 +93,7 @@ function ready() {
         button.addEventListener('click', removeCartItem);
     }
 
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
+    var addToCartButtons = btnshekveta;
     for (var i = 0; i < addToCartButtons.length; i++) {
         var gilaki = addToCartButtons[i];
 
