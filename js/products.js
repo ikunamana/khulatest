@@ -105,14 +105,6 @@ function populateProduktebi(obj) {
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 
 }
-function quantityChanged(event) {
-    var input = event.target;
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1
-    }
-    updateCartTotal()
-    quantityChanged()
-}
 
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -122,6 +114,16 @@ function cartIsEmpty() {
     } else {
         emptyCart.style.display = "flex";
     }
+    cartIsEmpty()
+}
+
+function quantityChanged(event) {
+    var input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+    quantityChanged()
 }
 
 function orderClicked() {
@@ -213,6 +215,17 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
+var dropbtn = document.getElementById("cartbtn");
+var dropupmenu1 = document.getElementById("cart-content");
+
+dropbtn.onclick = function cartmenu() {
+    dropupmenu1.classList.toggle("cart-content-active");
+    dropbtn.classList.toggle("cart-button-active");
+    cartIsEmpty()
+    updateCartTotal()
+}
+populate();
+
 
 }
 
