@@ -59,7 +59,6 @@ function cartIsEmpty() {
     }
 }
 updateCartTotal()
-buttonDisabled()
 
 
 function orderClicked() {
