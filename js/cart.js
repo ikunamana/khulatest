@@ -42,11 +42,11 @@ function ready() {
 
 //     }
 // }
-var dropbtn = document.getElementById("cartbtn");
+var dropupmenu1 = document.getElementById("cart-content");
 var redCircle = document.getElementById('redCircle');
 
 function cartBtnCheck() {
-    if (dropbtn.style.left = "15px") {
+    if (dropupmenu1.style.visibility = "visible") {
         redCircle.style.transform = "scale(1)"
 
     } else {
