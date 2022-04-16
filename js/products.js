@@ -52,6 +52,8 @@ function populateProduktebi(obj) {
         btnshekveta.innerHTML = "შეკვეთა";
         fasiCharchoII.innerHTML = "<strong>ფასი (ც):</strong>";
 
+            
+
     // json-ის ინფორმაციის ჩაშენება html-ში
 
         // nameOfOProductII.textContent = `${komponenti.name}`;
@@ -91,8 +93,8 @@ function ready() {
         var button = remCartItemButtons[i];
         button.addEventListener('click', removeCartItem);
     }
-
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
+    var section = getElementById('section')
+    var addToCartButtons = section.getElementsByClassName('btnshekvetapro');
     for (var i = 0; i < addToCartButtons.length; i++) {
         var gilaki = addToCartButtons[i];
 
