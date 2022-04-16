@@ -55,6 +55,14 @@ function cartBtnCheck() {
     }
 }
 
+function cartBtnCheck() {
+    var cartbtn = document.getElementById("cart-button");
+    var redCircle = document.getElementById('redCircle');
+    cartbtn.onclick = function cartBtnCheck() {
+        redCircle.classList.toggle('scaleReduce');
+    }
+}
+
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')

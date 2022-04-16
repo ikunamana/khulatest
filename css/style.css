@@ -2050,6 +2050,10 @@ h3 {
 
 /* // cart // */
 
+.scaleReduce {
+    transform: scale(0);
+}
+
 .redCircle {
     width: 25px;
     height: 25px;
