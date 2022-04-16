@@ -373,18 +373,6 @@ populate();
 //     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 // }
 
-var dropbtn = document.getElementById("cartbtn");
-var dropupmenu1 = document.getElementById("cart-content");
-
-dropbtn.onclick = function cartmenu() {
-    dropupmenu1.classList.toggle("cart-content-active");
-    dropbtn.classList.toggle("cart-button-active");
-    cartIsEmpty()
-    updateCartTotal()
-}
-populate();
-
-
 // var plus = document.getElementById('plus')
 // var minus = document.getElementsByClassName('minus')
 // var inputQuantity = document.getElementById('item-quantity')
