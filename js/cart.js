@@ -61,7 +61,7 @@ function cartIsEmpty() {
     }
 }
 updateCartTotal()
-
+cartBtnCheck()
 
 function orderClicked() {
     alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
@@ -170,12 +170,14 @@ dropbtn.onclick = function cartmenu() {
 var dropbtn = document.getElementById("cartbtn");
 var redCircle = document.getElementById('redCircle');
 
-if (dropbtn.style.left !== "0px") {
-    redCircle.style.transform = "scale(1)"
+function cartBtnCheck() {
+    if (dropbtn.style.left !== "0px") {
+        redCircle.style.transform = "scale(1)"
 
-} else {
-    redCircle.style.transform = "scale(0)"
+    } else {
+        redCircle.style.transform = "scale(0)"
 
+    }
 }
 
 // var plus = document.getElementById('plus')
