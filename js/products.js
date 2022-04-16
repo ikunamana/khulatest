@@ -76,13 +76,6 @@ function populateProduktebi(obj) {
         section.append(firstDiv);
     }
 
-
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
-    for (var i = 0; i < addToCartButtons.length; i++) {
-        var gilaki = addToCartButtons[i];
-
-        gilaki.addEventListener('click', addToCartClicked);
-    }
         function ready() {
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
@@ -216,7 +209,7 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
-
+}
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
 
@@ -227,7 +220,6 @@ dropbtn.onclick = function cartmenu() {
     updateCartTotal()
 }
 }
-// }
 
 populate();
 
@@ -382,7 +374,5 @@ populate();
 // plus.onclick = function inputQuantityPlus() {
 //     inputQuantity.value + plus1;
 // }
-
-
 
 
