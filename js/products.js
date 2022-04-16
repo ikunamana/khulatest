@@ -209,7 +209,7 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
-        }
+
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
 
@@ -219,7 +219,7 @@ dropbtn.onclick = function cartmenu() {
 }
 cartIsEmpty()
     updateCartTotal()
-}
+}}
 
 populate();
 
