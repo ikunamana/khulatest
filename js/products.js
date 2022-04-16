@@ -117,8 +117,9 @@ function populateProduktebi(obj) {
             </div>`
             cartRow.innerHTML = cartRowContents;
             cartItems.append(cartRow);
-            cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
         }
+
+        
         
 }
 
