@@ -224,9 +224,9 @@ dropbtn.onclick = function cartmenu() {
     cartIsEmpty()
     updateCartTotal()
 }
-}
-populate();
 
+populate();
+}
 }
 
 
