@@ -183,7 +183,8 @@ var dropupmenu1 = document.getElementById("cart-content");
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-    redCircle.classList.toggle('scaleReduce');
+    redCircle.setAttribute('style', "scale(0)");
+
     cartIsEmpty()
     updateCartTotal()
 }
