@@ -73,9 +73,43 @@ function populateProduktebi(obj) {
         btnshekvetaII.append(btnshekveta);
         btnshekvetaII.append(kalataDiv);
         kalataDiv.append(kalataimg);
-        
         section.append(firstDiv);
     }
+    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var gilaki = addToCartButtons[i];
+
+        gilaki.addEventListener('click', addToCartClicked);
+    }
+
+
+    btnshekveta.onclick = function addToCartClicked(event) {
+        var gilaki = event.target;
+        var product = gilaki.parentElement.parentElement.parentElement;
+        var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+        var price = product.getElementsByClassName('shop-item-price')[0].innerText;
+        var imageSrc = product.getElementsByClassName('productimg1')[0].src;
+        addItemToCart(title, price, imageSrc);
+        cartIsEmpty()
+        updateCartTotal()
+        quantityChanged()
+    
+    }
+    
+    
+    function addItemToCart(title, price, imageSrc) {
+        var cartRow = document.createElement('div')
+        cartRow.classList.add('cart-row')
+        var cartItems = document.getElementsByClassName('cart-items')[0]
+        var cartItemNames = document.getElementsByClassName('cart-item-name')
+        for (var i = 0; i < cartItemNames.length; i++) {
+            if (cartItemNames[i].innerText == title) {
+                alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
+                return
+            }
+            updateCartTotal()
+        }
+}
 }
 
 
