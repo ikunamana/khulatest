@@ -28,6 +28,13 @@ function ready() {
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 
 }
+var emptyCart = document.getElementById('emptycart')
+var orderButton = document.getElementsByClassName('order-button')
+
+function buttonDisabled() {
+    if (emptyCart.style.display === "flex")
+        orderButton.classList.add('order-clear');
+}
 
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
