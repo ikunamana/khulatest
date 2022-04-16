@@ -2051,10 +2051,16 @@ h3 {
 /* // cart // */
 
 .redCircle {
-    width: 30px;
-    height: 30px;
-    background-color: #a70000;
+    width: 25px;
+    height: 25px;
+    background-color: red;
     border-radius: 15px;
+    bottom: 140px;
+    position: absolute;
+    left: 40px;
+    z-index: 200;
+    transform: scale(0);
+    transition-duration: 200ms;
 }
 
 #cartbtn {

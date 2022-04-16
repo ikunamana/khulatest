@@ -47,15 +47,18 @@ function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
+    var redCircle = document.getElementById('redCircle')
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
         orderButton.style.pointerEvents = "auto";
-
+        redCircle.style.transform = "scale(1)"
     } else {
         emptyCart.style.display = "flex";
         orderButton.classList.add('order-clear');
         orderButton.style.pointerEvents = "none";
+        redCircle.style.transform = "scale(0)"
+
     }
 }
 updateCartTotal()
