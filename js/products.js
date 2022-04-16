@@ -74,7 +74,7 @@ function populateProduktebi(obj) {
         
         section.append(firstDiv);
     }
-}
+
 
 
 
@@ -228,6 +228,7 @@ dropbtn.onclick = function cartmenu() {
     dropbtn.classList.toggle("cart-button-active");
     cartIsEmpty()
     updateCartTotal()
+}
 }
 
 // var plus = document.getElementById('plus')
