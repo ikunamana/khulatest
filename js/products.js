@@ -176,7 +176,7 @@ function addItemToCart(title, price, imageSrc) {
         }
         updateCartTotal()
     }
-}
+
 
     var cartRowContents = `
     <div class="cart-item">
@@ -193,7 +193,7 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
 
-
+}
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
     var cartRows = allCartItems.getElementsByClassName('cart-row')
