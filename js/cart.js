@@ -58,7 +58,6 @@ function cartIsEmpty() {
         orderButton.classList.add('order-clear');
         orderButton.style.pointerEvents = "none";
         redCircle.style.transform = "scale(0)"
-
     }
 }
 updateCartTotal()
@@ -167,6 +166,15 @@ dropbtn.onclick = function cartmenu() {
     dropbtn.classList.toggle("cart-button-active");
     cartIsEmpty()
     updateCartTotal()
+}
+var dropbtn = document.getElementById("cartbtn");
+var redCircle = document.getElementById('redCircle');
+
+if (dropbtn.style.left > 0) {
+    redCircle.style.transform = "scale(0)"
+} else {
+    redCircle.style.transform = "scale(1)"
+
 }
 
 // var plus = document.getElementById('plus')
