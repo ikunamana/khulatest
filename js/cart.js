@@ -42,6 +42,18 @@ function ready() {
 
 //     }
 // }
+var dropbtn = document.getElementById("cartbtn");
+var redCircle = document.getElementById('redCircle');
+
+function cartBtnCheck() {
+    if (dropbtn.style.left !== "0px") {
+        redCircle.style.transform = "scale(1)"
+
+    } else {
+        redCircle.style.transform = "scale(0)"
+
+    }
+}
 
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -167,18 +179,7 @@ dropbtn.onclick = function cartmenu() {
     cartIsEmpty()
     updateCartTotal()
 }
-var dropbtn = document.getElementById("cartbtn");
-var redCircle = document.getElementById('redCircle');
 
-function cartBtnCheck() {
-    if (dropbtn.style.left !== "0px") {
-        redCircle.style.transform = "scale(1)"
-
-    } else {
-        redCircle.style.transform = "scale(0)"
-
-    }
-}
 
 // var plus = document.getElementById('plus')
 // var minus = document.getElementsByClassName('minus')
