@@ -29,28 +29,32 @@ function ready() {
 
 }
 
-function buttonDisabled() {
+// function buttonDisabled() {
 
-    var emptyCart = document.getElementById('emptycart')
-    var orderButton = document.getElementById('orderButton')
+//     var emptyCart = document.getElementById('emptycart')
+//     var orderButton = document.getElementById('orderButton')
 
-    if (emptyCart.style.display === "flex") {
+//     if (emptyCart.style.display == "flex") {
 
-        orderButton.classList.add('order-clear');
-    } else {
-        orderButton.classList.remove('order-clear');
+//         orderButton.classList.add('order-clear');
+//     } else {
+//         orderButton.classList.remove('order-clear');
 
-    }
-}
+//     }
+// }
 
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
+    var orderButton = document.getElementById('orderButton')
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
+        orderButton.classList.remove('order-clear');
+
 
     } else {
         emptyCart.style.display = "flex";
+        orderButton.classList.add('order-clear');
 
     }
 }
