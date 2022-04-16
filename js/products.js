@@ -193,7 +193,7 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartRow);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
-}
+
 
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
@@ -218,6 +218,7 @@ dropbtn.onclick = function cartmenu() {
     dropbtn.classList.toggle("cart-button-active");
     cartIsEmpty()
     updateCartTotal()
+}
 }
 }
 
