@@ -98,7 +98,7 @@ function populateProduktebi(obj) {
 
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
-
+        }
 
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -217,7 +217,6 @@ var dropupmenu1 = document.getElementById("cart-content");
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-}
 }
 }
 
