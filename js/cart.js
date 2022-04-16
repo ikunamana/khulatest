@@ -81,7 +81,6 @@ function cartIsEmpty() {
     }
 }
 updateCartTotal()
-cartBtnCheck()
 
 function orderClicked() {
     alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
