@@ -52,7 +52,7 @@ var redCircle = document.getElementById('redCircle');
         redCircle.style.transform = "scale(0)"
 
     } else {
-        redCircle.style.transform = "scale(0)"
+        redCircle.style.transform = "scale(1)"
 
     }
 }
