@@ -74,11 +74,10 @@ function populateProduktebi(obj) {
         
         section.append(firstDiv);
     }
+}
 
 
 
-
-populate();
 
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
@@ -229,7 +228,8 @@ dropbtn.onclick = function cartmenu() {
     cartIsEmpty()
     updateCartTotal()
 }
-}
+populate();
+
 
 // var plus = document.getElementById('plus')
 // var minus = document.getElementsByClassName('minus')
