@@ -2248,15 +2248,15 @@ h3 {
     overflow-y: scroll;
 }
 
-.cart-items :-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 10px;
 }
 
-.cart-items :-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     opacity: 0;
 }
 
-.cart-items :-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     color: black;
     opacity: 0.8;
 }
