@@ -30,7 +30,7 @@ function populateProduktebi(obj) {
         var btnshekveta = document.createElement('button');
         var kalataDiv = document.createElement('div');
         var kalata = document.createElement('p');
-        var kalataimg = document.creatElement('img')
+        var kalataimg = document.createElement('img')
         var br = document.createElement('br');
         var hr = document.createElement('br');
 
