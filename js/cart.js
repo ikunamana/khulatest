@@ -147,7 +147,6 @@ function addToCartClicked(event) {
 function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
-    cartRow.setAttribute('id-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     for (var i = 0; i < cartItemNames.length; i++) {
