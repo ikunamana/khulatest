@@ -81,14 +81,14 @@ function cartIsEmpty() {
     }
 }
 updateCartTotal()
-myFu()
+cartNumber()
 
-
-function myFu() {
+function cartNumber() {
+    var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    console.log(cartItems.children.length)
+    redCircle.innerText(cartItems.children.length);
 }
-myFu()
+cartNumber()
 
 function orderClicked() {
     alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
@@ -98,6 +98,7 @@ function orderClicked() {
     }
     cartIsEmpty()
     updateCartTotal()
+    cartNumber()
 }
 
 
