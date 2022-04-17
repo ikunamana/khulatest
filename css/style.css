@@ -2262,7 +2262,7 @@ h3 {
     opacity: 0;
 }
 
- ::-webkit-scrollbar-thumb:hover {
+ ::-webkit-scrollbar-thumb {
     background-color: rgb(78, 78, 78);
     opacity: 0.8;
     border-radius: 4px;
