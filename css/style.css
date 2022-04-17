@@ -2250,10 +2250,12 @@ h3 {
 
 ::-webkit-scrollbar {
     width: 5px;
+    transition-duration: 300ms;
 }
 
 ::-webkit-scrollbar:hover {
     width: 8px;
+    transition-duration: 300ms;
 }
 
 ::-webkit-scrollbar-track {
