@@ -75,7 +75,7 @@ function populateProduktebi(obj) {
         kalataDiv.append(kalataimg);
         section.append(firstDiv);
     }
-}
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -267,7 +267,7 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
-
+}
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
 
