@@ -2243,6 +2243,22 @@ h3 {
 
 .cart-items {
     transition-duration: 1s;
+    max-height: 220px;
+    object-fit: contain;
+    overflow-y: scroll;
+}
+
+.cart-items ::-webkit-scrollbar {
+    width: 10px;
+}
+
+.cart-items ::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+.cart-items ::-webkit-scrollbar-thumb {
+    color: black;
+    opacity: 0.8;
 }
 
 .cart-items button {
