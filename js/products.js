@@ -1,11 +1,11 @@
 // json-ის დაკავშირება და ინფორმაციის წამოღება
 async function populate() {
 
-    const requestURL = 'https://raw.githubusercontent.com/ikunamana/khulatest/main/js/products.json';
-    const request = new Request(requestURL);
+    let requestURL = 'https://raw.githubusercontent.com/ikunamana/khulatest/main/js/products.json';
+    let request = new Request(requestURL);
 
-    const response = await fetch(request);
-    const superHeroes = await response.json();
+    let response = await fetch(request);
+    let superHeroes = await response.json();
 
     populateProduktebi(superHeroes);
 
@@ -16,7 +16,7 @@ function populateProduktebi(obj) {
     let produkti = obj['production'];
 
 
-    for (const komponenti of produkti) {
+    for (let komponenti of produkti) {
         // const myDiv = document.createElement('div');
         let firstDiv = document.createElement('div');
         let imgDiv = document.createElement('div');
