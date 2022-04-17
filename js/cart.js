@@ -86,7 +86,7 @@ cartNumber()
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    redCircle.innerText(cartItems.children.length);
+    redCircle.innerText = (cartItems.children.length);
 }
 cartNumber()
 
