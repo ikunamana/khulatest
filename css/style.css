@@ -2258,7 +2258,7 @@ h3 {
     transition-duration: 300ms;
 }
 
-::-webkit-scrollbar:hover ::-webkit-scrollbar-track {
+::-webkit-scrollbar:hover+ ::-webkit-scrollbar-track {
     opacity: 0.7;
     background-color: #7ade4f7a;
 }
