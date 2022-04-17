@@ -82,6 +82,12 @@ function cartIsEmpty() {
 }
 updateCartTotal()
 
+function myFu() {
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    console.log(cartItems.children.length)
+}
+myFu()
+
 function orderClicked() {
     alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -183,7 +189,7 @@ var dropupmenu1 = document.getElementById("cart-content");
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-    redCircle.setAttribute('style', 'opacity:"0"');
+    redCircle.setAttribute.add('style', 'opacity:"0"');
 
     cartIsEmpty()
     updateCartTotal()
