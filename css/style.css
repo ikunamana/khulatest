@@ -2262,10 +2262,19 @@ h3 {
     opacity: 0;
 }
 
- ::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(78, 78, 78);
     opacity: 0.8;
     border-radius: 4px;
+    width: 5px;
+    transition-duration: 300ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: 0.8;
+    border-radius: 4px;
+    width: 9px;
+    transition-duration: 300ms;
 }
 
 .cart-items button {
