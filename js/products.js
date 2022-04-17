@@ -30,7 +30,11 @@ function populateProduktebi(obj) {
         var btnshekveta = document.createElement('button');
         var kalataDiv = document.createElement('div');
         var kalata = document.createElement('p');
-        var kalataimg = document.createElement('img');
+        var br = document.createElement('br');
+        var hr = document.createElement('br');
+
+
+
 
 
         // myDiv.setAttribute("class", "allproduct");
@@ -58,8 +62,8 @@ function populateProduktebi(obj) {
 
         // nameOfOProductII.textContent = `${komponenti.name}`;
         // actualPriceII.textContent = `${komponenti.price}`;
-        nameOfOProductII.innerHTML =  `${komponenti.name}` + "<br><hr><br><br>";
-        actualPriceII.innerHTML = `${komponenti.price}` + " ₾ " + "<br><br><br><br>";
+        nameOfOProductII.innerHTML =  `${komponenti.name}`;
+        actualPriceII.innerHTML = `${komponenti.price}` + " ₾ " + `<br><br><br><br>`;
 
         // myDiv.append(firstDiv);
         firstDiv.append(imgDiv);
@@ -68,6 +72,11 @@ function populateProduktebi(obj) {
         secondDiv.append(dasaxelebaII);
         secondDiv.append(nameOfOProductII);
         secondDiv.append(fasiCharchoII);
+        fasiCharchoII.append(br)
+        fasiCharchoII.append(hr)
+        fasiCharchoII.append(br)
+        fasiCharchoII.append(br)
+
         secondDiv.append(actualPriceII);
         secondDiv.append(btnshekvetaII);
         btnshekvetaII.append(btnshekveta);
