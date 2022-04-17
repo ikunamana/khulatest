@@ -12,25 +12,25 @@ async function populate() {
 }
 // პროდუქტების სექციისა და ელემენტების შექმნა, პროდუქტის დივების გამრავლება
 function populateProduktebi(obj) {
-    let section = document.getElementById('section');
-    let produkti = obj['production'];
+    var section = document.getElementById('section');
+    var produkti = obj['production'];
 
 
-    for (let komponenti of produkti) {
+    for (var komponenti of produkti) {
         // const myDiv = document.createElement('div');
-        let firstDiv = document.createElement('div');
-        let imgDiv = document.createElement('div');
-        let imgOfFirstDiv = document.createElement('img');
-        let secondDiv = document.createElement('div');
-        let dasaxelebaII = document.createElement('p');
-        let nameOfOProductII = document.createElement('p');
-        let fasiCharchoII = document.createElement('p');
-        let actualPriceII = document.createElement('h2');
-        let btnshekvetaII = document.createElement('div');
-        let btnshekveta = document.createElement('button');
-        let kalataDiv = document.createElement('div');
-        let kalata = document.createElement('p');
-        let kalataimg = document.createElement('img');
+        var firstDiv = document.createElement('div');
+        var imgDiv = document.createElement('div');
+        var imgOfFirstDiv = document.createElement('img');
+        var secondDiv = document.createElement('div');
+        var dasaxelebaII = document.createElement('p');
+        var nameOfOProductII = document.createElement('p');
+        var fasiCharchoII = document.createElement('p');
+        var actualPriceII = document.createElement('h2');
+        var btnshekvetaII = document.createElement('div');
+        var btnshekveta = document.createElement('button');
+        var kalataDiv = document.createElement('div');
+        var kalata = document.createElement('p');
+        var kalataimg = document.createElement('img');
 
 
         // myDiv.setAttribute("class", "allproduct");
