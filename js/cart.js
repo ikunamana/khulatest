@@ -110,6 +110,8 @@ function orderClear() {
     cartIsEmpty()
     updateCartTotal()
 }
+cartNumber()
+
 
 function quantityChanged(event) {
     var input = event.target;
@@ -138,12 +140,14 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc);
     cartIsEmpty()
     updateCartTotal()
+    cartNumber()
 }
 
 
 function addItemToCart(title, price, imageSrc) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
+    cartRow.setAttribute('id-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     for (var i = 0; i < cartItemNames.length; i++) {
@@ -194,6 +198,8 @@ dropbtn.onclick = function cartmenu() {
     dropbtn.classList.toggle("cart-button-active");
     cartIsEmpty()
     updateCartTotal()
+    cartNumber()
+
 }
 
 
