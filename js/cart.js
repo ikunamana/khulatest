@@ -81,6 +81,8 @@ function cartIsEmpty() {
     }
 }
 updateCartTotal()
+myFu()
+
 
 function myFu() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -189,9 +191,8 @@ var dropupmenu1 = document.getElementById("cart-content");
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-    redCircle.setAttribute.add('style', 'opacity:"0"');
-
     cartIsEmpty()
+    myFu()
     updateCartTotal()
 }
 
