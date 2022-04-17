@@ -110,7 +110,6 @@ function orderClear() {
     cartIsEmpty()
     updateCartTotal()
 }
-cartNumber()
 
 
 function quantityChanged(event) {
@@ -129,6 +128,8 @@ function removeCartItem(event) {
 
     cartIsEmpty()
     updateCartTotal()
+    cartNumber()
+
 }
 
 function addToCartClicked(event) {

@@ -2064,6 +2064,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     color: aliceblue;
+    align-items: center;
 }
 
 .scaleReduce {
