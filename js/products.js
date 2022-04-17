@@ -12,25 +12,25 @@ async function populate() {
 }
 // პროდუქტების სექციისა და ელემენტების შექმნა, პროდუქტის დივების გამრავლება
 function populateProduktebi(obj) {
-    const section = document.getElementById('section');
-    const produkti = obj['production'];
+    let section = document.getElementById('section');
+    let produkti = obj['production'];
 
 
     for (const komponenti of produkti) {
         // const myDiv = document.createElement('div');
-        const firstDiv = document.createElement('div');
-        const imgDiv = document.createElement('div');
-        const imgOfFirstDiv = document.createElement('img');
-        const secondDiv = document.createElement('div');
-        const dasaxelebaII = document.createElement('p');
-        const nameOfOProductII = document.createElement('p');
-        const fasiCharchoII = document.createElement('p');
-        const actualPriceII = document.createElement('h2');
-        const btnshekvetaII = document.createElement('div');
-        const btnshekveta = document.createElement('button');
-        const kalataDiv = document.createElement('div');
-        const kalata = document.createElement('p');
-        const kalataimg = document.createElement('img');
+        let firstDiv = document.createElement('div');
+        let imgDiv = document.createElement('div');
+        let imgOfFirstDiv = document.createElement('img');
+        let secondDiv = document.createElement('div');
+        let dasaxelebaII = document.createElement('p');
+        let nameOfOProductII = document.createElement('p');
+        let fasiCharchoII = document.createElement('p');
+        let actualPriceII = document.createElement('h2');
+        let btnshekvetaII = document.createElement('div');
+        let btnshekveta = document.createElement('button');
+        let kalataDiv = document.createElement('div');
+        let kalata = document.createElement('p');
+        let kalataimg = document.createElement('img');
 
 
         // myDiv.setAttribute("class", "allproduct");
