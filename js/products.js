@@ -294,6 +294,7 @@ function strgFnct(){
     cartDiv1.innerHTML = localStorage.getItem('cart');
     cartItems.append(cartDiv1);
 }
+strgFnct()
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
     var cartRows = allCartItems.getElementsByClassName('cart-row')
