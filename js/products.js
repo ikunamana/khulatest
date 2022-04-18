@@ -235,7 +235,10 @@ function addToCartClicked(event) {
 
 }
 
-function localStorageFunction(){
+function localStorageFunction(event){
+    var gilaki = event.target;
+    var product = gilaki.parentElement.parentElement.parentElement;
+
     var title = product.getElementsByClassName('shop-item-title')[0].innerText;
 
     localStorage.setItem('name', `${title}`)
