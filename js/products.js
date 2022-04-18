@@ -255,7 +255,6 @@ function addToCartClicked(event) {
 
 
 function addItemToCart(title, price, imageSrc) {
-    var title2 = localStorage.getItem('name');
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -271,7 +270,7 @@ function addItemToCart(title, price, imageSrc) {
     var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
-        <span class="cart-item-name ">${title2}</span>
+        <span class="cart-item-name ">${title}</span>
     </div>
     <span class="cart-item-price "> ${price} </span>
     <div class="cart-item-quantity ">
