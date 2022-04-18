@@ -236,7 +236,6 @@ function addToCartClicked(event) {
 }
 
 function localStorageFunction(){
-    for (var i = 0; i < addToCartButtons.length; i++);
     var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
     for (var i = 0; i < addToCartButtons.length; i++) {
         var gilaki = addToCartButtons[i];                       
@@ -246,10 +245,12 @@ function localStorageFunction(){
     var title = product.getElementsByClassName('shop-item-title')[0].innerText;
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-    
-    localStorage.setItem('name', `${title}`)
-    console.log(localStorage.getItem('name'))
+    for (var i = 0; i < addToCartButtons.length; i++) {
 
+    
+    localStorage.setItem('name', `${title}`)[i]
+    console.log(localStorage.getItem('name'))
+    }
 }
 
 
