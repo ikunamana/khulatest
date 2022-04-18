@@ -220,6 +220,7 @@ function removeCartItem(event) {
 
 }
 
+
 function addToCartClicked(event) {
     var gilaki = event.target;
     var product = gilaki.parentElement.parentElement.parentElement;
@@ -230,6 +231,12 @@ function addToCartClicked(event) {
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
+}
+
+function localStorageFunction(){
+    localStorage.setItem('name', '${title}')
+    console.log(localStorage.getItem('name'))
+
 }
 
 
