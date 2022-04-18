@@ -248,7 +248,7 @@ function localStorageFunction(event){
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
 
-    for (var i = 0; i < product.length; i++) {
+    for (var i = 0; i < title.length; i++) {
   
         localStorage.setItem('name', `${title}`)[i]    }
     console.log(localStorage.getItem('name'))
