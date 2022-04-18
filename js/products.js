@@ -236,12 +236,8 @@ function addToCartClicked(event) {
 }
 
 function localStorageFunction(event){
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
-    for (var i = 0; i < addToCartButtons.length; i++) {
-        var gilaki = addToCartButtons[i];}
-    var gilaki = event.target;
-    var product = gilaki.parentElement.parentElement.parentElement;
-    var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+
+    var orderButton = document.getElementById('orderButton')[0].innerText;
 
     localStorage.setItem('name', `${title}`)
     console.log(localStorage.getItem('name'))
