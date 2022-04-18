@@ -279,7 +279,7 @@ function addItemToCart(title, price, imageSrc) {
     </div>`
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
-    localStorage.setItem('cart', `${cartItems}`)
+    localStorage.setItem('cart', `${cartRowContents}`)
     var cartDiv1 = document.createElement('div');
     cartDiv1.innerHTML = cartDiv1;
     cartItems.append(cartDiv1);
