@@ -314,5 +314,4 @@ dropbtn.onclick = function cartmenu() {
 }
 
 populate();
-addItemToCart()
-
+addItemToCart(title, price, imageSrc)
