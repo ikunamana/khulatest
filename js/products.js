@@ -250,7 +250,7 @@ function localStorageFunction(event){
 
     for (var i = 0; i < title.length; i++) {
   
-    localStorage.setItem('name', `${title}`)[i]
+    localStorage.add('name', `${title}`)[i]
     }
     console.log(localStorage.getItem('name'))
 }
