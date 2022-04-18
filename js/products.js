@@ -236,10 +236,17 @@ function addToCartClicked(event) {
 }
 
 function localStorageFunction(){
-
-    var orderButton = document.getElementById('orderButton').innerText;
-
-    localStorage.setItem('name', `${orderButton}`)
+    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
+    for (var i = 0; i < addToCartButtons.length; i++) {
+        var gilaki = addToCartButtons[i];
+    }
+    var gilaki = event.target;
+    var product = gilaki.parentElement.parentElement.parentElement;
+    var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+    var price = product.getElementsByClassName('shop-item-price')[0].innerText;
+    var imageSrc = product.getElementsByClassName('productimg1')[0].src;
+    
+    localStorage.setItem('name', `${title}`)
     console.log(localStorage.getItem('name'))
 
 }
