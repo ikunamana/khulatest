@@ -236,7 +236,7 @@ function addToCartClicked(event) {
 }
 
 function localStorageFunction(){
-    localStorage.setItem('name', '${title}')
+    localStorage.setItem('name', `${title}`)
     console.log(localStorage.getItem('name'))
 
 }
