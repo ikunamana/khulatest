@@ -231,6 +231,8 @@ function addToCartClicked(event) {
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
+    localStorageFunction()
+
 }
 
 function localStorageFunction(){
