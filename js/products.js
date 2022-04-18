@@ -280,6 +280,9 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
     localStorage.setItem('cart', `${cartItems}`)
+    var cartDiv1 = documnt.createElement('div');
+    cartDiv1.innerHTML = cartDiv1;
+    cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
 }
