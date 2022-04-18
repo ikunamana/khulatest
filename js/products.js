@@ -313,5 +313,6 @@ dropbtn.onclick = function cartmenu() {
 }
 }
 
-
 populate();
+addItemToCart()
+
