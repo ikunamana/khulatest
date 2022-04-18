@@ -284,6 +284,7 @@ function addItemToCart(title, price, imageSrc) {
     cartDiv1.innerHTML = localStorage.getItem('cart');
     cartItems.append(cartDiv1);
 }
+addLocalStrg();
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
 }
@@ -313,7 +314,7 @@ dropbtn.onclick = function cartmenu() {
     updateCartTotal()
     cartNumber()
 }
+
 }
 
 populate();
-addLocalStrg();
