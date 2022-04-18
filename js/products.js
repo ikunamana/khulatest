@@ -250,6 +250,7 @@ function localStorageFunction(event){
   
         localStorage.setItem('name', `${title}`)
     console.log(localStorage.getItem('name'))
+    addToCartClicked()
 }
 
 
