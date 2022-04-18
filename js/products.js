@@ -284,6 +284,7 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
+    window.localStorage.length = 5
 }
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
