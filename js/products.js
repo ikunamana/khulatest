@@ -249,7 +249,7 @@ function localStorageFunction(event){
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
 
     
-    localStorage.setItem('name', `${title}`)[i]
+    localStorage.setItem('name', `${title}`)
     console.log(localStorage.getItem('name'))
 }
 
