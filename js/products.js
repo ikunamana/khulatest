@@ -286,7 +286,6 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartDiv1);
 
 }
-window.onload = addLocalStrg;
 
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
