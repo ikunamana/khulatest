@@ -286,6 +286,14 @@ function addItemToCart(title, price, imageSrc) {
     updateCartTotal()
     window.localStorage.length = 5
 }
+function strgFnct(){
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItemNames = document.getElementsByClassName('cart-item-name')
+    localStorage.setItem('cart', `${cartRowContents}`)
+    var cartDiv1 = document.createElement('div');
+    cartDiv1.innerHTML = localStorage.getItem('cart');
+    cartItems.append(cartDiv1);
+}
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
     var cartRows = allCartItems.getElementsByClassName('cart-row')
