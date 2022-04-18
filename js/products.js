@@ -236,6 +236,8 @@ function addToCartClicked(event) {
 }
 
 function localStorageFunction(){
+    var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+
     localStorage.setItem('name', `${title}`)
     console.log(localStorage.getItem('name'))
 
