@@ -235,9 +235,9 @@ function addToCartClicked(event) {
 
 }
 
-function localStorageFunction(event){
+function localStorageFunction(){
 
-    var orderButton = document.getElementById('orderButton')[0].innerText;
+    var orderButton = document.getElementById('orderButton').innerText;
 
     localStorage.setItem('name', `${title}`)
     console.log(localStorage.getItem('name'))
