@@ -239,7 +239,7 @@ function localStorageFunction(){
 
     var orderButton = document.getElementById('orderButton').innerText;
 
-    localStorage.setItem('name', `${title}`)
+    localStorage.setItem('name', `${orderButton}`)
     console.log(localStorage.getItem('name'))
 
 }
