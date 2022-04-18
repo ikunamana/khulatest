@@ -105,12 +105,12 @@ function ready() {
 
         gilaki.addEventListener('click', addToCartClicked);
     }
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
-    for (var i = 0; i < addToCartButtons.length; i++) {
-        var gilaki = addToCartButtons[i];
+    // var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
+    // for (var i = 0; i < addToCartButtons.length; i++) {
+    //     var gilaki = addToCartButtons[i];
 
-        gilaki.addEventListener('click', localStorageFunction);
-    }
+    //     gilaki.addEventListener('click', localStorageFunction);
+    // }
 
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
@@ -241,17 +241,17 @@ function addToCartClicked(event) {
 
 }
 
-function localStorageFunction(event){
-    var gilaki = event.target;
-    var product = gilaki.parentElement.parentElement.parentElement;
-    var title = product.getElementsByClassName('shop-item-title')[0].innerText;
-    var price = product.getElementsByClassName('shop-item-price')[0].innerText;
-    var imageSrc = product.getElementsByClassName('productimg1')[0].src;
+// function localStorageFunction(event){
+//     var gilaki = event.target;
+//     var product = gilaki.parentElement.parentElement.parentElement;
+//     var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+//     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
+//     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
   
-        localStorage.setItem('name', `${title}`)
-    console.log(localStorage.getItem('name'))
-    addToCartClicked()
-}
+//         localStorage.setItem('name', `${title}`)
+//     console.log(localStorage.getItem('name'))
+//     addToCartClicked()
+// }
 
 
 function addItemToCart(title, price, imageSrc) {
@@ -280,6 +280,7 @@ function addItemToCart(title, price, imageSrc) {
     </div>`
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
+    localStorage.setItem('cart', `${cartItems}`)
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
 }
