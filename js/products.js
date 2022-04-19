@@ -258,7 +258,7 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
-    var priceCart = document.getElementsByClassName('cart-item-price').value;
+    var priceCart = document.getElementsByClassName('cart-item-price')[0].value;
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
