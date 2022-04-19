@@ -259,13 +259,12 @@ function addItemToCart(title, price, imageSrc) {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     var priceCart = document.getElementById('ikuna');
-    var one = 1;
     var priceInc = priceCart.value
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-               total1 = priceCart + one;
-               return priceCart.value = total1
+                priceCart + 1;
+               return
 
             
         }
