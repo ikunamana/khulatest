@@ -262,7 +262,7 @@ function addItemToCart(title, price, imageSrc) {
     var num = 0
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            for (var i = 0; i < cartItemNames.length; i++)
+            for (var i = 0; i < priceCart.length; i++)
                 priceCart[i].value = ++num;
             return
         }
