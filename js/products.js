@@ -46,9 +46,9 @@ function populateProduktebi(obj) {
         secondDiv.setAttribute("class", "producttext");
         btnshekvetaII.setAttribute("class", "butshekv");
         btnshekveta.setAttribute("class", "btnshekvetapro");
-        kalataDiv.setAttribute("class", "cartdiv");
-        kalataimg.setAttribute ("class", "cartimg");
-        kalataimg.setAttribute("src","../images/cart1.png");
+        // kalataDiv.setAttribute("class", "cartdiv");
+        // kalataimg.setAttribute ("class", "cartimg");
+        // kalataimg.setAttribute("src","../images/cart1.png");
         nameOfOProductII.setAttribute('class', "shop-item-title");
         actualPriceII.setAttribute('class', "shop-item-price" );
 
