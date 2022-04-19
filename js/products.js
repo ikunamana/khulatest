@@ -278,23 +278,14 @@ function addItemToCart(title, price, imageSrc) {
     </div>`
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
-    localStorage.setItem('cart', `${cartRowContents}`)
-    var cartDiv1 = document.createElement('div');
-    cartDiv1.innerHTML = localStorage.getItem('cart');
-    cartItems.append(cartDiv1);
+    // localStorage.setItem('cart', `${cartRowContents}`)
+    // var cartDiv1 = document.createElement('div');
+    // cartDiv1.innerHTML = localStorage.getItem('cart');
+    // cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
-    window.localStorage.length = 5
 }
-function strgFnct(){
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    var cartItemNames = document.getElementsByClassName('cart-item-name')
-    localStorage.setItem('cart', `${cartRowContents}`)
-    var cartDiv1 = document.createElement('div');
-    cartDiv1.innerHTML = localStorage.getItem('cart');
-    cartItems.append(cartDiv1);
-}
-strgFnct()
+
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
     var cartRows = allCartItems.getElementsByClassName('cart-row')
