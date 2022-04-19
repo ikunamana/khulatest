@@ -258,12 +258,10 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
-    var priceCart = document.getElementById('ikuna');
-    var priceInc = priceCart.value
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-                priceInc + 1;
+                alert("პროდუქტი უკვე დამატებულია კალათაში.")
                return
 
             
