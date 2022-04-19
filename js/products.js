@@ -28,9 +28,9 @@ function populateProduktebi(obj) {
         var actualPriceII = document.createElement('h2');
         var btnshekvetaII = document.createElement('div');
         var btnshekveta = document.createElement('button');
-        var kalataDiv = document.createElement('div');
-        var kalata = document.createElement('p');
-        var kalataimg = document.createElement('img')
+        // var kalataDiv = document.createElement('div');
+        // var kalata = document.createElement('p');
+        // var kalataimg = document.createElement('img')
         var br = document.createElement('br');
         var hr = document.createElement('br');
 
@@ -52,7 +52,7 @@ function populateProduktebi(obj) {
         nameOfOProductII.setAttribute('class', "shop-item-title");
         actualPriceII.setAttribute('class', "shop-item-price" );
 
-        kalata.innerHTML = "კალათა";
+        // kalata.innerHTML = "კალათა";
         dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
         btnshekveta.innerHTML = "შეკვეთა";
         fasiCharchoII.innerHTML = "<strong>ფასი (ც):</strong>";
@@ -81,8 +81,8 @@ function populateProduktebi(obj) {
         secondDiv.append(actualPriceII);
         secondDiv.append(btnshekvetaII);
         btnshekvetaII.append(btnshekveta);
-        btnshekvetaII.append(kalataDiv);
-        kalataDiv.append(kalataimg);
+        // btnshekvetaII.append(kalataDiv);
+        // kalataDiv.append(kalataimg);
         section.append(firstDiv);
     }
 
