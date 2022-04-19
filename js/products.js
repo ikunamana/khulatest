@@ -258,13 +258,13 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
-    var priceCart = document.getElementById('ikuna');.value
+    var priceCart = document.getElementById('ikuna').value;
     var one = 1;
     var formula = priceCart + one;
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-                priceCart.value = formula;
+                priceCart = formula;
             return
         }
         updateCartTotal()
