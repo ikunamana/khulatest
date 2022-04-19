@@ -267,11 +267,10 @@ function addItemToCart(title, price, imageSrc) {
                total1 = priceCart + one;
             
         }
-        priceCart.value = total1
+        return priceCart.value = total1
 
         updateCartTotal()
     }
-    return
 
     var cartRowContents = `
     <div class="cart-item">
