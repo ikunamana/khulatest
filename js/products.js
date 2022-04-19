@@ -261,7 +261,7 @@ function addItemToCart(title, price, imageSrc) {
     var priceCart = cartItems.getElementsByClassName('item-quantity').value;
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            priceCart.stepUp();
+            priceCart.value = 5 ;
             return
         }
         updateCartTotal()
