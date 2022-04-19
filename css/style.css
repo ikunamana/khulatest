@@ -1777,7 +1777,7 @@ footer a {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     -webkit-animation-name: logoanima;
     animation-name: logoanima;
     -webkit-animation-duration: 1s;
@@ -1797,7 +1797,7 @@ footer a {
 .regform {
     display: flex;
     justify-content: space-around;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     animation-name: logoanima;
     animation-duration: 1s;
     transform: translateY(0);
