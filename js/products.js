@@ -54,7 +54,7 @@ function populateProduktebi(obj) {
 
         // kalata.innerHTML = "კალათა";
         dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
-        btnshekveta.innerHTML = "შეკვეთა";
+        btnshekveta.innerHTML = "კალათა";
         fasiCharchoII.innerHTML = "<strong>ფასი (ც):</strong>";
 
             
