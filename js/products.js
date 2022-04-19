@@ -259,10 +259,10 @@ function addItemToCart(title, price, imageSrc) {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     var priceCart = document.getElementsByClassName('cart-item-price');
-var i = 1;
+var countValue = 1;
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            priceCart.value = ++1;
+            priceCart.value = ++countValue;
             return
         }
         updateCartTotal()
