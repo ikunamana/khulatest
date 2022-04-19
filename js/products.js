@@ -258,9 +258,11 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
+    var priceCart = document.getElementsByClassName('cart-item-price').value;
+
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            alert('ეს პროდუქტი უკვე არის თქვენს კალათაში!')
+            priceCart + 1
             return
         }
         updateCartTotal()
