@@ -219,6 +219,27 @@ html {
     overflow-x: scroll;
     justify-content: flex-start;
 }
+.favoriteProducts .productform{
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-left:7px;
+    width: 400px;
+    height: 280px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    -webkit-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    animation-name: opacanim;
+    animation-duration: 400ms;
+
+}
 .info  {
     display: -webkit-box;
     display: -ms-flexbox;
