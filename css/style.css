@@ -207,7 +207,18 @@ html {
     -o-transition: cubic-bezier(0.4, 0, 1, 1);
     transition: cubic-bezier(0.4, 0, 1, 1);
 }
-
+.favoriteProducts{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    left: 0px;
+    border: 5px solid rgba(0, 128, 0, 0.411);
+    width: 100%;
+    flex: unset;
+    object-fit: contain;
+    overflow-x: scroll;
+    justify-content: flex-start;
+}
 .info  {
     display: -webkit-box;
     display: -ms-flexbox;
