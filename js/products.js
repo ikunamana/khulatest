@@ -262,7 +262,7 @@ function addItemToCart(title, price, imageSrc, productID) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
-    var type = document.getElementsByClassName('cart-item-type').innerHTML
+    var type = document.getElementsByClassName('cart-item-type')
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
@@ -278,9 +278,9 @@ function addItemToCart(title, price, imageSrc, productID) {
     function quantityType(){
         
         if(productID >= 20000) {
-            type = "ც."
+            type.innerHTML = "ც."
         }else{ 
-            type =  "კგ."
+            type.innerHTML =  "კგ."
         }
     }
 
