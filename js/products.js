@@ -42,7 +42,7 @@ function populateProduktebi(obj) {
         firstDiv.setAttribute("class", "productform");
         imgDiv.setAttribute("class", "productimg");
         imgOfFirstDiv.setAttribute("class", "productimg1");
-        imgOfFirstDiv.setAttribute("src", `${komponenti.img}`);
+        imgOfFirstDiv.setAttribute("src", `../images${komponenti.img}`);
         secondDiv.setAttribute("class", "producttext");
         btnshekvetaII.setAttribute("class", "butshekv");
         btnshekveta.setAttribute("class", "btnshekvetapro");
