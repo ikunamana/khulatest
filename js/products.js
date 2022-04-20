@@ -282,7 +282,6 @@ function addItemToCart(title, price, imageSrc, productID) {
         }else{ 
             type =  "კგ."
         }
-        quantityType()
     }
 
     var cartRowContents = `
