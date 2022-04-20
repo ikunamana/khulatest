@@ -237,7 +237,7 @@ function addToCartClicked(event) {
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
 
-    addItemToCart(title, price, imageSrc, productID, type);
+    addItemToCart(title, price, imageSrc, productID);
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
@@ -257,7 +257,7 @@ function addToCartClicked(event) {
 // }
 
 
-function addItemToCart(title, price, imageSrc, productID, type) {
+function addItemToCart(title, price, imageSrc, productID) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
