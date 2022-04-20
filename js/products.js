@@ -210,7 +210,7 @@ function orderClear() {
 
 function quantityChanged(event) {
     var input = event.target;
-    if (isNaN(input.value) || input.value <= 0) {
+    if (isNaN(input.value) || input.value <= 0 || input.valuec) {
         input.value = 1
     }
     updateCartTotal()
@@ -282,7 +282,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     </div>
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
-        <input class="item-quantity " onkeyup="updateCartTotal()"  value="1 " type="number ">
+        <input class="item-quantity "   value="1 " type="number ">
         <span class="cart-item-type">${productItemType}</span>
         <button class="remove-button ">წაშლა</button>
     </div>`
