@@ -57,7 +57,7 @@ function populateProduktebi(obj) {
         // kalata.innerHTML = "კალათა";
         dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
         btnshekveta.innerHTML = "კალათა";
-        fasiCharchoII.innerHTML = "<strong>ფასი (ც):</strong>";
+        fasiCharchoII.innerHTML = "<strong>ფასი (" + `${komponenti.type}` + "):</strong>";
 
             
 
@@ -275,15 +275,6 @@ function addItemToCart(title, price, imageSrc, productID) {
         updateCartTotal()
     }
 
-    function quantityType(){
-        
-        if(productID >= 20000) {
-            type.innerHTML = "ც."
-        }else{ 
-            type.innerHTML =  "კგ."
-        }
-    }
-
     var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
@@ -304,7 +295,6 @@ function addItemToCart(title, price, imageSrc, productID) {
     // cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
-    quantityType()
 }
 
 function updateCartTotal() {
