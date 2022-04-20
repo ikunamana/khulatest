@@ -290,9 +290,10 @@ function addItemToCart(title, price, imageSrc, productID, type) {
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
         <span class="cart-item-name" id="${productID}">${title}</span>
     </div>
-    <span class="cart-item-price "> ${price} ${type} </span>
+    <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
         <input class="item-quantity " value="1 " type="number ">
+        <span>${type}</span>
         <button class="remove-button ">წაშლა</button>
     </div>`
     cartRow.innerHTML = cartRowContents;
