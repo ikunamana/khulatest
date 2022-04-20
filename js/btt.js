@@ -35,7 +35,7 @@ function populateProduktebi(obj) {
         
     </div>`
     productForm.innerHTML = innerContent;
-    section.append('productForm');
+    section.append(productForm);
     var titleElement = section.getElementsByClassName('shop-item-title')[0]
         var price = parseFloat(titleElement.innerText.replace('../images', './images'))
 
