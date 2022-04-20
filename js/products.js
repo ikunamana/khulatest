@@ -57,7 +57,7 @@ function populateProduktebi(obj) {
         // kalata.innerHTML = "კალათა";
         dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
         btnshekveta.innerHTML = "კალათა";
-        fasiCharchoII.innerHTML = "<strong>ფასი (" + `${komponenti.type}` + "):</strong>";
+        fasiCharchoII.innerHTML = "<strong>ფასი (" + '<span class="product-item-type">' + `${komponenti.type}` + '</span>' + "):</strong>";
 
             
 
@@ -236,8 +236,9 @@ function addToCartClicked(event) {
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
+    var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
 
-    addItemToCart(title, price, imageSrc, productID);
+    addItemToCart(title, price, imageSrc, productID, productItemType);
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
@@ -257,7 +258,7 @@ function addToCartClicked(event) {
 // }
 
 
-function addItemToCart(title, price, imageSrc, productID) {
+function addItemToCart(title, price, imageSrc, productID, productItemType) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -283,7 +284,7 @@ function addItemToCart(title, price, imageSrc, productID) {
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
         <input class="item-quantity " value="1 " type="number ">
-        <span class="cart-item-type">${komponenti.type}</span>
+        <span class="cart-item-type">${productItemType}</span>
         <button class="remove-button ">წაშლა</button>
     </div>`
 
