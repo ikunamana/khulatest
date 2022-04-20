@@ -234,7 +234,7 @@ function addToCartClicked(event) {
     var product = gilaki.parentElement.parentElement.parentElement;
     var title = product.getElementsByClassName('shop-item-title')[0].innerText;
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
-    var productID = product.getElementsByClassName('shop-item-price')[0].id;
+    var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     addItemToCart(title, price, imageSrc, productID);
     cartIsEmpty()
