@@ -21,7 +21,7 @@ function populateProduktebi(obj) {
             productForm.setAttribute('class', 'productform') 
         var innerContent = `
         <div class="productimg">
-            <img class="productimg1" src="${komponenti.img}" alt="kveli">
+            <img class="productimg1" src="./images${komponenti.img}" alt="kveli">
         </div>
         <div class="producttext">
             <strong>დასახელება:</strong>
