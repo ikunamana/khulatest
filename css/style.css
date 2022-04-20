@@ -216,7 +216,6 @@ html {
     height: 340px;
     border: 5px solid rgba(0, 128, 0, 0.411);
     box-shadow: rgba(0, 90, 8, 0.473) 0 10px 15px -3px, rgba(1, 49, 5, 0.507) 0 4px 6px -2px;
-
     width: 100%;
     flex: unset;
     object-fit: contain;
