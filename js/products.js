@@ -275,7 +275,7 @@ function addItemToCart(title, price, imageSrc) {
     var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
-        <span class="cart-item-name" id="${komponenti.id}>${title}</span>
+        <span class="cart-item-name" id="${komponenti.id}">${title}</span>
     </div>
     <span class="cart-item-price "> ${price} </span>
     <div class="cart-item-quantity ">
