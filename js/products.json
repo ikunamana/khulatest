@@ -2,57 +2,69 @@
     "production": [{
             "name": "ყველი იმერული",
             "price": 16.9,
-            "img": "../images/im-kveli.jpg"
+            "img": "../images/im-kveli.jpg",
+            "id": 10001
         },
         {
             "name": "ყველი ქარხნული",
             "price": 17.9,
-            "img": "../images/kar-kveli.jpg"
+            "img": "../images/kar-kveli.jpg",
+            "id": 10002
+
         },
         {
             "name": "ჩეჩილი",
             "price": 26.9,
-            "img": "../images/chech-kveli.jpg"
+            "img": "../images/chech-kveli.jpg",
+            "id": 10003
         },
         {
             "name": "ჩურჩხელა",
             "price": 4.90,
-            "img": "../images/chech-kveli.jpg"
+            "img": "../images/chech-kveli.jpg",
+            "id": 20001
         },
         {
             "name": "ლობიო",
             "price": 14.90,
-            "img": "../images/lobio.jpg"
+            "img": "../images/lobio.jpg",
+            "id": 10004
         },
         {
             "name": "კვერცხი",
             "price": 0.6,
-            "img": "../images/eggs.jpg"
+            "img": "../images/eggs.jpg",
+            "id": 20002
         },
         {
             "name": "თაფლი",
             "price": 29.6,
-            "img": "../images/honey.jpg"
+            "img": "../images/honey.jpg",
+            "id": 10005
         },
         {
             "name": "მაწონი",
             "price": 3.9,
-            "img": "../images/matsoni.jpg"
+            "img": "../images/matsoni.jpg",
+            "id": 10006
         },
         {
             "name": "მჭადის ფქვილი",
             "price": 2.9,
-            "img": "../images/mchadis.jpg"
+            "img": "../images/mchadis.jpg",
+            "id": 10007
         },
         {
             "name": "რძე",
             "price": 3.9,
-            "img": "../images/matsoni.jpg"
+            "img": "../images/matsoni.jpg",
+            "id": 10008
         },
         {
             "name": "კაკალი",
             "price": 27.9,
-            "img": "../images/nuts.jpg"
+            "img": "../images/nuts.jpg",
+            "id": 10009
         }
     ]
 }

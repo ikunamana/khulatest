@@ -50,6 +50,8 @@ function populateProduktebi(obj) {
         // kalataimg.setAttribute ("class", "cartimg");
         // kalataimg.setAttribute("src","../images/cart1.png");
         nameOfOProductII.setAttribute('class', "shop-item-title");
+        nameOfOProductII.setAttribute('id',`${id}`);
+        
         actualPriceII.setAttribute('class', "shop-item-price" );
 
         // kalata.innerHTML = "კალათა";
