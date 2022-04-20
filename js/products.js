@@ -272,13 +272,23 @@ function addItemToCart(title, price, imageSrc, productID) {
 
         updateCartTotal()
     }
+    function quantityType()
+    var type = '';
+     {
+        if(productID >= 20000) {
+            type = "ც."
+        }else{ 
+            type =  "კგ."
+        }
+        quantityType()
+    }
 
     var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
         <span class="cart-item-name" id="${productID}">${title}</span>
     </div>
-    <span class="cart-item-price "> ${price} </span>
+    <span class="cart-item-price "> ${price} ${type} </span>
     <div class="cart-item-quantity ">
         <input class="item-quantity " value="1 " type="number ">
         <button class="remove-button ">წაშლა</button>
