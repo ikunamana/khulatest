@@ -305,6 +305,7 @@ function addItemToCart(title, price, imageSrc, productID) {
     // cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     updateCartTotal()
+    quantityType()
 }
 
 function updateCartTotal() {
