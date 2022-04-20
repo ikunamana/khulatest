@@ -208,6 +208,7 @@ html {
     transition: cubic-bezier(0.4, 0, 1, 1);
 }
 .favoriteProducts{
+    margin-top: 50px;
     display: flex;
     align-items: stretch;
     flex-wrap: nowrap;
