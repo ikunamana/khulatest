@@ -236,7 +236,6 @@ function addToCartClicked(event) {
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-    var type = ''
 
     addItemToCart(title, price, imageSrc, productID, type);
     cartIsEmpty()
@@ -263,6 +262,7 @@ function addItemToCart(title, price, imageSrc, productID, type) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
+    var type = document.getElementsByClassName('cart-item-type').innerHTML
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
@@ -293,9 +293,10 @@ function addItemToCart(title, price, imageSrc, productID, type) {
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
         <input class="item-quantity " value="1 " type="number ">
-        <span>${type}</span>
+        <span class="cart-item-type"></span>
         <button class="remove-button ">წაშლა</button>
     </div>`
+
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
     // localStorage.setItem('cart', `${cartRowContents}`)
