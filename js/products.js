@@ -236,7 +236,9 @@ function addToCartClicked(event) {
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-    addItemToCart(title, price, imageSrc, productID);
+    var type = ''
+
+    addItemToCart(title, price, imageSrc, productID, type);
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
@@ -256,7 +258,7 @@ function addToCartClicked(event) {
 // }
 
 
-function addItemToCart(title, price, imageSrc, productID) {
+function addItemToCart(title, price, imageSrc, productID, type) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -272,9 +274,9 @@ function addItemToCart(title, price, imageSrc, productID) {
 
         updateCartTotal()
     }
+
     function quantityType(){
-    var type = '';
-     
+        
         if(productID >= 20000) {
             type = "ც."
         }else{ 
