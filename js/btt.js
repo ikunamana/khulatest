@@ -17,7 +17,9 @@ function populateProduktebi(obj) {
 
     for (var komponenti of produkti) {
         var sectionOfIndex = document.getElementById('section')
-        var innerContent = `<div class="productform">
+        var productForm = document.createElement('div');
+            productForm.setAttribute('class', 'productform') 
+        var innerContent = `
         <div class="productimg">
             <img class="productimg1" src="${komponenti.img}" alt="kveli">
         </div>
@@ -30,9 +32,10 @@ function populateProduktebi(obj) {
             <div class="butshekv">
                 <button id="shekvetabtn" class="btnshekvetapro">შეკვეთა</button>
             </div>
-        </div>
+        
     </div>`
-    section.innerHTML = innerContent;
+    productForm.innerHTML = innerContent;
+    section.append('productform');
     var titleElement = section.getElementsByClassName('shop-item-title')[0]
         var price = parseFloat(titleElement.innerText.replace('../images', './images'))
 
