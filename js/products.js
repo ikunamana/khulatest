@@ -234,6 +234,7 @@ function addToCartClicked(event) {
     var product = gilaki.parentElement.parentElement.parentElement;
     var title = product.getElementsByClassName('shop-item-title')[0].innerText;
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
+    var productID = product.getElementsByClassName('shop-item-price')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     addItemToCart(title, price, imageSrc);
     cartIsEmpty()
@@ -275,7 +276,7 @@ function addItemToCart(title, price, imageSrc) {
     var cartRowContents = `
     <div class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt=" ">
-        <span class="cart-item-name" id="${komponenti.id}">${title}</span>
+        <span class="cart-item-name" id="${productID}">${title}</span>
     </div>
     <span class="cart-item-price "> ${price} </span>
     <div class="cart-item-quantity ">
