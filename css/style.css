@@ -212,12 +212,16 @@ html {
     display: flex;
     align-items: stretch;
     flex-wrap: nowrap;
+    height: 340px;
+    border-radius: 1px;
     left: 0px;
     border: 5px solid rgba(0, 128, 0, 0.411);
     width: 100%;
     flex: unset;
     object-fit: contain;
-    overflow-x: scroll;
+    overflow-x: scroll;    
+    box-shadow: rgba(3, 143, 45, 0.432) 0 10px 15px -3px, rgba(8, 252, 0, 0.514) 0 4px 6px -2px;
+
     justify-content: flex-start;
 }
 .favoriteProducts .productform{
