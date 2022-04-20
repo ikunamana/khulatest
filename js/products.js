@@ -278,9 +278,9 @@ function addItemToCart(title, price, imageSrc, productID, type) {
     function quantityType(){
         
         if(productID >= 20000) {
-            type = "ც."
+            type = `ც.`
         }else{ 
-            type =  "კგ."
+            type =  `კგ.`
         }
         quantityType()
     }
