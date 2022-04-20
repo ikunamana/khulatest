@@ -272,9 +272,9 @@ function addItemToCart(title, price, imageSrc, productID) {
 
         updateCartTotal()
     }
-    function quantityType()
+    function quantityType(){
     var type = '';
-     {
+     
         if(productID >= 20000) {
             type = "ც."
         }else{ 
