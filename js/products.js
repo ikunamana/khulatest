@@ -176,7 +176,12 @@ function cartNumber() {
 cartNumber()
 
 function orderClicked() {
-    alert('მადლობა, თქვენი შეკვეთა წარმატებით გაიგზავნა!')
+    var notification = document.getElementById('notification')
+    var succsesMessage = `<div class="succsesNotification" id="succsesNotification">
+    <span class="sucsessText">თქვენი შეკვეთა წარმატებით გაიგზავნა</span>
+    <span id="warningX" class="warningX">&times;</span>
+    </div>`
+    notification.innerHTML = succsesMessage;
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -264,10 +269,15 @@ function addItemToCart(title, price, imageSrc, productID) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
-    var warning = document.getElementById('warningNotification')
+    var notification = document.getElementById('notification')
+    var errorMessage = `<div class="warningNotification" id="warningNotification">
+    <span class="warningText">ეს პროდუქტი უკვე არის თქვენს კალათაში.</span>
+    <span id="warningX" class="warningX">&times;</span>
+    </div>`
+
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-                warning.style.top = "40px";
+                notofication.innerHTML = "errorMessage";
                return
         }
 
