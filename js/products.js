@@ -355,19 +355,22 @@ function updateCartTotal() {
     var redCircle = document.getElementById('redCircle');
     var cartContent = document.getElementById("cart-content")
 
+    function hideCircle(){
+        if (cartContent.style.left = "14px"){
+            redCircle.style.transform = "scale(0)"
+        } else {
+            redCircle.style.transform = "scale(1)"
+    
+        }
+    }
+
     dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-
-    if (cartContent.style.left = "14px"){
-        redCircle.style.transform = "scale(0)"
-    } else {
-        redCircle.style.transform = "scale(1)"
-
-    }
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
+    hideCircle()
 }
 }
 function savedCartCall(){
