@@ -182,6 +182,12 @@ function orderClicked() {
     <span id="warningX" class="warningX">&times;</span>
     </div>`
     notification.innerHTML = succsesMessage;
+    notification.style.top = "40px"
+    var x = document.getElementById("warningX");
+        x.onclick = function warningClose(){
+            notification.style.top = "-300px"
+                    }
+                    
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -278,7 +284,6 @@ function addItemToCart(title, price, imageSrc, productID) {
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
                 notification.innerHTML = errorMessage;
-                var message = document.getElementById("warningNotification")
                 notification.style.top = "40px"
                 var x = document.getElementById("warningX");
                      x.onclick = function warningClose(){
