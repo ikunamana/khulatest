@@ -175,10 +175,11 @@ function cartIsEmpty() {
         orderButton.style.pointerEvents = "none";
         redCircle.style.transform = "scale(0)";
     }
+    cartIsEmpty()
 }
 updateCartTotal()
 cartNumber()
-cartIsEmpty()
+
 
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
@@ -340,7 +341,7 @@ dropbtn.onclick = function cartmenu() {
     updateCartTotal()
     cartNumber()
 }
+cartmenu()
 }
 
 populate();
-cartmenu()
