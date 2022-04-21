@@ -353,12 +353,13 @@ function updateCartTotal() {
     var dropbtn = document.getElementById("cartbtn");
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
+    var cartContent = document.getElementById("cart-content")
 
     dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
 
-    if (dropbtn.style.borderTop = "none"){
+    if (cartContent.style.left = "14px"){
         redCircle.style.transform = "scale(0)"
     } else {
         redCircle.style.transform = "scale(1)"
