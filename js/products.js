@@ -184,8 +184,15 @@ function orderClicked() {
     notification.innerHTML = succsesMessage;
     notification.style.top = "40px"
     var x = document.getElementById("warningX");
+
         x.onclick = function warningClose(){
             notification.style.top = "-300px"
+                    }
+
+        window.onscroll = function notificationCloseViaScroll() {
+            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+                notification.style.top = "-300px"
+                        }
                     }
                     
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -289,6 +296,11 @@ function addItemToCart(title, price, imageSrc, productID) {
                      x.onclick = function warningClose(){
                      notification.style.top = "-300px"
                     }
+                    window.onscroll = function notificationCloseViaScroll() {
+                        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+                            notification.style.top = "-300px"
+                        }
+                    }        
                return
         }
 
