@@ -2483,6 +2483,13 @@ h3 {
     justify-content: space-around;
     transition-duration: 400ms;
 }
+.warningText{
+    width: 90%;
+}
+.warningX{
+    width: 10%;
+    
+}
 @media screen and (max-width: 414px) {
     .aboutus {
         margin-top: 20px;
