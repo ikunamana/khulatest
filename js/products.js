@@ -350,7 +350,7 @@ function cartNumber() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     redCircle.innerText = (cartItems.children.length);
 }
-cartNumber()
+
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
@@ -368,6 +368,8 @@ function cartIsEmpty() {
         redCircle.style.transform = "scale(0)";
     }
 }
-savedCartCall()
 
+savedCartCall()
+cartIsEmpty()
+cartNumber()
 populate();
