@@ -221,6 +221,7 @@ html {
     overflow-x: scroll;
     justify-content: flex-start;
 }
+
 .favoriteProducts .productform{
     margin-top: 15px;
     display: -webkit-box;
