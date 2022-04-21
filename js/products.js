@@ -280,6 +280,11 @@ function addItemToCart(title, price, imageSrc, productID) {
                 notification.innerHTML = "errorMessage";
                 var message = document.getElementById("warningNotification")
                 message.style.top = "40px"
+                var x = document.getElementById("warningX");
+                var warning = document.getElementById('warningNotification')
+                     x.onclick = function warningClose(){
+                     warning.style.top = "-300px"
+                    }
                return
         }
 
@@ -309,11 +314,7 @@ function addItemToCart(title, price, imageSrc, productID) {
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
 }
-var x = document.getElementById("warningX");
-var warning = document.getElementById('warningNotification')
-  x.onclick = function warningClose(){
-      warning.style.top = "-300px"
-  }
+
 
 
 function updateCartTotal() {
