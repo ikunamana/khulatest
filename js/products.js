@@ -237,12 +237,7 @@ function addToCartClicked(event) {
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
- 
-    // localStorage.setItem("localTitle", `${komponenti.name}`)
-    // localStorage.setItem("localPrice", `${komponenti.price}`)
-    // localStorage.setItem("localProductID",`${komponenti.id}`)
-    // localStorage.setItem("localImageSrc", `${komponenti.img}`)
-    // localStorage.setItem("localProductItemType", `${komponenti.type}`)
+     var obj =[]
     localStorage.setItem("localTitle", title)
     localStorage.setItem("localPrice", price)
     localStorage.setItem("localProductID", productID)
@@ -293,7 +288,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
 
     var cartRowContents = `
     <div class="cart-item">
-        <img class="cart-item-image " src="../images${imageSrc}" alt=" ">
+        <img class="cart-item-image " src="${imageSrc}" alt=" ">
         <span class="cart-item-name" id="${productID}">${title}</span>
     </div>
     <span class="cart-item-price "> ${price}</span>
