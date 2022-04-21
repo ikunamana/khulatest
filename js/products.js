@@ -357,8 +357,8 @@ function updateCartTotal() {
     dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-    
-    if (dropbtn.style.left > 0){
+
+    if (dropbtn.style.borderTop = "none"){
         redCircle.style.transform = "scale(0)"
     } else {
         redCircle.style.transform = "scale(1)"
