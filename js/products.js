@@ -186,6 +186,8 @@ function cartNumber() {
     redCircle.innerText = (cartItems.children.length);
 }
 cartNumber()
+cartIsEmpty()
+
 
 function orderClicked() {
     var notification = document.getElementById('notification')
@@ -226,6 +228,7 @@ function orderClear() {
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
+    hideCircle()
     updateCartTotal()
 }
 
@@ -248,6 +251,7 @@ function removeCartItem(event) {
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
+    
 }
 
 function addToCartClicked(event) {
