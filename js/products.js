@@ -236,7 +236,7 @@ function addToCartClicked(event) {
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-    var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
+    // var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
 //      var obj =[]
 //     localStorage.setItem("localTitle", title)
 //     localStorage.setItem("localPrice", price)
@@ -262,14 +262,14 @@ function addToCartClicked(event) {
 //     var productID = localStorage.getItem("localProductID");
 //     var imageSrc = localStorage.getItem("localImageSrc");
 //     var productItemType = localStorage.getItem("localProductItemType");
-    addItemToCart(title, price, imageSrc, productID, productItemType);
+    addItemToCart(title, price, imageSrc, productID);
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
 
 }
 
-function addItemToCart(title, price, imageSrc, productID, productItemType) {
+function addItemToCart(title, price, imageSrc, productID) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -294,7 +294,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
         <input class="item-quantity "   value="1 " type="number ">
-        <span class="cart-item-type">${productItemType}</span>
+        <span class="cart-item-type"></span>
         <button class="remove-button ">წაშლა</button>
     </div>`
 
