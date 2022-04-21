@@ -360,6 +360,9 @@ dropbtn.onclick = function cartmenu() {
     dropbtn.classList.toggle("cart-button-active");
     if (dropbtn.style.left > 0){
         redCircle.style.transform = "scale(0)"
+    } else {
+        redCircle.style.transform = "scale(1)"
+
     }
     cartIsEmpty()
     updateCartTotal()
