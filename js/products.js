@@ -349,13 +349,18 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
 
-var dropbtn = document.getElementById("cartbtn");
-var dropupmenu1 = document.getElementById("cart-content");
 
 
 dropbtn.onclick = function cartmenu() {
+    var dropbtn = document.getElementById("cartbtn");
+    var dropupmenu1 = document.getElementById("cart-content");
+    var redCircle = document.getElementById('redCircle');
+
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
+    if (dropbtn.style.left > 0){
+        redCircle.style.transform = "scale(0)"
+    }
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
