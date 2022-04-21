@@ -355,7 +355,7 @@ function updateCartTotal() {
     var redCircle = document.getElementById('redCircle');
 
     function hideCircle(){
-        if (dropupmenu1.classList("cart-content-active")){
+        if (dropupmenu1.classList.contains(("cart-content-active")) ){
             redCircle.style.transform = "scale(0)"
         } else {
             redCircle.style.transform = "scale(1)"
