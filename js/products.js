@@ -277,7 +277,7 @@ function addItemToCart(title, price, imageSrc, productID) {
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-                notofication.innerHTML = "errorMessage";
+                notification.innerHTML = "errorMessage";
                return
         }
 
