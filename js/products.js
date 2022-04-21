@@ -244,7 +244,7 @@ function addToCartClicked(event) {
         localImageSrc:`${komponenti.img}`,
         localProductItemType:`${komponenti.type}`
     }
-    let cartDivString = JSON.stringify(myObj);
+    let cartDivString = JSON.stringify(cartDivInside);
     localStorage.setItem("cartDivString", cartDivString)
     let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
     console.log(cartDivString2)
