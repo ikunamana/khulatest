@@ -230,18 +230,24 @@ function removeCartItem(event) {
 
 
 function addToCartClicked(event) {
-    // var gilaki = event.target;
-    // var product = gilaki.parentElement.parentElement.parentElement;
-    // var title = product.getElementsByClassName('shop-item-title')[0].innerText;
-    // var price = product.getElementsByClassName('shop-item-price')[0].innerText;
-    // var productID = product.getElementsByClassName('shop-item-title')[0].id;
-    // var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-    // var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
-    localStorage.setItem("localTitle", `${komponenti.name}`)
-    localStorage.setItem("localPrice", `${komponenti.price}`)
-    localStorage.setItem("localProductID",`${komponenti.id}`)
-    localStorage.setItem("localImageSrc", `${komponenti.img}`)
-    localStorage.setItem("localProductItemType", `${komponenti.type}`)
+    var gilaki = event.target;
+    var product = gilaki.parentElement.parentElement.parentElement;
+    var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+    var price = product.getElementsByClassName('shop-item-price')[0].innerText;
+    var productID = product.getElementsByClassName('shop-item-title')[0].id;
+    var imageSrc = product.getElementsByClassName('productimg1')[0].src;
+    var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
+ 
+    // localStorage.setItem("localTitle", `${komponenti.name}`)
+    // localStorage.setItem("localPrice", `${komponenti.price}`)
+    // localStorage.setItem("localProductID",`${komponenti.id}`)
+    // localStorage.setItem("localImageSrc", `${komponenti.img}`)
+    // localStorage.setItem("localProductItemType", `${komponenti.type}`)
+    localStorage.setItem("localTitle", title)
+    localStorage.setItem("localPrice", price)
+    localStorage.setItem("localProductID", productID)
+    localStorage.setItem("localImageSrc", imageSrc)
+    localStorage.setItem("localProductItemType", productItemType)
 
 //     let cartDivInside = {
 //         localTitle: `${komponenti.name}`,
