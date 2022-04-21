@@ -310,7 +310,6 @@ function addItemToCart(title, price, imageSrc, productID) {
     var savedCart = localStorage.getItem("cart")
     cartItems.innerHTML = savedCart
     updateCartTotal()
-    addToCartClicked()
 }
 
 function updateCartTotal() {
@@ -342,3 +341,4 @@ dropbtn.onclick = function cartmenu() {
 }
 
 populate();
+ready()
