@@ -2467,7 +2467,14 @@ h3 {
     justify-content: space-around;
     transition-duration: 300ms;
 }
-
+.warningNotification{
+    width: 400px;
+    top: 40px;
+    z-index: 10000;
+    background-color: rgba(255, 0, 0, 0.699);
+    backdrop-filter: blur(20px);
+    color: white;
+}
 @media screen and (max-width: 414px) {
     .aboutus {
         margin-top: 20px;
