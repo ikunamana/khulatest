@@ -307,8 +307,6 @@ function addItemToCart(title, price, imageSrc, productID) {
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
-    var savedCart = localStorage.getItem("cart")
-    cartItems.innerHTML = savedCart
     updateCartTotal()
 }
 
@@ -330,10 +328,13 @@ function updateCartTotal() {
 
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
+var cartItems = document.getElementById('cartItems');
+var savedCart = localStorage.getItem('cart')
 
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
+    cartItems.innerHTML = savedCart;
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
@@ -341,4 +342,4 @@ dropbtn.onclick = function cartmenu() {
 }
 
 populate();
-ready()
+cartmenu()
