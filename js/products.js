@@ -179,6 +179,7 @@ function cartIsEmpty() {
 }
 cartNumber()
 updateCartTotal()
+cartIsEmpty()
 
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
@@ -287,7 +288,6 @@ function addToCartClicked(event) {
 //     var imageSrc = localStorage.getItem("localImageSrc");
 //     var productItemType = localStorage.getItem("localProductItemType");
     addItemToCart(title, price, imageSrc, productID);
-    cartIsEmpty()
     hideCircle()
     updateCartTotal()
     cartNumber()
