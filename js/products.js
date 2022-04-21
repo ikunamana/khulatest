@@ -188,7 +188,6 @@ function cartNumber() {
 cartNumber()
 cartIsEmpty()
 
-
 function orderClicked() {
     var notification = document.getElementById('notification')
     var succsesMessage = `<div class="succsesNotification" id="succsesNotification">
@@ -383,9 +382,9 @@ function updateCartTotal() {
     dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-    cartIsEmpty()
     updateCartTotal()
     cartNumber()
+    cartIsEmpty()
     hideCircle()
 }
 }
@@ -420,6 +419,6 @@ function cartIsEmpty() {
 }
 
 savedCartCall()
-cartIsEmpty()
 cartNumber()
+cartIsEmpty()
 populate();
