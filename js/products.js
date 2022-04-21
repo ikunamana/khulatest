@@ -264,10 +264,10 @@ function addItemToCart(title, price, imageSrc, productID) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
-
+    var warning = document.getElementById('warningNotification')
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-                alert("პროდუქტი უკვე დამატებულია კალათაში.")
+                warning.style.top = "40px";
                return
         }
 
