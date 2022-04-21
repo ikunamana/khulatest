@@ -2449,6 +2449,24 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
+.mobile-menu {
+    width: 70px;
+    height: 70px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 0;
+    background-color: #f1f1a38a;
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 300ms;
+}
 
 @media screen and (max-width: 414px) {
     .aboutus {
@@ -2919,24 +2937,6 @@ h3 {
     position: fixed;
 }
 
-.mobile-menu {
-    width: 70px;
-    height: 70px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 0;
-    background-color: #f1f1a38a;
-    backdrop-filter: blur(30px) !important;
-    -webkit-backdrop-filter: blur(30px) !important;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    z-index: 9999;
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    transition-duration: 300ms;
-}
 
 .mobile-nav {
     width: -webkit-fill-available;
