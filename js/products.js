@@ -238,7 +238,7 @@ function addToCartClicked(event) {
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
     let cartDivInside = {
-        localTitle = `${komponenti.name}`,
+        localTitle = "${komponenti.name}",
         localPrice = `${komponenti.price}`,
         localProductID = `${komponenti.id}`,
         localImageSrc = `${komponenti.img}`,
