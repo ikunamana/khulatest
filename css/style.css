@@ -2467,6 +2467,11 @@ h3 {
     justify-content: space-around;
     transition-duration: 300ms;
 }
+.notification{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 .warningNotification{
     width: 380px;
     border-radius: 10px;
