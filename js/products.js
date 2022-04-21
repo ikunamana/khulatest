@@ -279,11 +279,10 @@ function addItemToCart(title, price, imageSrc, productID) {
         if (cartItemNames[i].innerText == title) {
                 notification.innerHTML = errorMessage;
                 var message = document.getElementById("warningNotification")
-                message.style.top = "40px"
+                notification.style.top = "40px"
                 var x = document.getElementById("warningX");
-                var warning = document.getElementById('warningNotification')
                      x.onclick = function warningClose(){
-                     warning.style.top = "-300px"
+                     notification.style.top = "-300px"
                     }
                return
         }

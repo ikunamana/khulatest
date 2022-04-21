@@ -2471,11 +2471,11 @@ h3 {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    top: -300px;
 }
 .warningNotification{
     width: 380px;
     border-radius: 10px;
-    top: -300px;
     margin: 5px;
     height: 70px;
     display: flex;
@@ -2511,7 +2511,6 @@ h3 {
 .succsesNotification{
     width: 380px;
     border-radius: 10px;
-    top: -300px;
     margin: 5px;
     height: 70px;
     display: flex;
