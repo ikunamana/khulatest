@@ -190,7 +190,7 @@ function orderClicked() {
                     }
 
         window.onscroll = function notificationCloseViaScroll() {
-            if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
                 notification.style.top = "-300px"
                         }
                     }
@@ -297,7 +297,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                      notification.style.top = "-300px"
                     }
                     window.onscroll = function notificationCloseViaScroll() {
-                        if (notification.documentElement.scrollTop > 10){
+                        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
                             notification.style.top = "-300px"
                         }
                     }        
