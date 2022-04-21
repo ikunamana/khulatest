@@ -307,6 +307,8 @@ function addItemToCart(title, price, imageSrc, productID) {
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
+    var savedCart = localStorage.getItem("cart")
+    cartItems.innerHTML = savedCart
     updateCartTotal()
 }
 
