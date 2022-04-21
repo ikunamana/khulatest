@@ -350,14 +350,14 @@ function updateCartTotal() {
 }
 
 
-
-dropbtn.onclick = function cartmenu() {
     var dropbtn = document.getElementById("cartbtn");
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
 
+    dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
+    
     if (dropbtn.style.left > 0){
         redCircle.style.transform = "scale(0)"
     } else {
