@@ -175,7 +175,6 @@ function cartIsEmpty() {
         orderButton.style.pointerEvents = "none";
         redCircle.style.transform = "scale(0)";
     }
-    cartIsEmpty()
 }
 updateCartTotal()
 cartNumber()
@@ -330,18 +329,23 @@ function updateCartTotal() {
 
 var dropbtn = document.getElementById("cartbtn");
 var dropupmenu1 = document.getElementById("cart-content");
-var cartItems = document.getElementById('cartItems');
-var savedCart = localStorage.getItem('cart')
+
 
 dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
-    cartItems.innerHTML = savedCart;
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
 }
 cartmenu()
 }
+function savedCartCall(){
+    var cartItems = document.getElementById('cartItems');
+    var savedCart = localStorage.getItem('cart')
+
+    cartItems.innerHTML = savedCart;
+}
+savedCartCall()
 
 populate();
