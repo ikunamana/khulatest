@@ -250,11 +250,11 @@ function addToCartClicked(event) {
     console.log(cartDivString2)
     var gilaki = event.target;
     var product = gilaki.parentElement.parentElement.parentElement;
-    var title = JSON.parse(localStorage.getItem("cartDivString", "localTitle"));
-    var price =JSON.parse(localStorage.getItem("cartDivString", "localPrice"));
-    var productID =JSON.parse(localStorage.getItem("cartDivString", "localProductID"));
-    var imageSrc =JSON.parse(localStorage.getItem("cartDivString", "localImageSrc"));
-    var productItemType =JSON.parse(localStorage.getItem("cartDivString", "localProductItemType"));
+    var title = JSON.parse(localStorage.getItem("localTitle"));
+    var price =JSON.parse(localStorage.getItem("localPrice"));
+    var productID =JSON.parse(localStorage.getItem("localProductID"));
+    var imageSrc =JSON.parse(localStorage.getItem("localImageSrc"));
+    var productItemType =JSON.parse(localStorage.getItem("localProductItemType"));
     addItemToCart(title, price, imageSrc, productID, productItemType);
     cartIsEmpty()
     updateCartTotal()
