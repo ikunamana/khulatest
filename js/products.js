@@ -247,7 +247,7 @@ function addToCartClicked(event) {
     let cartDivString = JSON.stringify(cartDivInside);
     localStorage.setItem("cartDivString", cartDivString)
     let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
-    console.log(cartDivString2)
+    console.log(JSON.parse(localStorage.getItem("localTitle")))
     var gilaki = event.target;
     var product = gilaki.parentElement.parentElement.parentElement;
     var title = JSON.parse(localStorage.getItem("localTitle"));
