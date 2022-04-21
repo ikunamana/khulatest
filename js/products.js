@@ -178,7 +178,7 @@ cartNumber()
 function orderClicked() {
     var notification = document.getElementById('notification')
     var succsesMessage = `<div class="succsesNotification" id="succsesNotification">
-    <span class="sucsessText">თქვენი შეკვეთა წარმატებით გაიგზავნა!</span>
+    <span class="successText">თქვენი შეკვეთა წარმატებით გაიგზავნა!</span>
     <span id="warningX" class="warningX">&times;</span>
     </div>`
     notification.innerHTML = succsesMessage;
