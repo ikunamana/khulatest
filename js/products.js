@@ -297,7 +297,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                      notification.style.top = "-300px"
                     }
                     window.onscroll = function notificationCloseViaScroll() {
-                        if (notification.documentElement.scrollTop > 100){
+                        if (notification.documentElement.scrollTop > 10){
                             notification.style.top = "-300px"
                         }
                     }        
