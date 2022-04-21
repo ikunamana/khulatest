@@ -223,6 +223,9 @@ html {
     overflow-x: scroll;
     justify-content: flex-start;
 }
+.mostPopular{
+    margin-top: 30px;
+}
 
 .favoriteProducts .productform{
     margin-top: 0px;

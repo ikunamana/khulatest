@@ -237,7 +237,17 @@ function addToCartClicked(event) {
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
-
+    let cartDivInside = {
+        localTitle = title,
+        localPrice = price,
+        localProductID = productID,
+        localImageSrc = imageSrc,
+        localProductItemType = productItemType
+    }
+    let cartDivString = JSON.stringify(myObj);
+    localStorage.setItem("cartDivString", cartDivString)
+    let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
+    console.log(cartDivString2)
     addItemToCart(title, price, imageSrc, productID, productItemType);
     cartIsEmpty()
     updateCartTotal()
