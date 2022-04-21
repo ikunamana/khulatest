@@ -2474,7 +2474,7 @@ h3 {
     top: -300px;
     position: fixed;
     transition-duration: 400ms;
-    z-index: 10001;
+    z-index: 1000000;
 }
 .warningNotification{
     width: 380px;
@@ -2499,7 +2499,7 @@ h3 {
     display: flex;
     justify-content: space-around;
 }
-.succesText{
+.successText{
     width: 95%;
     display: flex;
     justify-content: space-around;
