@@ -353,10 +353,9 @@ function updateCartTotal() {
     var dropbtn = document.getElementById("cartbtn");
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
-    var cartContent = document.getElementById("cart-content")
 
     function hideCircle(){
-        if (cartContent.style.left = "14px"){
+        if (dropupmenu1.style.left = "14px"){
             redCircle.style.transform = "scale(0)"
         } else {
             redCircle.style.transform = "scale(1)"
