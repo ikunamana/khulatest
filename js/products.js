@@ -5,9 +5,9 @@ async function populate() {
     let request = new Request(requestURL);
 
     let response = await fetch(request);
-    let superHeroes = await response.json();
+    let khulaProducts = await response.json();
 
-    populateProduktebi(superHeroes);
+    populateProduktebi(khulaProducts);
 
 }
 // პროდუქტების სექციისა და ელემენტების შექმნა, პროდუქტის დივების გამრავლება
@@ -34,10 +34,6 @@ function populateProduktebi(obj) {
         var br = document.createElement('br');
         var hr = document.createElement('br');
 
-
-
-
-
         // myDiv.setAttribute("class", "allproduct");
         firstDiv.setAttribute("class", "productform");
         imgDiv.setAttribute("class", "productimg");
@@ -58,8 +54,6 @@ function populateProduktebi(obj) {
         dasaxelebaII.innerHTML = "<strong>დასახელება:</strong>";
         btnshekveta.innerHTML = "კალათა";
         fasiCharchoII.innerHTML = "<strong>ფასი (" + '<span class="product-item-type">' + `${komponenti.type}` + '</span>' + "):</strong>";
-
-            
 
     // json-ის ინფორმაციის ჩაშენება html-ში
 
@@ -113,16 +107,13 @@ function ready() {
 
     //     gilaki.addEventListener('click', localStorageFunction);
     // }
-
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
-
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
-
 }
 
 // function buttonDisabled() {
@@ -157,8 +148,6 @@ function ready() {
 // cartbtn.onclick = function cartBtnCheck() {
 //     redCircle.classList.toggle('scaleReduce');
 // }
-
-
 function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
@@ -179,7 +168,6 @@ function cartIsEmpty() {
 updateCartTotal()
 cartNumber()
 
-
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -193,11 +181,12 @@ function orderClicked() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
 }
-
 
 function orderClear() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -210,7 +199,6 @@ function orderClear() {
     updateCartTotal()
 }
 
-
 function quantityChanged(event) {
     var input = event.target;
     if (isNaN(input.value) || input.value <= 0 || input.valuec) {
@@ -219,7 +207,6 @@ function quantityChanged(event) {
     updateCartTotal()
     quantityChanged()
 }
-
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
@@ -231,9 +218,7 @@ function removeCartItem(event) {
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
-
 }
-
 
 function addToCartClicked(event) {
     var gilaki = event.target;
@@ -272,7 +257,6 @@ function addToCartClicked(event) {
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
-
 }
 
 function addItemToCart(title, price, imageSrc, productID) {
@@ -285,8 +269,6 @@ function addItemToCart(title, price, imageSrc, productID) {
         if (cartItemNames[i].innerText == title) {
                 alert("პროდუქტი უკვე დამატებულია კალათაში.")
                return
-
-            
         }
 
         updateCartTotal()
