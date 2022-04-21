@@ -238,11 +238,11 @@ function addToCartClicked(event) {
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
     let cartDivInside = {
-        localTitle = "${komponenti.name}",
-        localPrice = `${komponenti.price}`,
-        localProductID = `${komponenti.id}`,
-        localImageSrc = `${komponenti.img}`,
-        localProductItemType = `${komponenti.type}`
+        localTitle: `${komponenti.name}`,
+        localPrice: `${komponenti.price}`,
+        localProductID: `${komponenti.id}`,
+        localImageSrc:`${komponenti.img}`,
+        localProductItemType:`${komponenti.type}`
     }
     let cartDivString = JSON.stringify(myObj);
     localStorage.setItem("cartDivString", cartDivString)
