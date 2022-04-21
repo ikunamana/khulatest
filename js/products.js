@@ -230,13 +230,13 @@ function removeCartItem(event) {
 
 
 function addToCartClicked(event) {
-    var gilaki = event.target;
-    var product = gilaki.parentElement.parentElement.parentElement;
-    var title = product.getElementsByClassName('shop-item-title')[0].innerText;
-    var price = product.getElementsByClassName('shop-item-price')[0].innerText;
-    var productID = product.getElementsByClassName('shop-item-title')[0].id;
-    var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-    var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
+    // var gilaki = event.target;
+    // var product = gilaki.parentElement.parentElement.parentElement;
+    // var title = product.getElementsByClassName('shop-item-title')[0].innerText;
+    // var price = product.getElementsByClassName('shop-item-price')[0].innerText;
+    // var productID = product.getElementsByClassName('shop-item-title')[0].id;
+    // var imageSrc = product.getElementsByClassName('productimg1')[0].src;
+    // var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
     let cartDivInside = {
         localTitle: `${komponenti.name}`,
         localPrice: `${komponenti.price}`,
@@ -248,25 +248,19 @@ function addToCartClicked(event) {
     localStorage.setItem("cartDivString", cartDivString)
     let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
     console.log(cartDivString2)
+    var gilaki = event.target;
+    var product = gilaki.parentElement.parentElement.parentElement;
+    var title = JSON.parse(localStorage.getItem("cartDivString", localTitle));
+    var price =JSON.parse(localStorage.getItem("cartDivString", localPrice));
+    var productID =JSON.parse(localStorage.getItem("cartDivString", localProductID));
+    var imageSrc =JSON.parse(localStorage.getItem("cartDivString", localImageSrc));
+    var productItemType =JSON.parse(localStorage.getItem("cartDivString", localProductItemType));
     addItemToCart(title, price, imageSrc, productID, productItemType);
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
 
 }
-
-// function localStorageFunction(event){
-//     var gilaki = event.target;
-//     var product = gilaki.parentElement.parentElement.parentElement;
-//     var title = product.getElementsByClassName('shop-item-title')[0].innerText;
-//     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
-//     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-  
-//         localStorage.setItem('name', `${title}`)
-//     console.log(localStorage.getItem('name'))
-//     addToCartClicked()
-// }
-
 
 function addItemToCart(title, price, imageSrc, productID, productItemType) {
     var cartRow = document.createElement('div')
