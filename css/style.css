@@ -2496,12 +2496,36 @@ h3 {
     display: flex;
     justify-content: space-around;
 }
+.succesText{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
 .warningX{
     width: 7%;
     padding-bottom: 10%;
     font-weight: 900;
     font-size: 30px;
     
+}
+.succsesNotification{
+    width: 380px;
+    border-radius: 10px;
+    top: -300px;
+    margin: 5px;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 1000000;
+    background-color: rgba(13, 116, 0, 0.699);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(30px);
+    color: white;
+    font-size: 17px;
+    justify-content: space-between;
+    transition-duration: 400ms;
+    box-shadow: rgb(0 0 0) 0px 20px 30px -10px;
 }
 @media screen and (max-width: 414px) {
     .aboutus {
