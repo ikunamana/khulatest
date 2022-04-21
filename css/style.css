@@ -215,8 +215,7 @@ html {
     left: 0px;
     height: 340px;
     border: 5px solid rgba(0, 128, 0, 0.411);
-    box-shadow: rgba(0, 90, 8, 0.473) 0 10px 15px -3px, rgba(1, 49, 5, 0.507) 0 4px 6px -2px;
-    width: 100%;
+    box-shadow: rgb(0 90 8 / 47%) 0 1px 5px -1px, rgb(1 49 5 / 51%) 0 10px 50px -1px;
     flex: unset;
     object-fit: contain;
     overflow-x: scroll;
