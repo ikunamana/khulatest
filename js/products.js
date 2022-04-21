@@ -237,17 +237,23 @@ function addToCartClicked(event) {
     // var productID = product.getElementsByClassName('shop-item-title')[0].id;
     // var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     // var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
-    let cartDivInside = {
-        localTitle: `${komponenti.name}`,
-        localPrice: `${komponenti.price}`,
-        localProductID: `${komponenti.id}`,
-        localImageSrc:`${komponenti.img}`,
-        localProductItemType:`${komponenti.type}`
-    }
-    let cartDivString = JSON.stringify(cartDivInside);
-    localStorage.setItem("cartDivString", cartDivString)
-    let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
-    console.log(JSON.parse(localStorage.getItem("localTitle")))
+    localStorage.setItem("localTitle", `${komponenti.name}`)
+    localStorage.setItem("localPrice", `${komponenti.price}`)
+    localStorage.setItem("localProductID",`${komponenti.id}`)
+    localStorage.setItem("localImageSrc", `${komponenti.img}`)
+    localStorage.setItem("localProductItemType", `${komponenti.type}`)
+
+//     let cartDivInside = {
+//         localTitle: `${komponenti.name}`,
+//         localPrice: `${komponenti.price}`,
+//         localProductID: `${komponenti.id}`,
+//         localImageSrc:`${komponenti.img}`,
+//         localProductItemType:`${komponenti.type}`
+// }
+//     let cartDivString = JSON.stringify(cartDivInside);
+//     localStorage.setItem("cartDivString", cartDivString)
+//     let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
+//     console.log(JSON.parse(localStorage.getItem("localTitle")))
     var gilaki = event.target;
     var product = gilaki.parentElement.parentElement.parentElement;
     var title = JSON.parse(localStorage.getItem("localTitle"));
