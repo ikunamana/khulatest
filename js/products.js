@@ -204,6 +204,8 @@ function orderClear() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
     updateCartTotal()
 }
@@ -221,7 +223,10 @@ function quantityChanged(event) {
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
+    var cartItems = document.getElementById('cartItems')
     buttonClicked.parentElement.parentElement.remove();
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
 
     cartIsEmpty()
     updateCartTotal()
