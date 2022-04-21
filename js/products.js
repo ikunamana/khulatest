@@ -283,6 +283,11 @@ function addItemToCart(title, price, imageSrc, productID) {
 
         updateCartTotal()
     }
+    var x = document.getElementById("warningX");
+  var warning = document.getElementById('warningNotification')
+    x.onclick = function warningClose(){
+        warning.style.top = "-300px"
+    }
 
     var cartRowContents = `
     <div class="cart-item">
@@ -365,11 +370,7 @@ function cartIsEmpty() {
         redCircle.style.transform = "scale(0)";
     }
 }
-  var x = document.getElementById("warningX");
-  var warning = document.getElementById('warningNotification')
-    x.onclick = function warningClose(){
-        warning.style.top = "-300px"
-    }
+
 savedCartCall()
 cartIsEmpty()
 cartNumber()
