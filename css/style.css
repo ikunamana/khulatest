@@ -2484,6 +2484,7 @@ h3 {
     z-index: 1000000;
     background-color: rgba(255, 0, 0, 0.699);
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(30px);
     color: white;
     font-size: 17px;
     justify-content: space-between;
