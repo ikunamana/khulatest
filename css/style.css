@@ -2472,6 +2472,7 @@ h3 {
     justify-content: space-around;
     width: 100%;
     top: -300px;
+    position: fixed;
 }
 .warningNotification{
     width: 380px;
@@ -2479,7 +2480,7 @@ h3 {
     margin: 5px;
     height: 70px;
     display: flex;
-    position: fixed;
+    position: relative;
     align-items: center;
     z-index: 1000000;
     background-color: rgba(255, 0, 0, 0.699);
@@ -2514,7 +2515,7 @@ h3 {
     margin: 5px;
     height: 70px;
     display: flex;
-    position: fixed;
+    position: relative;
     align-items: center;
     z-index: 1000000;
     background-color: rgba(13, 116, 0, 0.699);
