@@ -148,37 +148,37 @@ function ready() {
 // cartbtn.onclick = function cartBtnCheck() {
 //     redCircle.classList.toggle('scaleReduce');
 // }
-var dropupmenu1 = document.getElementById("cart-content");
-var redCircle = document.getElementById('redCircle');
 
-function hideCircle(){
-    if (dropupmenu1.classList.contains(("cart-content-active")) ){
-        redCircle.style.transform = "scale(0)"
-    } else {
-        redCircle.style.transform = "scale(1)"
+function cartIsEmpty() {
+    var dropupmenu1 = document.getElementById("cart-content");
+    var redCircle = document.getElementById('redCircle');
+
+    function hideCircle(){
+        if (dropupmenu1.classList.contains(("cart-content-active")) ){
+            redCircle.style.transform = "scale(0)"
+        } else {
+            redCircle.style.transform = "scale(1)"
 
     }
 }
-function cartIsEmpty() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
     var redCircle = document.getElementById('redCircle')
-    if (cartItems.children.length > 0) {
-        emptyCart.style.display = "none";
-        orderButton.classList.remove('order-clear');
-        orderButton.style.pointerEvents = "auto";
-        redCircle.style.transform = "scale(1)";
-    } else {
-        emptyCart.style.display = "flex";
-        orderButton.classList.add('order-clear');
-        orderButton.style.pointerEvents = "none";
-        redCircle.style.transform = "scale(0)";
-    }
+        if (cartItems.children.length > 0) {
+            emptyCart.style.display = "none";
+            orderButton.classList.remove('order-clear');
+            orderButton.style.pointerEvents = "auto";
+            redCircle.style.transform = "scale(1)";
+        } else {
+            emptyCart.style.display = "flex";
+            orderButton.classList.add('order-clear');
+            orderButton.style.pointerEvents = "none";
+            redCircle.style.transform = "scale(0)";
+        }
 }
-hideCircle()
-updateCartTotal()
 cartNumber()
+updateCartTotal()
 
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
