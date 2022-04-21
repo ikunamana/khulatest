@@ -237,31 +237,31 @@ function addToCartClicked(event) {
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
-     var obj =[]
-    localStorage.setItem("localTitle", title)
-    localStorage.setItem("localPrice", price)
-    localStorage.setItem("localProductID", productID)
-    localStorage.setItem("localImageSrc", imageSrc)
-    localStorage.setItem("localProductItemType", productItemType)
+//      var obj =[]
+//     localStorage.setItem("localTitle", title)
+//     localStorage.setItem("localPrice", price)
+//     localStorage.setItem("localProductID", productID)
+//     localStorage.setItem("localImageSrc", imageSrc)
+//     localStorage.setItem("localProductItemType", productItemType)
 
-//     let cartDivInside = {
-//         localTitle: `${komponenti.name}`,
-//         localPrice: `${komponenti.price}`,
-//         localProductID: `${komponenti.id}`,
-//         localImageSrc:`${komponenti.img}`,
-//         localProductItemType:`${komponenti.type}`
-// }
-//     let cartDivString = JSON.stringify(cartDivInside);
-//     localStorage.setItem("cartDivString", cartDivString)
-//     let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
-//     console.log(JSON.parse(localStorage.getItem("localTitle")))
-    var gilaki = event.target;
-    var product = gilaki.parentElement.parentElement.parentElement;
-    var title = localStorage.getItem("localTitle");
-    var price = localStorage.getItem("localPrice");
-    var productID = localStorage.getItem("localProductID");
-    var imageSrc = localStorage.getItem("localImageSrc");
-    var productItemType = localStorage.getItem("localProductItemType");
+// //     let cartDivInside = {
+// //         localTitle: `${komponenti.name}`,
+// //         localPrice: `${komponenti.price}`,
+// //         localProductID: `${komponenti.id}`,
+// //         localImageSrc:`${komponenti.img}`,
+// //         localProductItemType:`${komponenti.type}`
+// // }
+// //     let cartDivString = JSON.stringify(cartDivInside);
+// //     localStorage.setItem("cartDivString", cartDivString)
+// //     let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
+// //     console.log(JSON.parse(localStorage.getItem("localTitle")))
+//     var gilaki = event.target;
+//     var product = gilaki.parentElement.parentElement.parentElement;
+//     var title = localStorage.getItem("localTitle");
+//     var price = localStorage.getItem("localPrice");
+//     var productID = localStorage.getItem("localProductID");
+//     var imageSrc = localStorage.getItem("localImageSrc");
+//     var productItemType = localStorage.getItem("localProductItemType");
     addItemToCart(title, price, imageSrc, productID, productItemType);
     cartIsEmpty()
     updateCartTotal()
@@ -305,6 +305,8 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     // cartDiv1.innerHTML = localStorage.getItem('cart');
     // cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
 }
 
