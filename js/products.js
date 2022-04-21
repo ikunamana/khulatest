@@ -283,11 +283,6 @@ function addItemToCart(title, price, imageSrc, productID) {
 
         updateCartTotal()
     }
-    var x = document.getElementById("warningX");
-  var warning = document.getElementById('warningNotification')
-    x.onclick = function warningClose(){
-        warning.style.top = "-300px"
-    }
 
     var cartRowContents = `
     <div class="cart-item">
@@ -312,6 +307,12 @@ function addItemToCart(title, price, imageSrc, productID) {
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
 }
+var x = document.getElementById("warningX");
+var warning = document.getElementById('warningNotification')
+  x.onclick = function warningClose(){
+      warning.style.top = "-300px"
+  }
+
 
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
