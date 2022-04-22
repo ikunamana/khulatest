@@ -331,7 +331,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                         notification.style.top = "-300px"
                     }, 5000)
                     function notificationClear() {
-                        while (notification.hasChildNodes()) {
+                        if (notification.hasChildNodes()) {
                             cartItems.removeChild(notification.firstChild)
                         }
                     }
