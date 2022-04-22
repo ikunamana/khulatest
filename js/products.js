@@ -312,7 +312,7 @@ function addItemToCart(title, price, imageSrc, productID) {
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            notificationC.innerHTML = errorMessage
+            notification.innerHTML = errorMessage
             notification.style.top = "40px"
                  
                  var close = document.getElementsByClassName("warningX")
