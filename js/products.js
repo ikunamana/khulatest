@@ -335,7 +335,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                         var firstNotification = notification.firstChild
                         if (notification.hasChildNodes()){
                             setTimeout(() => {
-                            firstChild.remove()
+                                firstNotification.style.top = "-300px"
                             }, 5000)
                         } 
                     }
