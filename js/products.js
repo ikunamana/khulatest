@@ -323,6 +323,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                return
         }
 
+        
         updateCartTotal()
     }
 
