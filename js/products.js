@@ -318,20 +318,21 @@ function addItemToCart(title, price, imageSrc, productID) {
             notification.append(notificationChild)
             notificationChild.innerHTML = errorMessage
             notification.style.top = "40px"
-                var close = document.getElementById("warningX")
+                 }
+                 var close = document.getElementById("warningX")
                 for (var i = 0; i < close.length; i++){
                     var closeX = close[i];
                     closeX.addEventListener('click', warningClose);
                 }
                     function warningClose(event){
                      notification.style.top = "-300px"
-                    
-                }
+                    }
                     window.onscroll = function notificationCloseViaScroll() {
                         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
                             notification.style.top = "-300px"
                         }
-                    }        
+                    }   
+
                     // setTimeout(() => {
                     //     notification.style.top = "-300px"
                     // }, 5000)
@@ -343,9 +344,9 @@ function addItemToCart(title, price, imageSrc, productID) {
                             }, 5000)
                         } 
                     }
-                    
+                
                return
-        }
+        
 
         
         updateCartTotal()
