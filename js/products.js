@@ -304,10 +304,11 @@ function addItemToCart(title, price, imageSrc, productID) {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     var notification = document.getElementById('notification')
-    var errorMessage = `
+    var errorMessage = `<div class="warningNotification" id="warningNotification">
     <img class="notificationImg" src="../images/info.png" >
     <span class="warningText">ეს პროდუქტი უკვე არის თქვენს კალათაში.</span>
     <span id="warningX" class="warningX">&times;</span>
+    </div>
     `
 
     for (var i = 0; i < cartItemNames.length; i++) {
