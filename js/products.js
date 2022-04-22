@@ -334,7 +334,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                     function removeNotificationChild (){
                         if (notification.hasChildNodes()){
                             setTimeout(() => {
-                            notification.removeChild(notification.firstChild)
+                            notification.firstElementChild.remove()
                             }, 5000)
                         } 
                     }
