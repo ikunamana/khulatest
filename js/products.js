@@ -336,9 +336,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                             setTimeout(() => {
                             notification.removeChild(notification.firstChild)
                             }, 5000)
-                        } else {
-                            notification.style.top = "-300px"
-                        }
+                        } 
                     }
                     
                return
