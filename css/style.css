@@ -2495,12 +2495,13 @@ h3 {
     box-shadow: rgb(0 0 0) 0px 20px 30px -10px;
 }
 .warningText{
-    width: 95%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
+
 }
 .successText{
-    width: 95%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
@@ -2528,6 +2529,10 @@ h3 {
     justify-content: space-between;
     transition-duration: 400ms;
     box-shadow: rgb(0 0 0) 0px 20px 30px -10px;
+}
+.notificationImg{
+    width: 13%;
+    opacity: 0.9;
 }
 @media screen and (max-width: 414px) {
     .aboutus {

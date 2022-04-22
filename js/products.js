@@ -193,6 +193,7 @@ cartIsEmpty()
 function orderClicked() {
     var notification = document.getElementById('notification')
     var succsesMessage = `<div class="succsesNotification" id="succsesNotification">
+    <img class="notificationImg" src="../images/sucsess.png" >
     <span class="successText">თქვენი შეკვეთა წარმატებით გაიგზავნა!</span>
     <span id="warningX" class="warningX">&times;</span>
     </div>`
@@ -301,6 +302,7 @@ function addItemToCart(title, price, imageSrc, productID) {
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     var notification = document.getElementById('notification')
     var errorMessage = `<div class="warningNotification" id="warningNotification">
+    <img class="notificationImg" src="../images/info.png" >
     <span class="warningText">ეს პროდუქტი უკვე არის თქვენს კალათაში.</span>
     <span id="warningX" class="warningX">&times;</span>
     </div>`
