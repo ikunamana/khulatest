@@ -193,7 +193,7 @@ cartIsEmpty()
 function orderClicked() {
     var notification = document.getElementById('notification')
     var succsesMessage = `<div class="succsesNotification" id="succsesNotification">
-    <img class="notificationImg" src="../images/sucsess.png" >
+    <img class="notificationImg" src="../images/success.png" >
     <span class="successText">თქვენი შეკვეთა წარმატებით გაიგზავნა!</span>
     <span id="warningX" class="warningX">&times;</span>
     </div>`
