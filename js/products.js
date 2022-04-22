@@ -319,6 +319,7 @@ function addItemToCart(title, price, imageSrc, productID) {
             notificationChild.innerHTML = errorMessage
             notification.style.top = "40px"
                 var x = document.getElementById("warningX");
+                for (var i = 0; i < x.length; i++)
                      x.onclick = function warningClose(){
                      notification.style.top = "-300px"
                     }
@@ -327,14 +328,14 @@ function addItemToCart(title, price, imageSrc, productID) {
                             notification.style.top = "-300px"
                         }
                     }        
-                    setTimeout(() => {
-                        notification.style.top = "-300px"
-                    }, 5000)
-                    function notificationClear() {
+                    // setTimeout(() => {
+                    //     notification.style.top = "-300px"
+                    // }, 5000)
+                    setTimeou(() => {
                         if (notification.hasChildNodes()) {
                             cartItems.removeChild(notification.firstChild)
                         }
-                    }
+                    }, 5000)
                     
                return
         }
