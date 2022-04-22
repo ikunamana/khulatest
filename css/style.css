@@ -2498,12 +2498,13 @@ h3 {
     width: 80%;
     display: flex;
     justify-content: space-around;
-
+    padding: 10px;
 }
 .successText{
     width: 80%;
     display: flex;
     justify-content: space-around;
+    padding: 10px;
 }
 .warningX{
     width: 7%;
@@ -2533,6 +2534,8 @@ h3 {
 .notificationImg{
     width: 13%;
     opacity: 0.9;
+    padding: 10px;
+
 }
 @media screen and (max-width: 414px) {
     .aboutus {
