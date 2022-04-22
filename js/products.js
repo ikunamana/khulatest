@@ -177,9 +177,10 @@ function cartIsEmpty() {
             redCircle.style.transform = "scale(0)";
         }
 }
-cartNumber()
 updateCartTotal()
 cartIsEmpty()
+cartNumber()
+
 
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
