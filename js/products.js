@@ -333,7 +333,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                     // }, 5000)
                     setTimeout(() => {
                         while (notification.hasChildNodes()) {
-                            notification.removeChild(notification.firstChild)
+                            notification.firstChild.remove()
                         }
                     }, 5000)
                     
