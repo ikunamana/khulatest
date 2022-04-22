@@ -345,6 +345,7 @@ function addItemToCart(title, price, imageSrc, productID) {
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
+    cartIsEmpty()
 }
 
 
