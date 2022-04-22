@@ -318,11 +318,10 @@ function addItemToCart(title, price, imageSrc, productID) {
             notification.append(notificationChild)
             notificationChild.innerHTML = errorMessage
             notification.style.top = "40px"
-                var x = document.getElementById("warningX");
-                for (var i = 0; i < x.length; i++){
-                    var xi = x[i];
-                
-                     xi.onclick = function warningClose(){
+                var close = document.getElementById("warningX")
+                     close.onclick = function warningClose(){
+                        for (var i = 0; i < close.length; i++){
+
                      notification.style.top = "-300px"
                     }
                 }
