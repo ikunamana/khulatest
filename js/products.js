@@ -331,13 +331,15 @@ function addItemToCart(title, price, imageSrc, productID) {
                     // setTimeout(() => {
                     //     notification.style.top = "-300px"
                     // }, 5000)
-                    setTimeout(() => {
-                        if (notification.hasChildNodes()) {
-                            notification.firstChild.remove()
+                    function removeNotificationChild (){
+                        if (notification.hasChildNodes()){
+                            setTimeout(() => {
+                            notification.removeChild(notification.firstChild)
+                            }, 5000)
                         } else {
                             notification.style.top = "-300px"
                         }
-                    }, 5000)
+                    }
                     
                return
         }
