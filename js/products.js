@@ -331,8 +331,9 @@ function addItemToCart(title, price, imageSrc, productID) {
                     setTimeout(() => {
                         notification.style.top = "-300px"
                     }, 5000)
-        }
+        
                return
+                }
         updateCartTotal()
     }
 
