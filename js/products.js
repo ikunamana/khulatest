@@ -319,9 +319,9 @@ function addItemToCart(title, price, imageSrc, productID) {
             notificationChild.innerHTML = errorMessage
             notification.style.top = "40px"
                  }
-                 var close = document.getElementById("warningX")
-                for (var i = 0; i < close.length; i++){
-                    var closeX = close[i];
+                 var close = document.getElementsByClassName("warningX")
+                    for (var i = 0; i < close.length; i++){
+                        var closeX = close[i];
                     closeX.addEventListener('click', warningClose);
                 }
                     function warningClose(event){
@@ -344,11 +344,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                             }, 5000)
                         } 
                     }
-                
                return
-        
-
-        
         updateCartTotal()
     }
 
