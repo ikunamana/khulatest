@@ -304,9 +304,6 @@ function addItemToCart(title, price, imageSrc, productID) {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     var notification = document.getElementById('notification')
-    var notificationChild = document.createElement ('div')
-        notificationChild.setAttribute('class','warningNotification')
-        notificationChild.setAttribute('id','warningNotification')
     var errorMessage = `
     <img class="notificationImg" src="../images/info.png" >
     <span class="warningText">ეს პროდუქტი უკვე არის თქვენს კალათაში.</span>
@@ -315,10 +312,9 @@ function addItemToCart(title, price, imageSrc, productID) {
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-            notification.append(notificationChild)
-            notificationChild.innerHTML = errorMessage
+            notificationC.innerHTML = errorMessage
             notification.style.top = "40px"
-                 }
+                 
                  var close = document.getElementsByClassName("warningX")
                     for (var i = 0; i < close.length; i++){
                         var closeX = close[i];
@@ -332,18 +328,10 @@ function addItemToCart(title, price, imageSrc, productID) {
                             notification.style.top = "-300px"
                         }
                     }   
-
-                    // setTimeout(() => {
-                    //     notification.style.top = "-300px"
-                    // }, 5000)
-                    // function removeNotificationChild (){
-                    //     var firstNotification = notification.firstChild
-                    //     if (notification.hasChildNodes()){
-                    //         setTimeout(() => {
-                    //             firstNotification.style.top = "-300px"
-                    //         }, 5000)
-                    //     } 
-                    // }
+                    setTimeout(() => {
+                        notification.style.top = "-300px"
+                    }, 5000)
+        }
                return
         updateCartTotal()
     }
