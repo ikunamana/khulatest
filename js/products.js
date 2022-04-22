@@ -210,6 +210,9 @@ function orderClicked() {
                 notification.style.top = "-300px"
                         }
                     }
+                    setTimeout(() => {
+                        notification.style.top = "-300px"
+                    }, 5000)
                     
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
