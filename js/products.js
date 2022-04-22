@@ -336,14 +336,14 @@ function addItemToCart(title, price, imageSrc, productID) {
                     // setTimeout(() => {
                     //     notification.style.top = "-300px"
                     // }, 5000)
-                    function removeNotificationChild (){
-                        var firstNotification = notification.firstChild
-                        if (notification.hasChildNodes()){
-                            setTimeout(() => {
-                                firstNotification.style.top = "-300px"
-                            }, 5000)
-                        } 
-                    }
+                    // function removeNotificationChild (){
+                    //     var firstNotification = notification.firstChild
+                    //     if (notification.hasChildNodes()){
+                    //         setTimeout(() => {
+                    //             firstNotification.style.top = "-300px"
+                    //         }, 5000)
+                    //     } 
+                    // }
                return
         updateCartTotal()
     }
