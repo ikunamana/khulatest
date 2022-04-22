@@ -320,11 +320,12 @@ function addItemToCart(title, price, imageSrc, productID) {
             notification.style.top = "40px"
                 var x = document.getElementById("warningX");
                 for (var i = 0; i < x.length; i++){
-                    var xi = x[i];}
+                    var xi = x[i];
                 
                      xi.onclick = function warningClose(){
                      notification.style.top = "-300px"
                     }
+                }
                     window.onscroll = function notificationCloseViaScroll() {
                         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
                             notification.style.top = "-300px"
