@@ -304,16 +304,20 @@ function addItemToCart(title, price, imageSrc, productID) {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     var notification = document.getElementById('notification')
-    var errorMessage = `<div class="warningNotification" id="warningNotification">
+    var notificationChild = document.createElement ('div')
+        notificationChild.setAttribute('class','warningNotification')
+        notificationChild.setAttribute('id','warningNotification')
+    var errorMessage = `
     <img class="notificationImg" src="../images/info.png" >
     <span class="warningText">ეს პროდუქტი უკვე არის თქვენს კალათაში.</span>
     <span id="warningX" class="warningX">&times;</span>
-    </div>`
+    `
 
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
-                notification.innerHTML = errorMessage;
-                notification.style.top = "40px"
+            notification.append(notificationChild)
+            notificationChild.innerHTML = errorMessage
+            notification.style.top = "40px"
                 var x = document.getElementById("warningX");
                      x.onclick = function warningClose(){
                      notification.style.top = "-300px"
