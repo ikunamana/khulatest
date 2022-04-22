@@ -319,10 +319,10 @@ function addItemToCart(title, price, imageSrc, productID) {
             notificationChild.innerHTML = errorMessage
             notification.style.top = "40px"
                 var close = document.getElementById("warningX")
-                for (var i = 0; i < close.length; i++){
+                // for (var i = 0; i < close.length; i++){
                      close.onclick = function warningClose(){
                      notification.style.top = "-300px"
-                    }
+                    
                 }
                     window.onscroll = function notificationCloseViaScroll() {
                         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
