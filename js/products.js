@@ -323,7 +323,7 @@ function addItemToCart(title, price, imageSrc, productID) {
                     var closeX = close[i];
                     closeX.addEventListener('click', warningClose);
                 }
-                    function warningClose(){
+                    function warningClose(event){
                      notification.style.top = "-300px"
                     
                 }
