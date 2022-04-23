@@ -253,9 +253,9 @@ function removeCartItem(event) {
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
 
-    cartIsEmpty()
     updateCartTotal()
-    
+    cartIsEmpty()
+
 }
 
 function addToCartClicked(event) {
