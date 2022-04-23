@@ -14,7 +14,6 @@ function ready() {
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 }
 
-
 function cartIsEmpty() {
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
@@ -37,9 +36,10 @@ function cartIsEmpty() {
 }
 updateCartTotal()
 cartIsEmpty()
+var dropupmenu1 = document.getElementById("cart-content");
 
 function hideCircle(){
-    if (dropupmenu1.classList.contains(("cart-content-active")) ){
+    if (dropupmenu1.classList.contains(("cart-content-active")) || cartItems.children.length < 1 ){
         redCircle.style.transform = "scale(0)"
     } else {
         redCircle.style.transform = "scale(1)"
@@ -137,6 +137,9 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
+var dropupmenu1 = document.getElementById("cart-content");
+var dropbtn = document.getElementById("cartbtn");
+
     dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
@@ -146,18 +149,6 @@ function updateCartTotal() {
     hideCircle()
 }
 
-var dropbtn = document.getElementById("cartbtn");
-var dropupmenu1 = document.getElementById("cart-content");
-var redCircle = document.getElementById('redCircle');
-
-function hideCircle2(){
-    if (dropupmenu1.classList.contains(("cart-content-active")) ){
-        redCircle.style.transform = "scale(0)"
-    } else {
-        redCircle.style.transform = "scale(1)"
-
-    }
-}
 function savedCartCall(){
     var cartItems = document.getElementById('cartItems');
     var savedCart = localStorage.getItem('cart')
@@ -175,6 +166,9 @@ function cartIsEmpty() {
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
     var redCircle = document.getElementById('redCircle')
+    var dropbtn = document.getElementById("cartbtn");
+    var dropupmenu1 = document.getElementById("cart-content");
+
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
@@ -191,5 +185,4 @@ function cartIsEmpty() {
 savedCartCall()
 cartNumber()
 cartIsEmpty()
-hideCircle2()
-populate();
+ready()
