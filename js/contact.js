@@ -18,5 +18,5 @@ clickedArrow.addEventListener('click', contact)
                 arrow.style.transform = "rotate(0)"
             }
         }
-}
+
 //------- END -------//
