@@ -174,7 +174,7 @@ cartIsEmpty()
 var dropupmenu1 = document.getElementById("cart-content");
 
 function hideCircle(){
-    if (dropupmenu1.classList.contains(("cart-content-active")) || cartItems.children.length > 0  ){
+    if (dropupmenu1.classList.contains(("cart-content-active")) || cartItems.children.length < 1 ){
         redCircle.style.transform = "scale(0)"
     } else {
         redCircle.style.transform = "scale(1)"
@@ -422,7 +422,7 @@ function cartIsEmpty() {
     var dropbtn = document.getElementById("cartbtn");
     var dropupmenu1 = document.getElementById("cart-content");
 
-    if (cartItems.children.length > 0 || dropupmenu1.classList.contains(("cart-content-active")) ) {
+    if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
         orderButton.style.pointerEvents = "auto";
