@@ -97,6 +97,8 @@ function orderClicked() {
         cartItems.removeChild(cartItems.firstChild)
         
     }
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
     
     cartIsEmpty()
     updateCartTotal()
@@ -109,6 +111,8 @@ function orderClear() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
     updateCartTotal()
 }
@@ -127,6 +131,8 @@ function quantityChanged(event) {
 function removeCartItem(event) {
     var buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove();
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
 
     cartIsEmpty()
     updateCartTotal()
