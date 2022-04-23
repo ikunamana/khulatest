@@ -386,8 +386,9 @@ function updateCartTotal() {
     dropbtn.classList.toggle("cart-button-active");
     updateCartTotal()
     cartNumber()
-    cartIsEmpty()
     hideCircle()
+    cartIsEmpty()
+    
 }
 }
 var dropbtn = document.getElementById("cartbtn");
