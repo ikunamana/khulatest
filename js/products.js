@@ -378,8 +378,7 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
 
-
-
+var dropbtn = document.getElementById("cartbtn");
 
     dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
