@@ -1504,6 +1504,7 @@ select {
 .textContent{
     align-items: center;
     display: flex;
+    width: 70px;
 }
 
 .contactdiv{
