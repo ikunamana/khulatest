@@ -3,8 +3,10 @@
 var contactdiv = document.getElementById("hiddencontactdiv")
 var arrowdiv = document.getElementById("hiddencontact")
 var arrow = document.getElementById("hiddenarrow")
-
+for ( var i = 0; i < arrow.length; i++) { 
+    var clickedArrow = arrow[i];
 arrow.addEventListener('click', contact)
+}
 
     function contact(){
         if(contactdiv.style.marginLeft = "-300px"){
