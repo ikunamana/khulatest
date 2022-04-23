@@ -1757,7 +1757,6 @@ footer a {
     -ms-flex-align: center;
     align-items: center;
     width: 1200px;
-    height: 700px;
 }
 
 .signform {
@@ -1766,7 +1765,7 @@ footer a {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    /* margin-top: 150px; */
+    margin-top: 150px;
     -webkit-animation-name: logoanima;
     animation-name: logoanima;
     -webkit-animation-duration: 1s;
@@ -1780,18 +1779,19 @@ footer a {
     -webkit-transform-origin: bottom;
     -ms-transform-origin: bottom;
     transform-origin: bottom;
-    bottom: 800px;
+    margin-bottom: 80px;
 }
 
 .regform {
     display: flex;
     justify-content: space-around;
-    /* margin-top: 150px; */
+    margin-top: 150px;
     animation-name: logoanima;
     animation-duration: 1s;
     transform: translateY(0);
     transition-duration: 1s;
     transform-origin: top;
+    margin-bottom: 50px;
 }
 
 .shesvla {
