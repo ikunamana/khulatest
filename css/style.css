@@ -2505,7 +2505,7 @@ h3 {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 414px;
+        width: 100%;
         height: -webkit-fit-content;
         height: -moz-fit-content;
         height: fit-content;
@@ -2517,14 +2517,14 @@ h3 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        width: 414px;
+        width: 100%;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
         padding-top: 10px;
     }
     .footerright {
-        width: 414px;
+        width: 100%;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
