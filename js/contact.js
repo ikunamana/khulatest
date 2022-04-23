@@ -8,7 +8,7 @@ for ( var i = 0; i < arrow.length; i++) {
 clickedArrow.addEventListener('click', contact)
 }
 
-    function contact(event){
+    function contact(){
         if(contactdiv.style.marginLeft = "-300px"){
             contactdiv.style.marginLeft = "0px";
             arrowdiv.style.marginLeft = "200px";
