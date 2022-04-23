@@ -2,7 +2,7 @@
 var contactdiv = document.getElementById("hiddencontactdiv")
 var arrowdiv = document.getElementById("hiddencontact")
 var arrow = document.getElementById("hiddenarrow")
-arrow.addEventListener('click', contact)
+arrowdiv.addEventListener('click', contact)
 
 
     function contact(){
