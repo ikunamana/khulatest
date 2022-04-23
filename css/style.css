@@ -1501,6 +1501,9 @@ select {
     top: 50%;
     z-index: 50;
 }
+.hiddendiv a{
+    color: whitesmoke;
+}
 .contactdiv{
     display:block;
     background-color: #014d1fa6;
