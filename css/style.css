@@ -1501,6 +1501,10 @@ select {
     top: 50%;
     z-index: 50;
 }
+.textContent{
+    align-items: center;
+    display: flex;
+}
 
 .contactdiv{
     display:block;
@@ -1508,7 +1512,7 @@ select {
     padding: 30px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    color: rgb(187, 187, 187);
+    color: rgb(255, 227, 227);
     -webkit-backdrop-filter: blur(3px) ;
     backdrop-filter: blur(3px) ;
     position: fixed;
