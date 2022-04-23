@@ -1,5 +1,4 @@
 //------- HIDDEN CONTACT DIV -------//
-function hiddencontactdiv(){
 var contactdiv = document.getElementById("hiddencontactdiv")
 var arrowdiv = document.getElementById("hiddencontact")
 var arrow = document.getElementById("hiddenarrow")
@@ -20,5 +19,4 @@ clickedArrow.addEventListener('click', contact)
             }
         }
 }
-hiddencontactdiv()
 //------- END -------//
