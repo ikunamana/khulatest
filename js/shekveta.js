@@ -1,3 +1,4 @@
+const bodyParser = require('body-parser');
 var mongoose = require ('mongoose');
 var chema = mongoose.Schema;
 
@@ -8,4 +9,3 @@ const postSchema = new Schema({
 });
 var Post = mongoose.model('Post', postSchema);
 module.exports = Post;
-
