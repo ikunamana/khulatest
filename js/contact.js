@@ -20,4 +20,5 @@ clickedArrow.addEventListener('click', contact)
             }
         }
 }
+hiddencontactdiv()
 //------- END -------//
