@@ -255,7 +255,6 @@ function removeCartItem(event) {
 
     cartIsEmpty()
     updateCartTotal()
-    cartNumber()
     
 }
 
@@ -300,7 +299,7 @@ function addToCartClicked(event) {
 
 function addItemToCart(title, price, imageSrc, productID) {
     var cartRow = document.createElement('div')
-    cartRow.classList.add('cart-row')
+        cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
     var notification = document.getElementById('notification')
