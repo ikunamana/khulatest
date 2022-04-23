@@ -1508,6 +1508,7 @@ select {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     color: rgb(2 26 95);
+    -webkit-backdrop-filter: blur(3px) ;
     backdrop-filter: blur(3px) ;
     position: fixed;
     z-index: 50;
