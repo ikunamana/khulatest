@@ -3,6 +3,9 @@
 var contactdiv = document.getElementById("hiddencontactdiv")
 var arrowdiv = document.getElementById("hiddencontact")
 var arrow = document.getElementById("hiddenarrow")
+
+arrow.addEventListener('clicl', contact)
+
     function contact(){
         if(contactdiv.style.marginLeft === "-300px"){
                 contactdiv.style.marginLeft = "0px";
