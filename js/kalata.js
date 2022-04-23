@@ -4,7 +4,7 @@ function ready() {
         var button = remCartItemButtons[i];
         button.addEventListener('click', removeCartItem);
     }
- 
+
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
@@ -18,15 +18,6 @@ function ready() {
 function cartIsEmpty() {
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
-
-    function hideCircle(){
-        if (dropupmenu1.classList.contains(("cart-content-active")) ){
-            redCircle.style.transform = "scale(0)"
-        } else {
-            redCircle.style.transform = "scale(1)"
-    }
-}
-
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
@@ -42,12 +33,19 @@ function cartIsEmpty() {
             orderButton.style.pointerEvents = "none";
             redCircle.style.transform = "scale(0)";
         }
+        
 }
 updateCartTotal()
 cartIsEmpty()
-cartNumber()
 
+function hideCircle(){
+    if (dropupmenu1.classList.contains(("cart-content-active")) ){
+        redCircle.style.transform = "scale(0)"
+    } else {
+        redCircle.style.transform = "scale(1)"
 
+}
+}
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -84,9 +82,11 @@ function orderClicked() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
+    cartNumber()
     cartIsEmpty()
     updateCartTotal()
-    cartNumber()
 }
 
 function orderClear() {
@@ -94,9 +94,11 @@ function orderClear() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
-    hideCircle()
     updateCartTotal()
+    hideCircle()
 }
 
 function quantityChanged(event) {
@@ -112,17 +114,13 @@ function removeCartItem(event) {
     var buttonClicked = event.target;
     var cartItems = document.getElementById('cartItems')
     buttonClicked.parentElement.parentElement.remove();
-
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
-
-    cartIsEmpty()
-    updateCartTotal()
     cartNumber()
-    
+    updateCartTotal()
+    cartIsEmpty()
+    hideCircle()
 }
-
-
 
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
@@ -139,21 +137,6 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
-
-
-    var dropbtn = document.getElementById("cartbtn");
-    var dropupmenu1 = document.getElementById("cart-content");
-    var redCircle = document.getElementById('redCircle');
-
-    function hideCircle(){
-        if (dropupmenu1.classList.contains(("cart-content-active")) ){
-            redCircle.style.transform = "scale(0)"
-        } else {
-            redCircle.style.transform = "scale(1)"
-    
-        }
-    }
-
     dropbtn.onclick = function cartmenu() {
     dropupmenu1.classList.toggle("cart-content-active");
     dropbtn.classList.toggle("cart-button-active");
@@ -163,6 +146,18 @@ function updateCartTotal() {
     hideCircle()
 }
 
+var dropbtn = document.getElementById("cartbtn");
+var dropupmenu1 = document.getElementById("cart-content");
+var redCircle = document.getElementById('redCircle');
+
+function hideCircle2(){
+    if (dropupmenu1.classList.contains(("cart-content-active")) ){
+        redCircle.style.transform = "scale(0)"
+    } else {
+        redCircle.style.transform = "scale(1)"
+
+    }
+}
 function savedCartCall(){
     var cartItems = document.getElementById('cartItems');
     var savedCart = localStorage.getItem('cart')
@@ -196,4 +191,5 @@ function cartIsEmpty() {
 savedCartCall()
 cartNumber()
 cartIsEmpty()
-ready()
+hideCircle2()
+populate();
