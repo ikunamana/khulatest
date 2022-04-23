@@ -219,9 +219,9 @@ function orderClicked() {
     }
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
+    cartNumber()
     cartIsEmpty()
     updateCartTotal()
-    cartNumber()
 }
 
 function orderClear() {
@@ -251,9 +251,11 @@ function removeCartItem(event) {
     buttonClicked.parentElement.parentElement.remove();
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
-
+    cartNumber()
+    hideCircle()
     updateCartTotal()
     cartIsEmpty()
+
 
 }
 
