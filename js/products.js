@@ -385,9 +385,8 @@ var dropbtn = document.getElementById("cartbtn");
     dropbtn.classList.toggle("cart-button-active");
     updateCartTotal()
     cartNumber()
-    hideCircle()
     cartIsEmpty()
-    
+    hideCircle()
 }
 }
 var dropbtn = document.getElementById("cartbtn");
