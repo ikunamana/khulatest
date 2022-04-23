@@ -90,8 +90,6 @@ function orderClicked() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
-    var cartItemsHtml = cartItems.innerHTML;
-    localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
     updateCartTotal()
     cartNumber()
@@ -102,8 +100,6 @@ function orderClear() {
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
-    var cartItemsHtml = cartItems.innerHTML;
-    localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
     hideCircle()
     updateCartTotal()
