@@ -152,8 +152,6 @@ function ready() {
 function cartIsEmpty() {
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
-
-   
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
@@ -169,19 +167,19 @@ function cartIsEmpty() {
             orderButton.style.pointerEvents = "none";
             redCircle.style.transform = "scale(0)";
         }
-        function hideCircle(){
-            if (dropupmenu1.classList.contains(("cart-content-active")) ){
-                redCircle.style.transform = "scale(0)"
-            } else {
-                redCircle.style.transform = "scale(1)"
-    
-        }
-    }
+        
 }
 updateCartTotal()
 cartIsEmpty()
 
+function hideCircle(){
+    if (dropupmenu1.classList.contains(("cart-content-active")) ){
+        redCircle.style.transform = "scale(0)"
+    } else {
+        redCircle.style.transform = "scale(1)"
 
+}
+}
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -233,8 +231,8 @@ function orderClear() {
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
-    hideCircle()
     updateCartTotal()
+    hideCircle()
 }
 
 function quantityChanged(event) {
@@ -253,11 +251,9 @@ function removeCartItem(event) {
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     cartNumber()
-    hideCircle()
     updateCartTotal()
     cartIsEmpty()
-
-
+    hideCircle()
 }
 
 function addToCartClicked(event) {
@@ -294,9 +290,9 @@ function addToCartClicked(event) {
 //     var imageSrc = localStorage.getItem("localImageSrc");
 //     var productItemType = localStorage.getItem("localProductItemType");
     addItemToCart(title, price, imageSrc, productID);
-    hideCircle()
     updateCartTotal()
     cartNumber()
+    hideCircle()
 }
 
 function addItemToCart(title, price, imageSrc, productID) {
@@ -438,4 +434,5 @@ function cartIsEmpty() {
 savedCartCall()
 cartNumber()
 cartIsEmpty()
+hideCircle()
 populate();
