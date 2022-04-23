@@ -1498,7 +1498,7 @@ select {
     display: flex;
     position: absolute;
     align-items: center;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 .contactdiv{
     display:block;
