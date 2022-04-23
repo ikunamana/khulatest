@@ -179,7 +179,6 @@ function cartIsEmpty() {
 }
 updateCartTotal()
 cartIsEmpty()
-cartNumber()
 
 
 function cartNumber() {
