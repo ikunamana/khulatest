@@ -5,7 +5,7 @@ var arrowdiv = document.getElementById("hiddencontact")
 var arrow = document.getElementById("hiddenarrow")
 for ( var i = 0; i < arrow.length; i++) { 
     var clickedArrow = arrow[i];
-arrow.addEventListener('click', contact)
+clickedArrow.addEventListener('click', contact)
 }
 
     function contact(){
