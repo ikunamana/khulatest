@@ -7,7 +7,7 @@ var arrow = document.getElementById("hiddenarrow")
 arrow.addEventListener('click', contact)
 
     function contact(){
-        if(contactdiv.style.marginLeft === "-300px"){
+        if(contactdiv.style.marginLeft = "-300px"){
             contactdiv.style.marginLeft = "-300px";
             arrowdiv.style.marginLeft = "0px";
             arrow.style.transform = "rotate(0)"
