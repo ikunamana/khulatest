@@ -4,13 +4,6 @@ function ready() {
         var button = remCartItemButtons[i];
         button.addEventListener('click', removeCartItem);
     }
-
-    var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
-    for (var i = 0; i < addToCartButtons.length; i++) {
-        var gilaki = addToCartButtons[i];
-
-        gilaki.addEventListener('click', addToCartClicked);
-    }
  
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
@@ -33,6 +26,7 @@ function cartIsEmpty() {
             redCircle.style.transform = "scale(1)"
     }
 }
+
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
@@ -202,3 +196,4 @@ function cartIsEmpty() {
 savedCartCall()
 cartNumber()
 cartIsEmpty()
+ready()
