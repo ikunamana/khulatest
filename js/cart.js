@@ -171,6 +171,8 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
+    var cartItemsHtml = cartItems.innerHTML;
+    localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
 }
 
@@ -201,7 +203,39 @@ dropbtn.onclick = function cartmenu() {
     cartNumber()
 
 }
+function savedCartCall(){
+    var cartItems = document.getElementById('cartItems');
+    var savedCart = localStorage.getItem('cart')
 
+    cartItems.innerHTML = savedCart;
+}
+function cartNumber() {
+    var redCircle = document.getElementById('redCircle');
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    redCircle.innerText = (cartItems.children.length);
+}
+
+function cartIsEmpty() {
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var emptyCart = document.getElementById('emptycart')
+    var orderButton = document.getElementById('orderButton')
+    var redCircle = document.getElementById('redCircle')
+    if (cartItems.children.length > 0) {
+        emptyCart.style.display = "none";
+        orderButton.classList.remove('order-clear');
+        orderButton.style.pointerEvents = "auto";
+        redCircle.style.transform = "scale(1)";
+    } else {
+        emptyCart.style.display = "flex";
+        orderButton.classList.add('order-clear');
+        orderButton.style.pointerEvents = "none";
+        redCircle.style.transform = "scale(0)";
+    }
+}
+
+savedCartCall()
+cartNumber()
+cartIsEmpty()
 
 // var plus = document.getElementById('plus')
 // var minus = document.getElementsByClassName('minus')
