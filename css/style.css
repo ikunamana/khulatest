@@ -1494,34 +1494,25 @@ select {
     /* background-color: rgba(153, 205, 50, 0.233); */
 }
 
-.hiddendiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.hiddendiv{
     display: flex;
     position: absolute;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    margin-top: 340px;
+    margin-top: 25%;
 }
-
-.contactdiv {
-    display: block;
-    height: 360px;
+.contactdiv{
+    display:block;
     background-color: #014d1fa6;
     padding: 30px;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    color: cornsilk;
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    color: rgb(2 26 95);
+    backdrop-filter: blur(3px) ;
     position: fixed;
-    margin-left: -300px;
-    -webkit-transition-duration: 300ms;
-    -o-transition-duration: 300ms;
+    z-index: 50;
+    margin-left: -300px ;
     transition-duration: 300ms;
-    cursor: url("../images/khula.jpg") default;
-    z-index: 3000;
+    /* cursor: url("../images/khula.jpg") default; */
 }
 
 .added:hover .imgarrow {
