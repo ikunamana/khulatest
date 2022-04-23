@@ -383,7 +383,7 @@ function updateCartTotal() {
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
 
-    function hideCircle(){
+    function hideCircle2(){
         if (dropupmenu1.classList.contains(("cart-content-active")) ){
             redCircle.style.transform = "scale(0)"
         } else {
@@ -434,5 +434,5 @@ function cartIsEmpty() {
 savedCartCall()
 cartNumber()
 cartIsEmpty()
-hideCircle()
+hideCircle2()
 populate();
