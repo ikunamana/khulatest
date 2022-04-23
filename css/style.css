@@ -1494,11 +1494,12 @@ select {
     /* background-color: rgba(153, 205, 50, 0.233); */
 }
 
-.hiddendiv{
+.hiddendiv {
     display: flex;
     position: absolute;
     align-items: center;
-    margin-top: 10%;
+    top: 50%;
+    z-index: 50;
 }
 .contactdiv{
     display:block;

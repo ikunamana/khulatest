@@ -6,7 +6,7 @@ var arrow = document.getElementById("hiddenarrow")
     function contact(){
         if(contactdiv.style.marginLeft === "-300px"){
                 contactdiv.style.marginLeft = "0px";
-                arrowdiv.style.marginLeft = "260px";
+                arrowdiv.style.marginLeft = "200px";
                 arrow.style.transform = "rotate(180deg)"
         } else{
                 contactdiv.style.marginLeft = "-300px";
