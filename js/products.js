@@ -171,6 +171,7 @@ function cartIsEmpty() {
 }
 updateCartTotal()
 cartIsEmpty()
+var dropupmenu1 = document.getElementById("cart-content");
 
 function hideCircle(){
     if (dropupmenu1.classList.contains(("cart-content-active")) || cartItems.children.length > 0  ){
@@ -377,7 +378,7 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
-
+var dropupmenu1 = document.getElementById("cart-content");
 var dropbtn = document.getElementById("cartbtn");
 
     dropbtn.onclick = function cartmenu() {
