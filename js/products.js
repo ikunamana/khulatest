@@ -238,20 +238,13 @@ function orderClear() {
     hideCircle()
 }
 
-function quantityChanged(event) {
-    var input = event.target;
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1
-    }
-    updateCartTotal()
-}
+
 
 function plusButtonClicked(event){
     var plusButtonF = event.target;
     var quantityInput = plusButtonF.parentElement.getElementsByClassName('item-quantity');
-    var quantityInputValue = quantityInput.value;
 
-   quantityInputValue++
+   quantityInput.Value+2
     
 }
 
@@ -371,6 +364,13 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
     cartIsEmpty()
+    function quantityChanged(event) {
+        var input = event.target;
+        if (isNaN(input.value) || input.value <= 0) {
+            input.value = 1
+        }
+        updateCartTotal()
+    }
 }
 
 function updateCartTotal() {
