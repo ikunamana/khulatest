@@ -445,3 +445,4 @@ cartNumber()
 cartIsEmpty()
 // hideCircle2()
 populate();
+ready()
