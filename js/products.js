@@ -89,6 +89,12 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
+    var quantityInputs = document.getElementsByClassName('item-quantity')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i];
+        input.addEventListener('change', quantityChanged)
+    }
+    
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
         var button = remCartItemButtons[i];
@@ -101,11 +107,7 @@ function ready() {
 
         gilaki.addEventListener('click', addToCartClicked);
     }
-    var quantityInputs = document.getElementsByClassName('item-quantity')
-    for (var i = 0; i < quantityInputs.length; i++) {
-        var input = quantityInputs[i];
-        input.addEventListener('change', quantityChanged)
-    }
+    
 
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
