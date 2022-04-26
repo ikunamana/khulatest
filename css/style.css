@@ -10,6 +10,8 @@
     margin: 0;
     font-family: Georgian;
     scroll-behavior: smooth;
+    background-image: url(../images/background.png);
+    background-size: contain;
 }
 
 @font-face {
