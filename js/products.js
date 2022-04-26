@@ -234,7 +234,7 @@ function orderClear() {
 }
 
 function quantityChanged(event) {
-    input = event.target;
+    var input = event.target;
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
     }
