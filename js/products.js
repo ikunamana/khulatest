@@ -298,6 +298,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
         cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
+    var inputValue = document.getElementsByClassName('item-quantity')[0].value
     var notification = document.getElementById('notification')
     var errorMessage = `<div class="warningNotification" id="warningNotification">
     <img class="notificationImg" src="../images/info.png" >
@@ -340,7 +341,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     </div>
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
-        <input class="item-quantity"   value="" type="number">
+        <input class="item-quantity"   value="${inputValue}" type="number">
         <span class="cart-item-type">${productItemType}</span>
         <button class="remove-button ">წაშლა</button>
     </div>`
