@@ -238,10 +238,9 @@ function orderClear() {
 
 function quantityChanged(event) {
     var input = event.target;
-    if (isNaN(input.value) || input.value <= 0 || input.value) {
+    if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
     }
-    input.addEventListener("change", updateCartTotal)
     updateCartTotal()
     quantityChanged()
 }
