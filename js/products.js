@@ -82,11 +82,11 @@ function populateProduktebi(obj) {
         section.append(firstDiv);
     }
 
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready);
-} else {
-    ready()
-}
+// if (document.readyState == 'loading') {
+//     document.addEventListener('DOMContentLoaded', ready);
+// } else {
+//     ready()
+// }
 
 function ready() {
     var quantityInputs = document.getElementsByClassName('item-quantity')
