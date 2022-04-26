@@ -383,6 +383,7 @@ var dropbtn = document.getElementById("cartbtn");
     cartIsEmpty()
     hideCircle()
 }
+ready()
 }
 // var dropbtn = document.getElementById("cartbtn");
 // var dropupmenu1 = document.getElementById("cart-content");
@@ -444,5 +445,5 @@ savedCartCall()
 cartNumber()
 cartIsEmpty()
 // hideCircle2()
+
 populate();
-ready()
