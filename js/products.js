@@ -248,7 +248,7 @@ function quantityChanged(event) {
 
 function plusButtonClicked(event){
     var plusButtonF = event.target;
-    var quantityInput = document.getElementsByClassName('item-quantity');
+    var quantityInput = plusButtonF.parentElement.getElementsByClassName('item-quantity');
     var quantityInputValue = quantityInput.value;
 
    quantityInputValue++
