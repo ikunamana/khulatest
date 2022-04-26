@@ -237,7 +237,7 @@ function orderClear() {
     hideCircle()
 }
 
-function quantityChanged(event) {
+function quantityChanged() {
     var input = event.target;
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
