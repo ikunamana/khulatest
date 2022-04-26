@@ -241,10 +241,10 @@ function quantityChanged(event) {
     if (isNaN(input.value) || input.value <= 0 || input.valuec) {
         input.value = 1
     }
+    input.addEventListener("onchange", updateCartTotal)
     updateCartTotal()
     quantityChanged()
 }
-input.addEventListener("onchange", updateCartTotal)
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
