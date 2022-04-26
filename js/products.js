@@ -82,11 +82,11 @@ function populateProduktebi(obj) {
         section.append(firstDiv);
     }
 
-// if (document.readyState == 'loading') {
-//     document.addEventListener('DOMContentLoaded', ready);
-// } else {
-//     ready()
-// }
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready()
+}
 
 function ready() {
     var quantityInputs = document.getElementsByClassName('item-quantity')
@@ -246,7 +246,7 @@ function removeCartItem(event) {
     var cartItems = document.getElementById('cartItems')
     buttonClicked.parentElement.parentElement.remove();
     var cartItemsHtml = cartItems.innerHTML;
-    localStorage.setItem('cart', cartItemsHtml)
+    localStorage.push('cart', cartItemsHtml)
     cartNumber()
     updateCartTotal()
     cartIsEmpty()
@@ -383,20 +383,8 @@ var dropbtn = document.getElementById("cartbtn");
     cartIsEmpty()
     hideCircle()
 }
-ready()
 }
-// var dropbtn = document.getElementById("cartbtn");
-// var dropupmenu1 = document.getElementById("cart-content");
-// var redCircle = document.getElementById('redCircle');
 
-// function hideCircle2(){
-//     if (dropupmenu1.classList.contains(("cart-content-active")) ){
-//         redCircle.style.transform = "scale(0)"
-//     } else {
-//         redCircle.style.transform = "scale(1)"
-
-//     }
-// }
 function savedCartCall(){
     var cartItems = document.getElementById('cartItems');
     var savedCart = localStorage.getItem('cart')
@@ -429,21 +417,7 @@ function cartIsEmpty() {
         redCircle.style.transform = "scale(0)";
     }
 }
-var quantityInputs = document.getElementsByClassName('item-quantity')
-    for (var i = 0; i < quantityInputs.length; i++) {
-        var input = quantityInputs[i];
-        input.addEventListener('keyup', quantityChanged)
-    }
-    function quantityChanged(event) {
-        var input = event.target;
-        if (isNaN(input.value) || input.value <= 0) {
-            input.value = 1
-        }
-        quantityChanged()
-    }
 savedCartCall()
 cartNumber()
 cartIsEmpty()
-// hideCircle2()
-
 populate();
