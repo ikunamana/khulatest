@@ -241,9 +241,7 @@ function quantityChanged(event) {
     if (isNaN(input.value) || input.value <= 0) {
         input.value = 1
     }
-    quantityChanged()
     updateCartTotal()
-
 }
 
 function removeCartItem(event) {
