@@ -100,6 +100,11 @@ function ready() {
         var button = remCartItemButtons[i];
         button.addEventListener('click', removeCartItem);
     }
+    var plusButton = document.getElementsByClassName('cart-quantity-plus');
+    for (var i = 0; i < plusButton.length; i++) {
+        var plusButtonF = plusButton[i];
+        plusButtonF.addEventListener('click', plusButtonClicked);
+    }
 
     var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
     for (var i = 0; i < addToCartButtons.length; i++) {
@@ -239,6 +244,15 @@ function quantityChanged(event) {
         input.value = 1
     }
     updateCartTotal()
+}
+
+function plusButtonClicked(event){
+    var plusBtn = event.target;
+    var targetedInput = plusBtn.parentElement
+    var quantityInput = targetedInput.getElementsByClassName("item-quantity");
+    var quantityInputValue = quantityInput.value;
+    quantityInputValue++
+    
 }
 
 function removeCartItem(event) {
