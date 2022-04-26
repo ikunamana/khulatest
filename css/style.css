@@ -2202,6 +2202,8 @@ h3 {
     animation-name: logoanima;
     -webkit-animation-duration: 500ms;
     animation-duration: 500ms;
+    padding: 0;
+    margin: 0;
 }
 .plus-minus {
     height: 60px;
