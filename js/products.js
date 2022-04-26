@@ -244,6 +244,7 @@ function quantityChanged(event) {
     updateCartTotal()
     quantityChanged()
 }
+input.addEventListener("onchange", updateCartTotal)
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
