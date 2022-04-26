@@ -234,9 +234,9 @@ function orderClear() {
 }
 
 function quantityChanged(event) {
-    var inputClicked = event.target;
-    if (isNaN(inputClicked.value) || inputClicked.value <= 0) {
-        inputClicked.value = 1
+    var input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
     }
     updateCartTotal()
 }
