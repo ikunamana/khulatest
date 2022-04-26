@@ -10,8 +10,9 @@
     margin: 0;
     font-family: Georgian;
     scroll-behavior: smooth;
-    background-image: url(../images/background.png);
+    background-image: url(../images/background.jpg);
     background-size: contain;
+    background-attachment: fixed;
 }
 
 .body{
