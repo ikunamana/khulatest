@@ -343,7 +343,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     <div class="cart-item-quantity ">
         <input class="item-quantity"   value="1" type="number">
         <span class="cart-item-type">${productItemType}</span>
-        <button class="remove-button ">წაშლა</button>
+        <button class="remove-button">წაშლა</button>
     </div>`
 
     cartRow.innerHTML = cartRowContents;
