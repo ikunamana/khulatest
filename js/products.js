@@ -89,7 +89,11 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-  
+    var quantityInputs = document.getElementsByClassName('item-quantity')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i];
+        input.addEventListener('keyup', quantityChanged)
+    }
 
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
@@ -230,17 +234,11 @@ function orderClear() {
 }
 
 function quantityChanged(event) {
-    var quantityInputs = document.getElementsByClassName('item-quantity')
-    for (var i = 0; i < quantityInputs.length; i++) {
-        var input = quantityInputs[i];
-        input.addEventListener('keyup', quantityChanged)
-    }
     var inputClicked = event.target;
     if (isNaN(inputClicked.value) || inputClicked.value <= 0) {
         inputClicked.value = 1
     }
     updateCartTotal()
-    quantityChanged()
 }
 
 function removeCartItem(event) {
