@@ -112,11 +112,7 @@ function ready() {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
-    var quantityInputs = document.getElementsByClassName('item-quantity')
-    for (var i = 0; i < quantityInputs.length; i++) {
-        var input = quantityInputs[i]
-        input.addEventListener('change', updateCartTotal)
-    }
+
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 }
@@ -268,7 +264,7 @@ function addToCartClicked(event) {
     var price = product.getElementsByClassName('shop-item-price')[0].innerText;
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
-    // var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
+    var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
 //      var obj =[]
 //     localStorage.setItem("localTitle", title)
 //     localStorage.setItem("localPrice", price)
@@ -294,7 +290,7 @@ function addToCartClicked(event) {
 //     var productID = localStorage.getItem("localProductID");
 //     var imageSrc = localStorage.getItem("localImageSrc");
 //     var productItemType = localStorage.getItem("localProductItemType");
-    addItemToCart(title, price, imageSrc, productID);
+    addItemToCart(title, price, imageSrc, productID, productID);
     updateCartTotal()
     cartNumber()
     hideCircle()
@@ -341,13 +337,13 @@ function addItemToCart(title, price, imageSrc, productID) {
     }
 
     var cartRowContents = `
-    <div class="cart-item">
-        <img class="cart-item-image " src="${imageSrc}" alt=" ">
+    <div id="${productID}" class="cart-item">
+        <img class="cart-item-image " src="${imageSrc}" alt="${title}">
         <span class="cart-item-name" id="${productID}">${title}</span>
     </div>
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
-        <input class="item-quantity "   value="1 " type="number ">
+        <input class="item-quantity "   value="1" type="number">
         <span class="cart-item-type"></span>
         <button class="remove-button ">წაშლა</button>
     </div>`
@@ -364,23 +360,6 @@ function addItemToCart(title, price, imageSrc, productID) {
     updateCartTotal()
     cartIsEmpty()
 }
-
-function updateCartTotal(event) {
-    var allCartItems = document.getElementsByClassName('cart-items')[0]
-    var cartRows = allCartItems.getElementsByClassName('cart-row')
-    var total = 0
-    for (var i = 0; i < cartRows.length; i++) {
-        var cartRow = cartRows[i];
-        var priceElement = cartRow.getElementsByClassName('cart-item-price')[0]
-        var quantityElement = cartRow.getElementsByClassName('item-quantity')[0]
-        var price = parseFloat(priceElement.innerText.replace('GEL', ''))
-        var quantity = quantityElement.value
-        total = total + (price * quantity)
-    }
-    total = Math.round(total * 100) / 100
-    document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
-}
-
 
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
