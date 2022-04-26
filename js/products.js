@@ -112,6 +112,11 @@ function ready() {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
+    var quantityInputs = document.getElementsByClassName('item-quantity')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', updateCartTotal)
+    }
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 }
@@ -360,6 +365,21 @@ function addItemToCart(title, price, imageSrc, productID) {
     cartIsEmpty()
 }
 
+function updateCartTotal(event) {
+    var allCartItems = document.getElementsByClassName('cart-items')[0]
+    var cartRows = allCartItems.getElementsByClassName('cart-row')
+    var total = 0
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i];
+        var priceElement = cartRow.getElementsByClassName('cart-item-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('item-quantity')[0]
+        var price = parseFloat(priceElement.innerText.replace('GEL', ''))
+        var quantity = quantityElement.value
+        total = total + (price * quantity)
+    }
+    total = Math.round(total * 100) / 100
+    document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
+}
 
 
 function updateCartTotal() {
