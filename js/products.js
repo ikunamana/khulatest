@@ -237,14 +237,7 @@ function orderClear() {
     hideCircle()
 }
 
-function quantityChanged(event) {
-    var input = event.target;
-    if (isNaN(input.value) || input.value <= 0) {
-        input.value = 1
-    }
-    updateCartTotal()
-    quantityChanged()
-}
+
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
@@ -361,7 +354,14 @@ function addItemToCart(title, price, imageSrc, productID) {
     updateCartTotal()
     cartIsEmpty()
 }
-
+function quantityChanged(event) {
+    var input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
+    }
+    updateCartTotal()
+    quantityChanged()
+}
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
     var cartRows = allCartItems.getElementsByClassName('cart-row')
