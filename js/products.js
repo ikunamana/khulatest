@@ -234,9 +234,9 @@ function orderClear() {
 }
 
 function quantityChanged(event) {
-    var inputActive = event.target;
-    if (isNaN(inputActive.value) || inputActive.value <= 0) {
-        inputActive.value = 1
+    var input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1
     }
     updateCartTotal()
     quantityChanged()
@@ -298,7 +298,6 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
         cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = document.getElementsByClassName('cart-item-name')
-    var inputValue = document.getElementsByClassName('item-quantity')[0]
     var notification = document.getElementById('notification')
     var errorMessage = `<div class="warningNotification" id="warningNotification">
     <img class="notificationImg" src="../images/info.png" >
