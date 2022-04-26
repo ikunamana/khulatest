@@ -287,13 +287,13 @@ function addToCartClicked(event) {
 //     var productID = localStorage.getItem("localProductID");
 //     var imageSrc = localStorage.getItem("localImageSrc");
 //     var productItemType = localStorage.getItem("localProductItemType");
-    addItemToCart(title, price, imageSrc, productID, productID);
+    addItemToCart(title, price, imageSrc, productID, productItemType);
     updateCartTotal()
     cartNumber()
     hideCircle()
 }
 
-function addItemToCart(title, price, imageSrc, productID) {
+function addItemToCart(title, price, imageSrc, productID, productItemType) {
     var cartRow = document.createElement('div')
         cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -336,12 +336,12 @@ function addItemToCart(title, price, imageSrc, productID) {
     var cartRowContents = `
     <div id="${productID}" class="cart-item">
         <img class="cart-item-image " src="${imageSrc}" alt="${title}">
-        <span class="cart-item-name" id="${productID}">${title}</span>
+        <span class="cart-item-name">${title}</span>
     </div>
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
         <input class="item-quantity"   value="1" type="number">
-        <span class="cart-item-type"></span>
+        <span class="cart-item-type">${type}</span>
         <button class="remove-button ">წაშლა</button>
     </div>`
 
