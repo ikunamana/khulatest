@@ -239,6 +239,7 @@ function quantityChanged(event) {
         input.value = 1
     }
     updateCartTotal()
+    quantityChanged()
 }
 
 function removeCartItem(event) {
