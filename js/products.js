@@ -110,7 +110,7 @@ function ready() {
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
-        input.addEventListener('change', quantityChanged,updateCartTotal)
+        input.addEventListener('change', quantityChanged)
     }
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
