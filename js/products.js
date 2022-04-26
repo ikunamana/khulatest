@@ -429,7 +429,18 @@ function cartIsEmpty() {
         redCircle.style.transform = "scale(0)";
     }
 }
-
+var quantityInputs = document.getElementsByClassName('item-quantity')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i];
+        input.addEventListener('keyup', quantityChanged)
+    }
+    function quantityChanged(event) {
+        var input = event.target;
+        if (isNaN(input.value) || input.value <= 0) {
+            input.value = 1
+        }
+        quantityChanged()
+    }
 savedCartCall()
 cartNumber()
 cartIsEmpty()
