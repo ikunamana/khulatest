@@ -2194,7 +2194,15 @@ h3 {
     background: none;
     border: none;
 }
-
+.cart-items input[type=number] {
+    width: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-animation-name: logoanima;
+    animation-name: logoanima;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
 .plus-minus {
     height: 60px;
     display: flex;
