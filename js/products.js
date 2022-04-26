@@ -246,7 +246,7 @@ function removeCartItem(event) {
     var cartItems = document.getElementById('cartItems')
     buttonClicked.parentElement.parentElement.remove();
     var cartItemsHtml = cartItems.innerHTML;
-    localStorage.setItem('cart2', cartItemsHtml)
+    localStorage.setItem('cart', cartItemsHtml)
     cartNumber()
     updateCartTotal()
     cartIsEmpty()
