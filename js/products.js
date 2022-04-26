@@ -249,10 +249,10 @@ function quantityChanged(event) {
 function plusButtonClicked(event){
     var plusButtonF = event.target;
     var targetedInput = plusButtonF.parentElement
-    var quantityInput = targetedInput.getElementsByClassName('item-quantity')[i];
+    var quantityInput = plusButtonF.getElementsByName('item-quantity');
     var quantityInputValue = quantityInput.value;
 
-    quantityInputValue++
+   quantityInputValue = quantityInputValue++
     
 }
 
@@ -356,7 +356,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     <div class="cart-item-quantity ">
         <span class="cart-quantity-plus"><img width="30px" src="../images/plus.png" alt="plus"></span>
         <span class="cart-quantity-minus"><img  width="30px" src="../images/minus.png" alt="minus"></span>
-        <input class="item-quantity"   value="1" type="number">
+        <input class="item-quantity" name="item-quantity"  value="1" type="number">
         <span class="cart-item-type">${productItemType}</span>
         <button class="remove-button">წაშლა</button>
     </div>`
