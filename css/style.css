@@ -14,6 +14,11 @@
     background-size: contain;
 }
 
+.body{
+    background-image: url(../images/background.png);
+    background-size: contain;
+}
+
 @font-face {
     font-family: Georgian;
     src: url("../fonts/bpg_nino_mtavruli_normal.ttf");
