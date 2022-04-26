@@ -101,15 +101,9 @@ function ready() {
 
         gilaki.addEventListener('click', addToCartClicked);
     }
-    // var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
-    // for (var i = 0; i < addToCartButtons.length; i++) {
-    //     var gilaki = addToCartButtons[i];
-
-    //     gilaki.addEventListener('click', localStorageFunction);
-    // }
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
-        var input = quantityInputs[i]
+        var input = quantityInputs[i];
         input.addEventListener('change', quantityChanged)
     }
 
