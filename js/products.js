@@ -212,8 +212,15 @@ function orderClicked() {
 
                 var orderedItems = cartRowF.getElementsByClassName('cart-item-name')[0].innerHTML
                 var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0].value
-                var ikuna = document.createElement('div');
-                ikuna.innerHTML = "დასახელება:" + orderedItems + "რაოდენობა:" + orderedQuantity
+                var orderedQuantity = cartRowF.getElementsByClassName('cart-item-type')[0].innerHTML
+                var orderedQuantity = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
+                var orderedQuantity = cartRowF.getElementsByClassName('cart-item-type')[0].innerHTML
+                var finalOrder = document.createElement('div');
+                var order = [
+                    name = orderedItems
+
+                ]
+                finalOrder.innerHTML = order
                 console.log(ikuna)
 
                 }
