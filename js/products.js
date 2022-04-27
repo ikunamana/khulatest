@@ -226,7 +226,7 @@ function orderClicked() {
                 
                 orderArr = []
                     
-                orderArr = orderObj
+                orderArr = orderObj[0]
                 
                 finalOrder.innerHTML = order
                 localStorage.setItem('order', orderArr)
