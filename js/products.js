@@ -206,7 +206,7 @@ function orderClicked() {
 
 
                 var cartItems = document.getElementsByClassName('cart-items')[0]
-                var cartRow = document.getElementsByClassName('cart-row');
+                var cartRow = cartItems.getElementsByClassName('cart-row');
                 for (var i = 0; i < cartRow.length; i++) {
 
                 var orderedItems = cartRow.getElementsByClassName('cart-item-name')[0].innerHTML
