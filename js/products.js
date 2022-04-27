@@ -89,7 +89,11 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-
+    var plusButton = document.getElementsByClassName('cart-quantity-plus');
+    for (var i = 0; i < plusButton.length; i++) {
+        var plusButtonF = plusButton[i];
+        plusButtonF.addEventListener('click', plusButtonClicked);
+    }
 
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
@@ -230,6 +234,19 @@ function orderClear() {
     hideCircle()
 }
 
+function plusButtonClicked(event){
+    var plusButtonF = event.target;
+    var inputFather = plusButtonF.parentElement.nextSibling.nextElementSibling.nextElementSibling;
+    console.log(inputFather)
+    var quantityValue = parseInt(inputFather.value, 10);
+    console.log(quantityValue)
+        quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
+    if(quantityValue<10) {
+        quantityValue++;
+        inputFather.value = quantityValue;
+    }
+}
+
 function removeCartItem(event) {
     var buttonClicked = event.target;
     var cartItems = document.getElementById('cartItems')
@@ -362,26 +379,9 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
         updateCartTotal()
     }
 
-    var plusButton = document.getElementsByClassName('cart-quantity-plus');
-    for (var i = 0; i < plusButton.length; i++) {
-        var plusButtonF = plusButton[i];
-        plusButtonF.addEventListener('click', plusButtonClicked);
-    }
+ 
 
-    function plusButtonClicked(event){
-        var plusButtonF = event.target;
-        var inputFather = plusButtonF.parentElement.nextSibling.nextElementSibling.nextElementSibling;
-        console.log(inputFather)
-        var quantityValue = parseInt(inputFather.value, 10);
-        console.log(quantityValue)
-            quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
-        if(quantityValue<10) {
-            quantityValue++;
-            inputFather.value = quantityValue;
-        }
-    }
-    
-    
+
 }
 
 function updateCartTotal() {
