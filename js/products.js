@@ -216,10 +216,10 @@ function orderClicked() {
                 var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
                 var finalOrder = document.createElement('div');
                 var order = orderArr [
-                        "name" = orderedItems,
-                        "raodeonoba"= orderedQuantity,
-                        "type"= orderedType,
-                        "price"= orderedPrice]
+                        name = orderedItems,
+                        raodeonoba = orderedQuantity,
+                        type = orderedType,
+                        price = orderedPrice]
 
                 orderObj = JSON.stringify(order)
                 
