@@ -236,7 +236,6 @@ function orderClear() {
 function plusButtonClicked(event){
     var plusButtonF = event.target;
     var inputFather = plusButtonF.parentElement.nextSibling.nextElementSibling;
-    console.log(inputFather)
     var quantityValue = parseInt(inputFather.value, 10);
         quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
     if(quantityValue<10) {
@@ -248,12 +247,12 @@ function plusButtonClicked(event){
 function minusButtonClicked(event){
     var minusButtonF = event.target;
     var inputFather = minusButtonF.parentElement.previousSibling.previousElementSibling.previousElementSibling;
-    console.log(inputFather)
     var quantityValue = parseInt(inputFather.value, 10);
         quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
     if(quantityValue>1) {
         quantityValue--;
         inputFather.value = quantityValue;
+        
     }
 }
 
