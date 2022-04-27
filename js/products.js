@@ -234,6 +234,7 @@ function orderClear() {
 
 // პროდუქტის რაოდენობის გაზრდა პლუს (+) ღილაკზე დაჭერით.
 function plusButtonClicked(event){
+    var cartItems = document.getElementsByClassName('cart-items')[0]
     var plusButtonF = event.target;
     var inputFather = plusButtonF.parentElement.nextSibling.nextElementSibling;
     var quantityValue = parseInt(inputFather.value, 10);
@@ -242,11 +243,14 @@ function plusButtonClicked(event){
         quantityValue++;
         inputFather.value = quantityValue;
         inputFather.setAttribute('value', quantityValue)
+        var cartItemsHtml = cartItems.innerHTML;
+        localStorage.setItem('cart', cartItemsHtml)    
     }
     updateCartTotal()
 }
 
 function minusButtonClicked(event){
+    var cartItems = document.getElementsByClassName('cart-items')[0]
     var minusButtonF = event.target;
     var inputFather = minusButtonF.parentElement.previousSibling.previousElementSibling.previousElementSibling;
     var quantityValue = parseInt(inputFather.value, 10);
@@ -255,6 +259,9 @@ function minusButtonClicked(event){
         quantityValue--;
         inputFather.value = quantityValue;
         inputFather.setAttribute('value', quantityValue)
+        var cartItemsHtml = cartItems.innerHTML;
+        localStorage.setItem('cart', cartItemsHtml)
+    
     }
     updateCartTotal()
 }
