@@ -226,8 +226,8 @@ function orderClicked() {
                     
                 
                 
-                finalOrder.innerHTML = orderObj
-                console.log(finalOrder)
+                // finalOrder.innerHTML = orderObj
+                sessionStorage.setItem(orderObj)
 
                 }
 
