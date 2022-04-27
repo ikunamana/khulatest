@@ -227,7 +227,7 @@ function orderClicked() {
                 
                 
                 finalOrder.innerHTML = orderObj
-                console.log(finalOrder)
+                console.log(orderObj)
                 }
 
 
