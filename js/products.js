@@ -371,6 +371,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     function plusButtonClicked(event){
         var plusButtonF = event.target;
         var divParent = plusButtonF.parentElement;
+        console.log(divParent)
         var inputFather = divParent.getElementsByTagName('input')[0]
         var quantityValue = parseInt(inputFather.value, 10);
             quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
