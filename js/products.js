@@ -204,11 +204,11 @@ function orderClicked() {
                 notification.style.top = "-300px"
                 }, 5000)
                 var cartItems = document.getElementsByClassName('cart-items')[0]
-                var cartItemName = document.getElementsByClassName('cart-item-name');
-                for (var i = 0; i < cartItemName.length; i++) {
+                var cartRow = document.getElementsByClassName('cart-row');
+                for (var i = 0; i < cartRow.length; i++) {
 
-                var orderedItems = cartItems.getElementsByClassName('cart-item-name')[i].innerHTML
-                var orderedQuantity = cartItems.getElementsByClassName('item-quantity').value
+                var orderedItems = cartRow.getElementsByClassName('cart-item-name')[0].innerHTML
+                var orderedQuantity = cartRow.getElementsByClassName('item-quantity')[0].value
                 var ikuna = document.createElement('div');
                 ikuna.innerHTML = "დასახელება:" + orderedItems + "რაოდენობა:" + orderedQuantity
 
