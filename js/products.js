@@ -208,13 +208,15 @@ function orderClicked() {
                 var cartItems = document.getElementsByClassName('cart-items')[0]
                 var cartRow = cartItems.getElementsByClassName('cart-row');
                 for (var i = 0; i < cartRow.length; i++) {
+                    var cartRowF = cartRow[i];
 
-                var orderedItems = cartRow[i].getElementsByClassName('cart-item-name').outerHTML
-                var orderedQuantity = cartRow[0].getElementsByClassName('item-quantity').value
+
+                var orderedItems = cartRowF.getElementsByClassName('cart-item-name').innerHTML
+                var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0]
                 var ikuna = document.createElement('div');
                 ikuna.innerHTML = "დასახელება:" + orderedItems + "რაოდენობა:" + orderedQuantity
 
-                console.log(orderedQuantity)
+                console.log(orderedItems)
                 }
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
