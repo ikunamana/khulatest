@@ -211,13 +211,14 @@ function orderClicked() {
                     var cartRowF = cartRow[i];
 
 
-                var orderedItems = cartRowF.getElementsByClassName('cart-item-name').innerHTML
+                var orderedItems = cartRowF.getElementsByClassName('cart-item-name')
                 var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0]
                 var ikuna = document.createElement('div');
                 ikuna.innerHTML = "დასახელება:" + orderedItems + "რაოდენობა:" + orderedQuantity
+                
                 }
                 console.log(orderedItems)
-                
+
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
