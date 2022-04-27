@@ -360,7 +360,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     // cartDiv1.innerHTML = localStorage.getItem('cart');
     // cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
-    cartRow.getElementsByClassName('cart-quantity-plus').addEventListener('click', plusButtonClicked);
+    cartRow.getElementsByClassName('cart-quantity-plus')[0].addEventListener('click', plusButtonClicked);
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
