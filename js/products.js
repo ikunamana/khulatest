@@ -373,7 +373,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
         var plusButtonF = event.target;
         var quantityInput = document.getElementsByClassName('item-quantity');
         var quantityInputValue = quantityInput.value;
-        quantityInputValue++
+        quantityInputValue * 2
     }
 }
 
