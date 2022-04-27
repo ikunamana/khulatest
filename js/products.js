@@ -203,7 +203,8 @@ function orderClicked() {
         setTimeout(() => {
                 notification.style.top = "-300px"
                 }, 5000)
-                    
+    var orderedItems = cartItems.getElementsByClassName('cart-item-name')[0].innerHTML
+    console.log(orderedItems)
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
@@ -261,7 +262,6 @@ function minusButtonClicked(event){
         inputFather.setAttribute('value', quantityValue)
         var cartItemsHtml = cartItems.innerHTML;
         localStorage.setItem('cart', cartItemsHtml)
-    
     }
     updateCartTotal()
 }
