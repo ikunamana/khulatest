@@ -95,11 +95,7 @@ function ready() {
         var button = remCartItemButtons[i];
         button.addEventListener('click', removeCartItem);
     }
-    var plusButton = document.getElementsByClassName('cart-quantity-plus');
-    for (var i = 0; i < plusButton.length; i++) {
-        var plusButtonF = plusButton[i];
-        plusButtonF.addEventListener('click', plusButtonClicked);
-    }
+    
 
     var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
     for (var i = 0; i < addToCartButtons.length; i++) {
@@ -235,13 +231,7 @@ function orderClear() {
 
 
 
-function plusButtonClicked(event){
-    var plusButtonF = event.target;
-    var quantityInput = plusButtonF.parentElement.getElementsByClassName('item-quantity');
 
-   quantityInput.Value+2
-    
-}
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
@@ -359,10 +349,16 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
     cartIsEmpty()
+
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i];
         input.addEventListener('keyup', quantityChanged)
+    }
+    var plusButton = document.getElementsByClassName('cart-quantity-plus');
+    for (var i = 0; i < plusButton.length; i++) {
+        var plusButtonF = plusButton[i];
+        plusButtonF.addEventListener('click', plusButtonClicked);
     }
 
     function quantityChanged(event) {
@@ -371,6 +367,13 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
             input.value = 1
         }
         updateCartTotal()
+    }
+
+    function plusButtonClicked(event){
+        var plusButtonF = event.target;
+        var quantityInput = document.getElementsByClassName('item-quantity');
+        var quantityInputValue = quantityInput.value;
+        quantityInputValue++
     }
 }
 
