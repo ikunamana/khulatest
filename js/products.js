@@ -370,7 +370,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
 
     function plusButtonClicked(event){
         var plusButtonF = event.target;
-        var divParent = plusButtonF.parentElement;
+        var divParent = plusButtonF.parentElement.parentElement;
         console.log(divParent)
         var inputFather = divParent.getElementsByTagName('input')[0]
         var quantityValue = parseInt(inputFather.value, 10);
