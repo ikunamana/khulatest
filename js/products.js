@@ -220,12 +220,11 @@ function orderClicked() {
                         raodeonoba: orderedQuantity,
                         type: orderedType,
                         price: orderedPrice}]
-                        var orderF = order[1]
 
                 // orderObj = JSON.stringify(order)
                 
                 // finalOrder.innerHTML = orderObj
-                localStorage.setItem('ORDER', JSON.stringify(orderF))
+                console.log(JSON.stringify(order))
         
     }
 
