@@ -89,7 +89,7 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-  
+
 
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
@@ -229,10 +229,6 @@ function orderClear() {
     updateCartTotal()
     hideCircle()
 }
-
-
-
-
 
 function removeCartItem(event) {
     var buttonClicked = event.target;
@@ -379,9 +375,11 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
             quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
         if(quantityValue<10) {
             quantityValue++;
-            inputFather.value = quantityValue;
+            inputFather.getElementsByClassName('item-quantity').value = quantityValue;
         }
     }
+    
+    
 }
 
 function updateCartTotal() {
