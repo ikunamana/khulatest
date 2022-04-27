@@ -325,8 +325,8 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     </div>
     <span class="cart-item-price "> ${price}</span>
     <div class="cart-item-quantity ">
-        <span class="cart-quantity-plus"><img width="30px" src="../images/plus.png" alt="plus"></span>
-        <span class="cart-quantity-minus"><img  width="30px" src="../images/minus.png" alt="minus"></span>
+        <span class="cart-quantity-plus"><img src="../images/plus.png" alt="plus"></span>
+        <span class="cart-quantity-minus"><img src="../images/minus.png" alt="minus"></span>
         <input class="item-quantity" name="item-quantity"  value="1" type="number">
         <span class="cart-item-type">${productItemType}</span>
         <button class="remove-button">წაშლა</button>
