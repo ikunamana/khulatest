@@ -89,7 +89,7 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    var plusButton = cartRow.getElementsByClassName('cart-quantity-plus');
+    var plusButton = document.getElementsByClassName('cart-quantity-plus');
     for (var i = 0; i < plusButton.length; i++) {
         var plusButtonF = plusButton[i];
         plusButtonF.addEventListener('click', plusButtonClicked);
