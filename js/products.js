@@ -236,7 +236,7 @@ function orderClear() {
 
 function plusButtonClicked(event){
     var plusButtonF = event.target;
-    var inputFather = plusButtonF.parentElement;
+    var inputFather = plusButtonF.parentElement.parentElement;
     var quantityValue = parseInt(inputFather.getElementsByClassName('item-quantity').value, 10)[0];
         quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
     if(quantityValue<10) {
