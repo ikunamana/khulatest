@@ -225,7 +225,7 @@ function orderClicked() {
                 
                 var obj = orderObj
                 finalOrder.innerHTML = orderObj
-                console.log(obj)
+                localStorage.setItem('order', obj)
         }
 
 
