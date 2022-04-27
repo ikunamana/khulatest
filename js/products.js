@@ -355,7 +355,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
         var input = quantityInputs[i];
         input.addEventListener('keyup', quantityChanged)
     }
-    var plusButton = cartRow.getElementsByClassName('cart-quantity-plus')[0];
+    var plusButton = cartRow.getElementsByClassName('cart-quantity-plus');
     for (var i = 0; i < plusButton.length; i++) {
         var plusButtonF = plusButton[i];
         plusButtonF.addEventListener('click', plusButtonClicked);
