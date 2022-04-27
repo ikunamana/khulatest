@@ -371,11 +371,12 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
 
     function plusButtonClicked(event){
         var plusButtonF = event.target;
-        var quantityValue = parseInt(document.getElementsByClassName('item-quantity').value, 10);
+        var inputFather = plusButtonF.parentElement;
+        var quantityValue = parseInt(inputFather.getElementsByClassName('item-quantity').value, 10);
             quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
         if(quantityValue<10) {
             quantityValue++;
-            document.getElementsByClassName('item-quantity').value = quantityValue;
+            inputFather.getElementsByClassName('item-quantity').value = quantityValue;
         }
     }
 }
