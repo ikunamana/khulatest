@@ -247,7 +247,7 @@ function plusButtonClicked(event){
 
 function minusButtonClicked(event){
     var minusButtonF = event.target;
-    var inputFather = minusButtonF.parentElement.previousSibling.previousElementSibling;
+    var inputFather = minusButtonF.parentElement.previousSibling.previousElementSibling.previousElementSibling;
     console.log(inputFather)
     var quantityValue = parseInt(inputFather.value, 10);
         quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
@@ -346,7 +346,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     <div class="cart-item-quantity ">
         <span class="cart-quantity-plus"><img src="../images/plus.png" alt="plus"></span>
         <input class="item-quantity" name="item-quantity"  value="1" type="" disabled>
-        <span class="cart-item-type">${productItemType}</span></br>
+        <span class="cart-item-type">${productItemType}</span>
         <span class="cart-quantity-minus"><img src="../images/minus.png" alt="minus"></span>
         <button class="remove-button">წაშლა</button>
     </div>`
