@@ -230,7 +230,7 @@ function orderClicked() {
                     
                 
                 finalOrder.innerHTML = order
-                localStorage.setItem('order', orderI)
+                localStorage.setItem('order', orderObj)
                 }
                 }
 
