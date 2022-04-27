@@ -2195,7 +2195,7 @@ h3 {
     width: 30px;
 }
 
-.cart-items input {
+.cart-items input[disabled] {
     width: 14px;
     font-size: 18px;
     font-weight: 800;
