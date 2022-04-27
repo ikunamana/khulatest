@@ -215,17 +215,16 @@ function orderClicked() {
                 var orderedType = cartRowF.getElementsByClassName('cart-item-type')[0].innerHTML
                 var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
                 var finalOrder = document.createElement('div');
-                var order = { "order" : [{
-                        'name': orderedItems,
-                        'raodeonoba': orderedQuantity,
-                        'type': orderedType,
-                        'price': orderedPrice}]}
+                var order =[{
+                        name: orderedItems,
+                        raodeonoba: orderedQuantity,
+                        type: orderedType,
+                        price: orderedPrice}]
 
                 // orderObj = JSON.stringify(order)
                 
-                var obj = order[0]
                 // finalOrder.innerHTML = orderObj
-                localStorage.setItem('order', obj)
+                localStorage.setItem('order', JSON.stringify(order))
         }
 
 
