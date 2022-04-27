@@ -2332,6 +2332,11 @@ h3 {
 .cart-item-quantity img {
     width: 20px;
     height: 20px;
+    opacity: 0.8;
+}
+
+.cart-item-quantity img:hover {
+    opacity: 1;
 }
 
 .cart-inside {
