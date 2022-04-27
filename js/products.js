@@ -221,16 +221,17 @@ function orderClicked() {
                         "type": orderedType,
                         "price": orderedPrice
                 }
+                for (var i = 0; i < order.length; i++) {
+                    var orderI = order[i];
 
-                orderObj = JSON.stringify(order)
+
+                orderObj = JSON.stringify(orderI)
                 
-                orderArr = []
                     
-                orderArr = orderObj[0]
                 
                 finalOrder.innerHTML = order
-                localStorage.setItem('order', orderArr)
-
+                localStorage.setItem('order', orderI)
+                }
                 }
 
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
