@@ -82,6 +82,8 @@ function populateProduktebi(obj) {
         section.append(firstDiv);
     }
 
+// JS-ის ფაილი იტვირთება გვერდის პარალელურად, გვერდის ჩატვირთვისას გაეშვება ფუნქცია
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
@@ -89,25 +91,30 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
+    // Event-ები ჩატვირთული გვერდის ელემენტებზე
+    
+    // პროდუქტის რაოდენობის Input-ის მნიშვნელობის ცვლილების Event
     var quantityInputs = document.getElementsByClassName('item-quantity')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i];
-        input.addEventListener('keyup', quantityChanged)
+        input.addEventListener('change', quantityChanged)
     }
 
+    // პროდუქტის რაოდენობის გამზრდელი ღილაკის, (+) - ის Event
     var plusButton = document.getElementsByClassName('cart-quantity-plus');
     for (var i = 0; i < plusButton.length; i++) {
         var plusButtonF = plusButton[i];
         plusButtonF.addEventListener('click', plusButtonClicked);
     }
 
+    // პროდუქტის ამოსაშლელი ღილაკის, (წაშლა)-ის Event
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
         var button = remCartItemButtons[i];
         button.addEventListener('click', removeCartItem);
     }
     
-
+    // პროდუქტის კალათაში დასამატებელი ღილაკის, (კალათა)-ის Event
     var addToCartButtons = document.getElementsByClassName('btnshekvetapro');
     for (var i = 0; i < addToCartButtons.length; i++) {
         var gilaki = addToCartButtons[i];
@@ -115,44 +122,12 @@ function ready() {
         gilaki.addEventListener('click', addToCartClicked);
     }
     
-
+    // კალათაში არსებული პროდუქტების შეკვეთა/ერთიანად წაშლის ღილაკების Event
     document.getElementsByClassName('order-button')[0].addEventListener('click', orderClicked)
     document.getElementsByClassName('order-clear')[0].addEventListener('click', orderClear)
 }
 
-// function buttonDisabled() {
-
-//     var emptyCart = document.getElementById('emptycart')
-//     var orderButton = document.getElementById('orderButton')
-
-//     if (emptyCart.style.display == "flex") {
-
-//         orderButton.classList.add('order-clear');
-//     } else {
-//         orderButton.classList.remove('order-clear');
-
-//     }
-// }
-
-// function cartBtnCheck() {
-//     var dropupmenu1 = document.getElementById("cart-content");
-//     var redCircle = document.getElementById('redCircle');
-//     if (dropupmenu1.style.pointerEvents = "visible") {
-//         redCircle.style.transform = "scale(0)"
-
-//     } else {
-//         redCircle.style.transform = "scale(1)"
-
-//     }
-// }
-
-// var cartbtn = document.getElementById('cartbtn');
-// var redCircle = document.getElementById('redCircle');
-
-// cartbtn.onclick = function cartBtnCheck() {
-//     redCircle.classList.toggle('scaleReduce');
-// }
-
+// როცა კალათაში არ არის პროდუქტი, კალათის შიგთავსი იცლება Div-ით, რომელიც ატყობინებს მომხმარებელს, რომ კალათა ცარიელია.
 function cartIsEmpty() {
     var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
@@ -175,16 +150,19 @@ function cartIsEmpty() {
 }
 updateCartTotal()
 cartIsEmpty()
-var dropupmenu1 = document.getElementById("cart-content");
 
+// კალათის ღილაკის მარჯვენა ზედა კუთხეში არსებული რაოდენობის მაჩვენებელი წითელი წრე ქრება, როცა კალათა ღიაა.
 function hideCircle(){
+    var dropupmenu1 = document.getElementById("cart-content");
+
     if (dropupmenu1.classList.contains(("cart-content-active")) || cartItems.children.length < 1 ){
         redCircle.style.transform = "scale(0)"
     } else {
         redCircle.style.transform = "scale(1)"
+    }
+}
 
-}
-}
+// კალათაში არსებული პროდუქტების რაოდენობა
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -193,6 +171,7 @@ function cartNumber() {
 cartNumber()
 cartIsEmpty()
 
+// შეკვეთის ღილაკზე Click Event და შეტყობინების Div-ის გამოსვლა ეკრანზე.
 function orderClicked() {
     var notification = document.getElementById('notification')
     var succsesMessage = `<div class="succsesNotification" id="succsesNotification">
@@ -204,23 +183,27 @@ function orderClicked() {
     notification.style.top = "40px"
     var x = document.getElementById("warningX");
 
+    // შეტყობინების Div-ის დახურვა X ღილაკზე კლიკით.
         x.onclick = function warningClose(){
             notification.style.top = "-300px"
                     }
-
+    // შეტყობინების Div-ის დახურვა სქროლით.
         window.onscroll = function notificationCloseViaScroll() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
                 notification.style.top = "-300px"
-                        }
-                    }
-                    setTimeout(() => {
-                        notification.style.top = "-300px"
-                    }, 5000)
+            }
+        }
+    // შეტყობინების Div-ის დახურვა ავტომატურად, 5 წამში.
+        setTimeout(() => {
+                notification.style.top = "-300px"
+                }, 5000)
                     
+    // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+    // ცარიელი კალათის LocalStorage-ში დამახსოვრება.
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     cartNumber()
@@ -228,11 +211,14 @@ function orderClicked() {
     updateCartTotal()
 }
 
+// კალათის გასუფთავება, ყველა პროდუქტის ერთიანად წაშლა ღილაკზე "გასუფთავება" დაჭერით.
 function orderClear() {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
+
+    // ცარიელი კალათის LocalStorage-ში დამახსოვრება.
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     cartIsEmpty()
@@ -240,12 +226,11 @@ function orderClear() {
     hideCircle()
 }
 
+// პროდუქტის რაოდენობის გაზრდა პლუს (+) ღილაკზე დაჭერით.
 function plusButtonClicked(event){
     var plusButtonF = event.target;
     var inputFather = plusButtonF.parentElement.nextSibling.nextElementSibling.nextElementSibling;
-    console.log(inputFather)
     var quantityValue = parseInt(inputFather.value, 10);
-    console.log(quantityValue)
         quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
     if(quantityValue<10) {
         quantityValue++;
@@ -253,6 +238,7 @@ function plusButtonClicked(event){
     }
 }
 
+// რაოდენობის შეზღუდვა, რაოდენობა არ უნდა იყოს <= 0;
 function quantityChanged(event) {
     var input = event.target;
     if (isNaN(input.value) || input.value <= 0) {
@@ -261,10 +247,12 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
+// კალათიდან პროდუქტის ამოშლა ღილაკზე "წაშლა" კლიკით.
 function removeCartItem(event) {
     var buttonClicked = event.target;
     var cartItems = document.getElementById('cartItems')
     buttonClicked.parentElement.parentElement.remove();
+    // კალათის LocalStorage-ში დამახსოვრება.
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
     cartNumber()
@@ -273,6 +261,7 @@ function removeCartItem(event) {
     hideCircle()
 }
 
+// პროდუქტის დამატება კალათაში, გვერდზე არსებული პროდუქტების ცალკეული მონაცემების აღება.
 function addToCartClicked(event) {
     var gilaki = event.target;
     var product = gilaki.parentElement.parentElement.parentElement;
@@ -281,37 +270,14 @@ function addToCartClicked(event) {
     var productID = product.getElementsByClassName('shop-item-title')[0].id;
     var imageSrc = product.getElementsByClassName('productimg1')[0].src;
     var productItemType = product.getElementsByClassName('product-item-type')[0].innerHTML;
-//      var obj =[]
-//     localStorage.setItem("localTitle", title)
-//     localStorage.setItem("localPrice", price)
-//     localStorage.setItem("localProductID", productID)
-//     localStorage.setItem("localImageSrc", imageSrc)
-//     localStorage.setItem("localProductItemType", productItemType)
 
-// //     let cartDivInside = {
-// //         localTitle: `${komponenti.name}`,
-// //         localPrice: `${komponenti.price}`,
-// //         localProductID: `${komponenti.id}`,
-// //         localImageSrc:`${komponenti.img}`,
-// //         localProductItemType:`${komponenti.type}`
-// // }
-// //     let cartDivString = JSON.stringify(cartDivInside);
-// //     localStorage.setItem("cartDivString", cartDivString)
-// //     let cartDivString2 = JSON.parse(localStorage.getItem("cartDivString"));
-// //     console.log(JSON.parse(localStorage.getItem("localTitle")))
-//     var gilaki = event.target;
-//     var product = gilaki.parentElement.parentElement.parentElement;
-//     var title = localStorage.getItem("localTitle");
-//     var price = localStorage.getItem("localPrice");
-//     var productID = localStorage.getItem("localProductID");
-//     var imageSrc = localStorage.getItem("localImageSrc");
-//     var productItemType = localStorage.getItem("localProductItemType");
     addItemToCart(title, price, imageSrc, productID, productItemType);
     updateCartTotal()
     cartNumber()
     hideCircle()
 }
 
+// გვერდზე აღებული ცალკეული მონაცემების გადატანა კალათაში.
 function addItemToCart(title, price, imageSrc, productID, productItemType) {
     var cartRow = document.createElement('div')
         cartRow.classList.add('cart-row')
@@ -324,7 +290,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     <span id="warningX" class="warningX">&times;</span>
     </div>
     `
-
+    // თუ გვერდზე არსებული პროდუქტის სახელი ემთხვევა კალათაში არსებული პროდუქტის სახელს, შეწყდეს გადატანის პროცესი და ეკრანზე გაჩნდეს შეტყობინება.
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             notification.innerHTML = errorMessage
@@ -334,7 +300,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
                     for (var i = 0; i < close.length; i++){
                         var closeX = close[i];
                     closeX.addEventListener('click', warningClose);
-                }
+                    }
                     function warningClose(event){
                      notification.style.top = "-300px"
                     }
@@ -379,16 +345,9 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
     cartIsEmpty()
-
-    
-
-
-
- 
-
-
 }
 
+// კალათაში არსებული პროდუქტების ჯამური ფასის განახლება.
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
     var cartRows = allCartItems.getElementsByClassName('cart-row')
@@ -401,6 +360,7 @@ function updateCartTotal() {
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
+    // ჯამური ფასის .00 - მდე დამრგვალება.
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total + 'GEL'
 }
