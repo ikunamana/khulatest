@@ -89,6 +89,11 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
+    var plusButton = cartRow.getElementsByClassName('cart-quantity-plus');
+    for (var i = 0; i < plusButton.length; i++) {
+        var plusButtonF = plusButton[i];
+        plusButtonF.addEventListener('click', plusButtonClicked);
+    }
 
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
@@ -229,7 +234,16 @@ function orderClear() {
     hideCircle()
 }
 
-
+function plusButtonClicked(event){
+    var plusButtonF = event.target;
+    var inputFather = plusButtonF.parentElement;
+    var quantityValue = parseInt(inputFather.getElementsByClassName('item-quantity').value, 10)[0];
+        quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
+    if(quantityValue<10) {
+        quantityValue++;
+        inputFather.getElementsByClassName('item-quantity').value = quantityValue;
+    }
+}
 
 
 
@@ -355,11 +369,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
         var input = quantityInputs[i];
         input.addEventListener('keyup', quantityChanged)
     }
-    var plusButton = cartRow.getElementsByClassName('cart-quantity-plus');
-    for (var i = 0; i < plusButton.length; i++) {
-        var plusButtonF = plusButton[i];
-        plusButtonF.addEventListener('click', plusButtonClicked);
-    }
+
 
     function quantityChanged(event) {
         var input = event.target;
@@ -367,17 +377,6 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
             input.value = 1
         }
         updateCartTotal()
-    }
-
-    function plusButtonClicked(event){
-        var plusButtonF = event.target;
-        var inputFather = plusButtonF.parentElement;
-        var quantityValue = parseInt(inputFather.getElementsByClassName('item-quantity').value, 10)[0];
-            quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
-        if(quantityValue<10) {
-            quantityValue++;
-            inputFather.getElementsByClassName('item-quantity').value = quantityValue;
-        }
     }
 }
 
