@@ -211,7 +211,7 @@ function orderClicked() {
                     var cartRowF = cartRow[i];
 
 
-                var orderedItems = cartRowF.getElementsByClassName('cart-item-name').innerHTML
+                var orderedItems = cartRowF.getElementsByClassName('cart-item-name')
                 var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0]
                 var ikuna = document.createElement('div');
                 ikuna.innerHTML = "დასახელება:" + orderedItems + "რაოდენობა:" + orderedQuantity
