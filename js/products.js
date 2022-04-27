@@ -220,8 +220,9 @@ function orderClicked() {
                     name = orderedItems
 
                 ]
+                
                 finalOrder.innerHTML = order
-                console.log(ikuna)
+                console.log(finalOrder)
 
                 }
 
