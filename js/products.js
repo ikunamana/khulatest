@@ -245,7 +245,6 @@ function plusButtonClicked(event){
         quantityValue++;
         inputFather.value = quantityValue;
     }
-    plusButtonClicked()
 }
 
 function removeCartItem(event) {
