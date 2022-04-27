@@ -225,9 +225,9 @@ function orderClicked() {
 
                 orderObj = JSON.stringify(order)
                 
-                
+                var obj = orderObj
                 finalOrder.innerHTML = orderObj
-                console.log(orderObj)
+                console.log(obj)
                 }
 
 
