@@ -221,12 +221,12 @@ function orderClicked() {
                         "type": orderedType,
                         "price": orderedPrice,
                 }
-                orderObj = obj['order']
+                // orderObj = obj['order']
                 
                     
                 
                 
-                finalOrder.innerHTML = orderObj
+                finalOrder.innerHTML = order
                 console.log(finalOrder)
 
                 }
