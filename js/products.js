@@ -226,8 +226,8 @@ function orderClicked() {
                     
                 
                 
-                // finalOrder.innerHTML = orderObj
-                localStorage.setItem('order', orderObj)
+                finalOrder.innerHTML = orderObj
+                localStorage.setItem('order', finalOrder)
 
                 }
 
