@@ -2196,8 +2196,9 @@ h3 {
 }
 
 .cart-items input {
-    width: 20px;
-    font-size: 17px;
+    width: 14px;
+    font-size: 18px;
+    font-weight: 800;
     background: none;
     border: none;
 }
