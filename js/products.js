@@ -203,6 +203,8 @@ function orderClicked() {
         setTimeout(() => {
                 notification.style.top = "-300px"
                 }, 5000)
+
+
                 var cartItems = document.getElementsByClassName('cart-items')[0]
                 var cartRow = document.getElementsByClassName('cart-row');
                 for (var i = 0; i < cartRow.length; i++) {
@@ -369,6 +371,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
         <button class="remove-button">წაშლა</button>
     </div>`
 
+    cartRow.setAttribute('class', 'cart-row')
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
     // localStorage.setItem('cart', `${cartRowContents}`)
