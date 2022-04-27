@@ -241,6 +241,7 @@ function plusButtonClicked(event){
     if(quantityValue<10) {
         quantityValue++;
         inputFather.value = quantityValue;
+        inputFather.setAttribute('value', quantityValue)
     }
     updateCartTotal()
 }
@@ -253,6 +254,7 @@ function minusButtonClicked(event){
     if(quantityValue>1) {
         quantityValue--;
         inputFather.value = quantityValue;
+        inputFather.setAttribute('value', quantityValue)
     }
     updateCartTotal()
 }
