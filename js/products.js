@@ -227,7 +227,7 @@ function orderClicked() {
                 
                 
                 // finalOrder.innerHTML = orderObj
-                sessionStorage.setItem(orderObj)
+                localStorage.setItem('order', orderObj)
 
                 }
 
