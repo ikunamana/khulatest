@@ -434,7 +434,7 @@ function cartIsEmpty() {
         redCircle.style.transform = "scale(0)";
     }
 }
-// savedCartCall()
+savedCartCall()
 cartNumber()
 cartIsEmpty()
 populate();
