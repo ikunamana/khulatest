@@ -107,6 +107,12 @@ function ready() {
         plusButtonF.addEventListener('click', plusButtonClicked);
     }
 
+    var minusButton = document.getElementsByClassName('cart-quantity-minus');
+    for (var i = 0; i < minusButton.length; i++) {
+        var minusButtonF = minusButton[i];
+        minusButtonF.addEventListener('click', minusButtonClicked);
+    }
+
     // პროდუქტის ამოსაშლელი ღილაკის, (წაშლა)-ის Event
     var remCartItemButtons = document.getElementsByClassName('remove-button');
     for (var i = 0; i < remCartItemButtons.length; i++) {
@@ -239,6 +245,18 @@ function plusButtonClicked(event){
     }
 }
 
+function minusButtonClicked(event){
+    var minusButtonF = event.target;
+    var inputFather = minusButtonF.parentElement.previousSibling.previousElementSibling;
+    console.log(inputFather)
+    var quantityValue = parseInt(inputFather.value, 10);
+        quantityValue = isNaN(quantityValue) ? 0 : quantityValue;
+    if(quantityValue>1) {
+        quantityValue--;
+        inputFather.value = quantityValue;
+    }
+}
+
 // რაოდენობის შეზღუდვა, რაოდენობა არ უნდა იყოს <= 0;
 function quantityChanged(event) {
     var input = event.target;
@@ -341,6 +359,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     // cartItems.append(cartDiv1);
     cartRow.getElementsByClassName('remove-button')[0].addEventListener('click', removeCartItem);
     cartRow.getElementsByClassName('cart-quantity-plus')[0].addEventListener('click', plusButtonClicked);
+    cartRow.getElementsByClassName('cart-quantity-minus')[0].addEventListener('click', minusButtonClicked);
     cartRow.getElementsByClassName('item-quantity')[0].addEventListener('click', quantityChanged);
     var cartItemsHtml = cartItems.innerHTML;
     localStorage.setItem('cart', cartItemsHtml)
