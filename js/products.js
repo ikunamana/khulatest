@@ -242,6 +242,7 @@ function plusButtonClicked(event){
         quantityValue++;
         inputFather.value = quantityValue;
     }
+    updateCartTotal()
 }
 
 function minusButtonClicked(event){
@@ -252,8 +253,8 @@ function minusButtonClicked(event){
     if(quantityValue>1) {
         quantityValue--;
         inputFather.value = quantityValue;
-        
     }
+    updateCartTotal()
 }
 
 // რაოდენობის შეზღუდვა, რაოდენობა არ უნდა იყოს <= 0;
