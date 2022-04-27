@@ -224,11 +224,8 @@ function orderClicked() {
                 // orderObj = JSON.stringify(order)
                 
                 // finalOrder.innerHTML = orderObj
-                for (var i = 0; i < order.length; i++) {
-                    orderF = order[i];
-                    
-                console.log(JSON.stringify(orderF))
-        }
+                console.log(JSON.stringify(order))
+        
     }
 
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
