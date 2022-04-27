@@ -227,7 +227,7 @@ function orderClicked() {
                 for (var i = 0; i < order.length; i++) {
                     orderF = order[i];
                     
-                localStorage.setItem('1'[i], JSON.stringify(orderF))
+                console.log(JSON.stringify(orderF))
         }
     }
 
