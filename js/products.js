@@ -204,7 +204,11 @@ function orderClicked() {
                 notification.style.top = "-300px"
                 }, 5000)
                 var cartItems = document.getElementsByClassName('cart-items')[0]
+                var cartItemName = document.getElementsByClassName('cart-item-name');
+                for (var i = 0; i < cartItemName.length; i++) {
+
                 var orderedItems = cartItems.getElementsByClassName('cart-item-name')[0].innerHTML
+                }
     console.log(orderedItems)
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
