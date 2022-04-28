@@ -222,17 +222,17 @@ function orderClicked() {
                         type: orderedType,
                         price: orderedPrice
                         }
-                        for (var i = 0; i < order.length; i++){
-                            finalOrder[i].innerHTML = JSON.stringify(order)
-
-                        }
-                    
-                    
-                    
+            finalOrder.innerHTML = JSON.stringify(order)
                 // finalOrder.innerHTML = orderObj
                 
                     }
+                    for (var i = 0; i < cartRow.length; i++) {
+                        var orderF = order[i];
+
+                                 finalOrder[i].innerHTML = JSON.stringify(order)
+                    }
                     console.log(finalOrder)
+   
                 localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
                 
         
