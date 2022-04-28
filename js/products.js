@@ -220,7 +220,7 @@ function orderClicked() {
                         // raodeonoba: orderedQuantity,
                         // type: orderedType,
                         // price: orderedPrice
-                    }[i]
+                    },
                 
                         
                 var orderObj = [order][i]
