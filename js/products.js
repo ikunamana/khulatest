@@ -216,10 +216,11 @@ function orderClicked() {
                 var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
                 var finalOrder = document.createElement('div');
                 var order = {
-                        name: orderedItems,
-                        raodeonoba: orderedQuantity,
-                        type: orderedType,
-                        price: orderedPrice}
+                        name: orderedItems[i],
+                        // raodeonoba: orderedQuantity,
+                        // type: orderedType,
+                        // price: orderedPrice
+                    }
                 
                         
                 var orderObj = [order]
