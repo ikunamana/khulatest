@@ -205,29 +205,29 @@ function orderClicked() {
                 }, 5000)
 
 
-                var cartItems = document.getElementsByClassName('cart-items')[0]
-                var cartRow = cartItems.getElementsByClassName('cart-row');
+        //         var cartItems = document.getElementsByClassName('cart-items')[0]
+        //         var cartRow = cartItems.getElementsByClassName('cart-row');
 
-                for (var i = 0; i < cartRow.length; i++) {
-                    var cartRowF = cartRow[i];
+        //         for (var i = 0; i < cartRow.length; i++) {
+        //             var cartRowF = cartRow[i];
 
-                var orderedItems = cartRowF.getElementsByClassName('cart-item-name')[0].innerHTML
-                var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0].value
-                var orderedType = cartRowF.getElementsByClassName('cart-item-type')[0].innerHTML
-                var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
-                var finalOrder = document.createElement('div');
-                var order = {
-                    name: orderedItems,
-                    raodeonoba: orderedQuantity,
-                    type: orderedType,
-                    price: orderedPrice
-                };
-                var orderF =[][0]
-                orderF.push(JSON.stringify(order))
-                finalOrder.innerHTML=orderF
-        }
-             // finalOrder.innerHTML = orderObj
-                console.log(orderF)
+        //         var orderedItems = cartRowF.getElementsByClassName('cart-item-name')[0].innerHTML
+        //         var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0].value
+        //         var orderedType = cartRowF.getElementsByClassName('cart-item-type')[0].innerHTML
+        //         var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
+        //         var finalOrder = document.createElement('div');
+        //         var order = {
+        //             name: orderedItems,
+        //             raodeonoba: orderedQuantity,
+        //             type: orderedType,
+        //             price: orderedPrice
+        //         };
+        //         var orderF =[]
+        //         orderF.push(JSON.stringify(order))
+        //         finalOrder.innerHTML=orderF
+        // }
+        //      // finalOrder.innerHTML = orderObj
+        //         console.log(orderF)
                     
                     
    
