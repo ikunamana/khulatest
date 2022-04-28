@@ -223,7 +223,7 @@ function orderClicked() {
                     }
                 
                         
-                orderObj = [order]
+                var orderObj = [order]
                 // orderObj= JSON.stringify(order)
                 // ordProd.push(orderObj[i])
                 }
