@@ -222,7 +222,7 @@ function orderClicked() {
                         type: orderedType,
                         price: orderedPrice
                 }]
-                JSON.stringify(orderedCart).forEach(element => {
+                JSON.stringify(order).forEach(element => {
                         finalOrder.innerHTML = element
                     });
                 }
