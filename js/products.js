@@ -224,7 +224,7 @@ function orderClicked() {
                 
                         
                 orderObj = [order]
-
+                var newObj = [orderObj]
                 // orderObj= JSON.stringify(order)
                 // ordProd.push(orderObj[i])
             
