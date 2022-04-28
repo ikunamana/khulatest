@@ -207,6 +207,7 @@ function orderClicked() {
 
                 var cartItems = document.getElementsByClassName('cart-items')[0]
                 var cartRow = cartItems.getElementsByClassName('cart-row');
+
                 for (var i = 0; i < cartRow.length; i++) {
                     var cartRowF = cartRow[i];
 
@@ -221,7 +222,8 @@ function orderClicked() {
                         type: orderedType,
                         price: orderedPrice
                         }
-                    var newObj = [order]
+                    newObj = [order]
+
                     }
                     var orderedCart = newObj
                 
