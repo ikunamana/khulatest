@@ -237,16 +237,12 @@ function orderClicked() {
         type: orderedType,
         price: orderedPrice
 }]
-                
-                order.forEach(element => {
-                        finalOrder.innerHTML = element
-                    });
-                }
+}       
              // finalOrder.innerHTML = orderObj
                 
                     
                     
-                    console.log(finalOrder)
+                    console.log(order)
    
                 // localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
                 
