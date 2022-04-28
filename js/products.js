@@ -222,12 +222,12 @@ function orderClicked() {
                     type: orderedType,
                     price: orderedPrice
                 };
-                var orderF =[]
-                orderF.push(JSON.stringify(order))[0]
+                var orderF =[][0]
+                orderF.push(JSON.stringify(order))
                 finalOrder.innerHTML=orderF
         }
              // finalOrder.innerHTML = orderObj
-                console.log(fi)
+                console.log(orderF)
                     
                     
    
