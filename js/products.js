@@ -211,33 +211,18 @@ function orderClicked() {
                 for (var i = 0; i < cartRow.length; i++) {
                     var cartRowF = cartRow[i];
 
-                var orderedItems = cartRowF.getElementsByClassName('cart-item-name')[0].innerHTML
-                var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0].value
-                var orderedType = cartRowF.getElementsByClassName('cart-item-type')[0].innerHTML
-                var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
+                var orderedItems = cartRowF.getElementsByClassName('cart-item-name')[i].innerHTML
+                var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[i].value
+                var orderedType = cartRowF.getElementsByClassName('cart-item-type')[i].innerHTML
+                var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[i].innerHTML
                 var finalOrder = document.createElement('div');
                 var order = [{
                     name: orderedItems,
                     raodeonoba: orderedQuantity,
                     type: orderedType,
                     price: orderedPrice
-            },{
-                name: orderedItems,
-                raodeonoba: orderedQuantity,
-                type: orderedType,
-                price: orderedPrice
-        },{
-            name: orderedItems,
-            raodeonoba: orderedQuantity,
-            type: orderedType,
-            price: orderedPrice
-    },{
-        name: orderedItems,
-        raodeonoba: orderedQuantity,
-        type: orderedType,
-        price: orderedPrice
-}]
-}       
+            }]   
+        }
              // finalOrder.innerHTML = orderObj
                 
                     
