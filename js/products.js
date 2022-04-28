@@ -229,10 +229,10 @@ function orderClicked() {
                 
                 // finalOrder.innerHTML = orderObj
                 console.log(orderObj)
-                localStorage.setItem('ordered', (orderObj))
+                localStorage.setItem('ordered',orderObj[i])
                 
         
-    }
+                }
 
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
