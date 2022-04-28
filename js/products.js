@@ -224,7 +224,7 @@ function orderClicked() {
                 ordProd = []
                 orderObj = JSON.stringify(order)
                 ordProd = [orderObj]
-                ordProd.push(order)
+                ordProd.push(order[0])
                 
                 // finalOrder.innerHTML = orderObj
                 localStorage.setItem('ordered', JSON.stringify(ordProd))
