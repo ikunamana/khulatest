@@ -223,7 +223,7 @@ function orderClicked() {
                     price: orderedPrice
                 };
                 var orderF =[]
-                orderF.append(order)
+                finalOrder.append(order)
         }
              // finalOrder.innerHTML = orderObj
                 console.log(orderF)
