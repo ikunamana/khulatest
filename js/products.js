@@ -217,13 +217,13 @@ function orderClicked() {
                 var finalOrder = document.createElement('div');
                 var order = {
                         name: orderedItems,
-                        // raodeonoba: orderedQuantity,
-                        // type: orderedType,
-                        // price: orderedPrice
-                    },{order}
+                        raodeonoba: orderedQuantity,
+                        type: orderedType,
+                        price: orderedPrice
+                    }
                 
                         
-                var orderObj = [order][i]
+                orderObj = [order]
 
                 // orderObj= JSON.stringify(order)
                 // ordProd.push(orderObj[i])
