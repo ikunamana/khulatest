@@ -224,7 +224,7 @@ function orderClicked() {
                 };
                 var orderF =[]
                 orderF.push(order)
-                finalOrder.innerHTML(orderF)
+                finalOrder.innerHTML=orderF
         }
              // finalOrder.innerHTML = orderObj
                 console.log(finalOrder)
