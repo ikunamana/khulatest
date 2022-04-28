@@ -226,7 +226,7 @@ function orderClicked() {
                 finalOrder.append(order)
         }
              // finalOrder.innerHTML = orderObj
-                console.log(orderF)
+                console.log(finalOrder)
                     
                     
    
