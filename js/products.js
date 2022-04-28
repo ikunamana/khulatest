@@ -231,7 +231,7 @@ function orderClicked() {
                     }
                     console.log(orderF)
    
-                localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
+                // localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
                 
         
     
