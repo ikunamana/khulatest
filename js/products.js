@@ -220,14 +220,18 @@ function orderClicked() {
                         raodeonoba: orderedQuantity,
                         type: orderedType,
                         price: orderedPrice}
-
-                ordProd = [][0]
+                        
+                ordProd = []
+                for (var i = 0; i < ordProd.length; i++) {
+                            var ordProdF = ordProd[i];
                 orderObj = JSON.stringify(order)
-                ordProd = [orderObj]
-                ordProd.push(order)
+                ordProdF = [orderObj]
+                ordProdF.push(order)
+            
                 
                 // finalOrder.innerHTML = orderObj
-                localStorage.setItem('ordered', JSON.stringify(ordProd))
+                localStorage.setItem('ordered', JSON.stringify(ordProdF))
+                }
         
     }
 
