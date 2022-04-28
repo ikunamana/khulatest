@@ -225,7 +225,6 @@ function orderClicked() {
                     finalOrder.innerHTML = JSON.stringify(order)[i]
                     }
                     
-                    var orderedCart = newObj
                     
                 // finalOrder.innerHTML = orderObj
                 console.log(finalOrder)
