@@ -222,7 +222,10 @@ function orderClicked() {
                         type: orderedType,
                         price: orderedPrice
                         }
-                    finalOrder.innerHTML = JSON.stringify(order)
+                        for (var i = 0; i < order.length; i++){
+                            finalOrder[i].innerHTML = JSON.stringify(order)
+
+                        }
                     
                     
                     
