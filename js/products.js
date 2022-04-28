@@ -227,14 +227,14 @@ function orderClicked() {
                 var newObj = [orderObj]
                 // orderObj= JSON.stringify(order)
                 // ordProd.push(orderObj[i])
-            
+                }
                 
                 // finalOrder.innerHTML = orderObj
                 console.log(newObj)
                 localStorage.setItem('`${orderedItems}`', newObj)
                 
         
-                }
+    
 
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
