@@ -224,7 +224,7 @@ function orderClicked() {
                         }
                     newObj = [order][i]
                     
-                    finalOrder[0].innerHTML = JSON.stringify(order)
+                    finalOrder[i].innerHTML = JSON.stringify(order)
 
                     }
                     
