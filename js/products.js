@@ -219,7 +219,7 @@ function orderClicked() {
                         name: orderedItems,
                         raodeonoba: orderedQuantity,
                         type: orderedType,
-                        price: orderedPrice}][i]
+                        price: orderedPrice}[i]]
                 }
                         
                 var orderObj = [][i]
