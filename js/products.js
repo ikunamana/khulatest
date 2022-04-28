@@ -224,7 +224,7 @@ function orderClicked() {
                     }
                 }
 
-                order.array.forEach(element => {
+                order.forEach(element => {
                     finalOrder.innerHTML = element
 
                 });
