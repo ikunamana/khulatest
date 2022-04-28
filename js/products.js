@@ -224,7 +224,7 @@ function orderClicked() {
                         }
                     }
                     var orderObj1 = obj[order];
-                        for (var shem of order) {
+                        for (var shem of orderObj1) {
                             finalOrder.innerHTML = shem.name;
                         }
              // finalOrder.innerHTML = orderObj
