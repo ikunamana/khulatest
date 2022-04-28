@@ -228,10 +228,8 @@ function orderClicked() {
                     }
                     for (var i = 0; i < cartRow.length; i++) {
                         var orderF = order[i];
-
-                                 finalOrder[i].innerHTML = JSON.stringify(orderF)
                     }
-                    console.log(finalOrder)
+                    console.log(orderF)
    
                 localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
                 
