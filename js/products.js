@@ -221,9 +221,8 @@ function orderClicked() {
                         type: orderedType,
                         price: orderedPrice}
                         
-                ordProd = []
-                for (var i = 0; i < ordProd.length; i++) {
-                            var ordProdF = ordProd[i];
+                ordProd = [][i]
+
                 orderObj = JSON.stringify(order)
                 ordProdF = [orderObj]
                 ordProdF.push(order)
@@ -231,7 +230,7 @@ function orderClicked() {
                 
                 // finalOrder.innerHTML = orderObj
                 localStorage.setItem('ordered', JSON.stringify(ordProdF))
-                }
+                
         
     }
 
