@@ -231,7 +231,7 @@ function orderClicked() {
                     var orderedCart = newObj
                     
                 // finalOrder.innerHTML = orderObj
-                console.log(JSON.stringify(newObj))
+                console.log(finalOrder)
                 localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
                 
         
