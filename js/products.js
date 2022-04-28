@@ -221,7 +221,7 @@ function orderClicked() {
                         type: orderedType,
                         price: orderedPrice
                         }
-                    var newObj = [order][i]
+                    var newObj = [order]
                     }
                     var orderedCart = newObj
                 
