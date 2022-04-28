@@ -217,12 +217,28 @@ function orderClicked() {
                 var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
                 var finalOrder = document.createElement('div');
                 var order = [{
-                        name: orderedItems,
-                        raodeonoba: orderedQuantity,
-                        type: orderedType,
-                        price: orderedPrice
-                }]
-                JSON.stringify(order).forEach(element => {
+                    name: orderedItems,
+                    raodeonoba: orderedQuantity,
+                    type: orderedType,
+                    price: orderedPrice
+            },{
+                name: orderedItems,
+                raodeonoba: orderedQuantity,
+                type: orderedType,
+                price: orderedPrice
+        },{
+            name: orderedItems,
+            raodeonoba: orderedQuantity,
+            type: orderedType,
+            price: orderedPrice
+    },{
+        name: orderedItems,
+        raodeonoba: orderedQuantity,
+        type: orderedType,
+        price: orderedPrice
+}]
+                
+                order.forEach(element => {
                         finalOrder.innerHTML = element
                     });
                 }
