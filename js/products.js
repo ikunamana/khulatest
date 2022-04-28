@@ -221,9 +221,9 @@ function orderClicked() {
                         raodeonoba: orderedQuantity,
                         type: orderedType,
                         price: orderedPrice
-                        }
+                }
                     }
-                    var orderObj1 = obj[order];
+                    var orderObj1 = obj['order'];
                         for (var shem of orderObj1) {
                             finalOrder.innerHTML = shem.name;
                         }
