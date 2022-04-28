@@ -230,7 +230,6 @@ function orderClicked() {
                 
                     
                     
-                    console.log(order)
    
                 // localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
                 
