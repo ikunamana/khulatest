@@ -220,10 +220,10 @@ function orderClicked() {
                         raodeonoba: orderedQuantity,
                         type: orderedType,
                         price: orderedPrice
+                        }
+                       var newObj = [order]
                     }
-                var newObj = order
-                }
-                var orderedCart = newObj
+                    var orderedCart = newObj
                 
                 // finalOrder.innerHTML = orderObj
                 console.log(JSON.stringify(orderedCart))
