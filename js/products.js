@@ -225,7 +225,7 @@ function orderClicked() {
 
                 orderObj = JSON.stringify(order)
                 ordProd = [orderObj]
-                ordProd.push(order)
+                ordProd.push(order)[i]
             
                 
                 // finalOrder.innerHTML = orderObj
