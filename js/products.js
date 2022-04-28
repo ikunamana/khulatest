@@ -221,7 +221,7 @@ function orderClicked() {
                         type: orderedType,
                         price: orderedPrice}
                         
-                ordProd = [][i]
+                // ordProd = [][i]
 
                 orderObj = JSON.stringify(order)
                 ordProd = orderObj[i]
