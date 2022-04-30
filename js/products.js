@@ -158,6 +158,8 @@ function cartIsEmpty() {
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
     var redCircle = document.getElementById('redCircle')
+    var cartRow2 = document.getElementById('cart-row')
+
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
@@ -476,6 +478,7 @@ function cartIsEmpty() {
     var redCircle = document.getElementById('redCircle')
     var dropbtn = document.getElementById("cartbtn");
     var dropupmenu1 = document.getElementById("cart-content");
+    var cartRow2 = document.getElementById('cart-row')
 
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
