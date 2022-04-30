@@ -82,6 +82,24 @@ function populateProduktebi(obj) {
         section.append(firstDiv);
     }
 
+    const cards = document.querySelectorAll('.productform')
+
+    const observer = new IntersectionObserver(
+        products => {
+         products.forEach(product => {
+            product.target.classList.toggle('shown', product.isIntersecting)
+            
+        })
+    },
+    {
+    threshold: .5,
+    }
+)
+    
+    cards.forEach(card => {
+        observer.observe(card)
+    })
+
 // JS-ის ფაილი იტვირთება გვერდის პარალელურად, გვერდის ჩატვირთვისას გაეშვება ფუნქცია
 
 if (document.readyState == 'loading') {
@@ -135,23 +153,24 @@ function ready() {
 
 // როცა კალათაში არ არის პროდუქტი, კალათის შიგთავსი იცლება Div-ით, რომელიც ატყობინებს მომხმარებელს, რომ კალათა ცარიელია.
 function cartIsEmpty() {
-    var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
     var redCircle = document.getElementById('redCircle')
-        if (cartItems.children.length > 0) {
-            emptyCart.style.display = "none";
-            orderButton.classList.remove('order-clear');
-            orderButton.style.pointerEvents = "auto";
-            redCircle.style.transform = "scale(1)";
-        } else {
-            emptyCart.style.display = "flex";
-            orderButton.classList.add('order-clear');
-            orderButton.style.pointerEvents = "none";
-            redCircle.style.transform = "scale(0)";
-        }
+    if (cartItems.children.length > 0) {
+        emptyCart.style.display = "none";
+        orderButton.classList.remove('order-clear');
+        orderButton.style.pointerEvents = "auto";
+        redCircle.style.transform = "scale(1)";
+        cartRow2.style.display ="flex"
+    } else {
+        emptyCart.style.display = "flex";
+        orderButton.classList.add('order-clear');
+        orderButton.style.pointerEvents = "none";
+        redCircle.style.transform = "scale(0)";
+        cartRow2.style.display = "none"
+    }
         
 }
 updateCartTotal()
@@ -463,11 +482,13 @@ function cartIsEmpty() {
         orderButton.classList.remove('order-clear');
         orderButton.style.pointerEvents = "auto";
         redCircle.style.transform = "scale(1)";
+        cartRow2.style.display ="flex"
     } else {
         emptyCart.style.display = "flex";
         orderButton.classList.add('order-clear');
         orderButton.style.pointerEvents = "none";
         redCircle.style.transform = "scale(0)";
+        cartRow2.style.display = "none"
     }
 }
 savedCartCall()
