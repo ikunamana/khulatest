@@ -2166,7 +2166,6 @@ h3 {
 .cart-empty {
     margin: auto;
     padding-bottom: 50px;
-    display: flex;
     justify-content: space-around;
     height: 150px;
     align-items: center;
