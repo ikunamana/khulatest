@@ -2190,7 +2190,6 @@ h3 {
     width: 70px;
     height: 70px;
     border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
     background: #f1f1a38a;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
@@ -2932,6 +2931,7 @@ padding-top: 10px;}
         text-align: justify;
     }
     .cart-content {
+        pointer-events: none;
         min-width: 400px;
         transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
     }
