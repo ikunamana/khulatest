@@ -2936,8 +2936,9 @@ padding-top: 10px;}
         transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
     }
     .cart-content-active {
-        min-width: 370px;
-        transform: none;
+        transform: rotateX(0deg) rotateY(0deg) scale(0.9);
+        transform-origin: bottom left;
+        
     }
     .ordered-content-active{
         transform: rotateX(0deg) rotateY(0deg) scale(0.9);
