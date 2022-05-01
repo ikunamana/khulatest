@@ -225,7 +225,7 @@ function orderClicked() {
                 notification.style.top = "-300px"
                 }, 5000)
 
-
+                    ordered()
         //         var cartItems = document.getElementsByClassName('cart-items')[0]
         //         var cartRow = cartItems.getElementsByClassName('cart-row');
 
@@ -429,6 +429,51 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     cartIsEmpty()
 }
 
+// შეკვეთილი პროდუქტების სია, ჩეკი beta 1
+function ordered(){
+
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartRow = cartItems.getElementsByClassName('cart-row')
+    
+    for(i = 0; i <  cartRow.length; i++){
+    var cartrowF = cartRow[i]
+    
+    var orderedItems = cartrowF.getElementsByClassName('cart-item-name')[0].innerHTML
+    var orderedQuantity = cartrowF.getElementsByClassName('item-quantity')[0].value
+    var orderedType = cartrowF.getElementsByClassName('cart-item-type')[0].innerHTML
+    var orderedPrice = cartrowF.getElementsByClassName('cart-item-price')[0].innerHTML
+    var orderedID = cartrowF.getElementsByClassName('cart-item')[0].id
+    var price = parseFloat(orderedPrice.replace('GEL', ''))
+    var total = 0
+            total = total + (price * orderedQuantity)
+        // ჯამური ფასის .00 - მდე დამრგვალება.
+        total = Math.round(total * 100) / 100
+    var order =
+    `<td>`+orderedItems+`</td>
+    <td>`+orderedID+`</td>
+    <td>`+orderedQuantity+orderedType+`</td>
+    <td>`+orderedPrice+`</td>
+    <td class="orderedTotal">`+total+`</td>
+    `
+        var folder = document.getElementById('orderedFolder')
+        var newFolder = document.createElement('tr')
+    
+        var quantSpan = document.createElement('td')
+    
+        newFolder.innerHTML = order
+        folder.append(newFolder)
+        var number = folder.children.length-1
+    
+        quantSpan.setAttribute('class', 'product' + '#-'+ number)
+        quantSpan.innerText=number
+        newFolder.prepend(quantSpan)
+        var folderIn = folder.innerHTML
+        sessionStorage.setItem('ordered', folderIn)
+    }
+    }
+
+
+
 // კალათაში არსებული პროდუქტების ჯამური ფასის განახლება.
 function updateCartTotal() {
     var allCartItems = document.getElementsByClassName('cart-items')[0]
@@ -462,8 +507,11 @@ var dropbtn = document.getElementById("cartbtn");
 function savedCartCall(){
     var cartItems = document.getElementById('cartItems');
     var savedCart = localStorage.getItem('cart')
+    var orderedItemSession = sessionStorage.getItem('ordered')
+    var folder = document.getElementById('orderedFolder')
 
     cartItems.innerHTML = savedCart;
+    folder.innerHTML=orderedItemSession;
 }
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
