@@ -2933,7 +2933,6 @@ padding-top: 10px;}
         text-align: justify;
     }
     .cart-content {
-        pointer-events: none;
         min-width: 400px;
         transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
     }
