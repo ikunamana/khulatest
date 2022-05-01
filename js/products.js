@@ -161,17 +161,17 @@ function cartIsEmpty() {
     var cartRow2 = document.getElementById('cart-row')
 
     if (cartItems.children.length > 0) {
-        emptyCart.style.display = "flex";
+        emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
         orderButton.style.pointerEvents = "auto";
         redCircle.style.transform = "scale(1)";
-        cartRow2.style.display ="none"
+        cartRow2.style.display ="flex"
     } else {
-        emptyCart.style.display = "none";
+        emptyCart.style.display = "flex";
         orderButton.classList.add('order-clear');
         orderButton.style.pointerEvents = "none";
         redCircle.style.transform = "scale(0)";
-        cartRow2.style.display = "flex"
+        cartRow2.style.display = "none"
     }
         
 }
