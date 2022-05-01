@@ -81,7 +81,6 @@ function populateProduktebi(obj) {
         // kalataDiv.append(kalataimg);
         section.append(firstDiv);
     }
-
     const cards = document.querySelectorAll('.productform')
 
     const observer = new IntersectionObserver(
@@ -93,13 +92,12 @@ function populateProduktebi(obj) {
     },
     {
     threshold: .5,
-    }
+}
 )
     
     cards.forEach(card => {
         observer.observe(card)
     })
-
 // JS-ის ფაილი იტვირთება გვერდის პარალელურად, გვერდის ჩატვირთვისას გაეშვება ფუნქცია
 
 if (document.readyState == 'loading') {
@@ -153,13 +151,13 @@ function ready() {
 
 // როცა კალათაში არ არის პროდუქტი, კალათის შიგთავსი იცლება Div-ით, რომელიც ატყობინებს მომხმარებელს, რომ კალათა ცარიელია.
 function cartIsEmpty() {
+    var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
     var redCircle = document.getElementById('redCircle')
     var cartRow2 = document.getElementById('cart-row')
-
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
@@ -225,37 +223,11 @@ function orderClicked() {
                 notification.style.top = "-300px"
                 }, 5000)
 
-                    ordered()
-        //         var cartItems = document.getElementsByClassName('cart-items')[0]
-        //         var cartRow = cartItems.getElementsByClassName('cart-row');
 
-        //         for (var i = 0; i < cartRow.length; i++) {
-        //             var cartRowF = cartRow[i];
-
-        //         var orderedItems = cartRowF.getElementsByClassName('cart-item-name')[0].innerHTML
-        //         var orderedQuantity = cartRowF.getElementsByClassName('item-quantity')[0].value
-        //         var orderedType = cartRowF.getElementsByClassName('cart-item-type')[0].innerHTML
-        //         var orderedPrice = cartRowF.getElementsByClassName('cart-item-price')[0].innerHTML
-        //         var finalOrder = document.createElement('div');
-        //         var order = {
-        //             name: orderedItems,
-        //             raodeonoba: orderedQuantity,
-        //             type: orderedType,
-        //             price: orderedPrice
-        //         };
-        //         var orderF =[]
-        //         orderF.push(JSON.stringify(order))
-        //         finalOrder.innerHTML=orderF
-        // }
-        //      // finalOrder.innerHTML = orderObj
-        //         console.log(orderF)
-                    
-                    
-   
-                // localStorage.setItem('`${orderedItems}`', JSON.stringify(orderedCart))
-                
+            ordered()
         
-    
+
+
 
     // კალათაში არსებული პროდუქტების ერთიანად წაშლა შეკვეთის ღილაკზე კლიკის შემდეგ.
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -427,52 +399,54 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
     localStorage.setItem('cart', cartItemsHtml)
     updateCartTotal()
     cartIsEmpty()
+
+
+
+
 }
 
-// შეკვეთილი პროდუქტების სია, ჩეკი beta 1
 function ordered(){
 
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    var cartRow = cartItems.getElementsByClassName('cart-row')
-    
-    for(i = 0; i <  cartRow.length; i++){
-    var cartrowF = cartRow[i]
-    
-    var orderedItems = cartrowF.getElementsByClassName('cart-item-name')[0].innerHTML
-    var orderedQuantity = cartrowF.getElementsByClassName('item-quantity')[0].value
-    var orderedType = cartrowF.getElementsByClassName('cart-item-type')[0].innerHTML
-    var orderedPrice = cartrowF.getElementsByClassName('cart-item-price')[0].innerHTML
-    var orderedID = cartrowF.getElementsByClassName('cart-item')[0].id
-    var price = parseFloat(orderedPrice.replace('GEL', ''))
-    var total = 0
-            total = total + (price * orderedQuantity)
-        // ჯამური ფასის .00 - მდე დამრგვალება.
-        total = Math.round(total * 100) / 100
-    var order =
-    `<td>`+orderedItems+`</td>
-    <td>`+orderedID+`</td>
-    <td>`+orderedQuantity+orderedType+`</td>
-    <td>`+orderedPrice+`</td>
-    <td class="orderedTotal">`+total+`</td>
-    `
-        var folder = document.getElementById('orderedFolder')
-        var newFolder = document.createElement('tr')
-    
-        var quantSpan = document.createElement('td')
-    
-        newFolder.innerHTML = order
-        folder.append(newFolder)
-        var number = folder.children.length-1
-    
-        quantSpan.setAttribute('class', 'product' + '#-'+ number)
-        quantSpan.innerText=number
-        newFolder.prepend(quantSpan)
-        var folderIn = folder.innerHTML
-        sessionStorage.setItem('ordered', folderIn)
-    }
-    }
+var cartItems = document.getElementsByClassName('cart-items')[0]
+var cartRow = cartItems.getElementsByClassName('cart-row')
 
+for(i = 0; i <  cartRow.length; i++){
+var cartrowF = cartRow[i]
 
+var orderedItems = cartrowF.getElementsByClassName('cart-item-name')[0].innerHTML
+var orderedQuantity = cartrowF.getElementsByClassName('item-quantity')[0].value
+var orderedType = cartrowF.getElementsByClassName('cart-item-type')[0].innerHTML
+var orderedPrice = cartrowF.getElementsByClassName('cart-item-price')[0].innerHTML
+var orderedID = cartrowF.getElementsByClassName('cart-item')[0].id
+var price = parseFloat(orderedPrice.replace('GEL', ''))
+var total = 0
+        total = total + (price * orderedQuantity)
+    // ჯამური ფასის .00 - მდე დამრგვალება.
+    total = Math.round(total * 100) / 100
+var order =
+`<td>`+orderedItems+`</td>
+<td>`+orderedID+`</td>
+<td>`+orderedQuantity+orderedType+`</td>
+<td>`+orderedPrice+`</td>
+<td class="orderedTotal">`+total+`</td>
+`
+    var folder = document.getElementById('orderedFolder')
+    var newFolder = document.createElement('tr')
+
+    var quantSpan = document.createElement('td')
+
+    newFolder.innerHTML = order
+    folder.append(newFolder)
+    var number = folder.children.length-1
+
+    quantSpan.setAttribute('class', 'product' + '#-'+ number)
+    quantSpan.innerText=number
+    newFolder.prepend(quantSpan)
+    var folderIn = folder.innerHTML
+    sessionStorage.setItem('ordered', folderIn)
+}
+orderedFolderEmpty()
+}
 
 // კალათაში არსებული პროდუქტების ჯამური ფასის განახლება.
 function updateCartTotal() {
@@ -502,17 +476,8 @@ var dropbtn = document.getElementById("cartbtn");
     cartIsEmpty()
     hideCircle()
 }
+
 }
-var orderedContent = document.getElementsByClassName("ordered-content")[0];
-var orderedBtn = document.getElementById("orderedBtn");
-
-    orderedBtn.onclick = function orderMenu() {
-    orderedContent.classList.toggle("ordered-content-active");
-    orderedBtn.classList.toggle("ordered-button-active");
-    
-}
-
-
 function savedCartCall(){
     var cartItems = document.getElementById('cartItems');
     var savedCart = localStorage.getItem('cart')
@@ -520,8 +485,47 @@ function savedCartCall(){
     var folder = document.getElementById('orderedFolder')
 
     cartItems.innerHTML = savedCart;
-    // folder.innerHTML=orderedItemSession;
+    // folder.innerHTML = orderedItemSession
+
+    function sessionAppend(){
+        if (orderedItemSession == null){
+            return
+        } else{
+    folder.innerHTML = orderedItemSession
+    }
 }
+sessionAppend()
+orderedFolderEmpty()
+}
+function orderedFolderEmpty(){
+    var folder = document.getElementById('orderedFolder')
+    var headOfTable = document.getElementsByClassName('headOfTable')[0]
+    var orderedTitle = document.getElementsByClassName('orderedTitle')[0]
+    var orderedNull = document.getElementsByClassName('orderedNull')[0]
+    
+    if(folder.children.length <= 1){
+        headOfTable.classList.add('hidden')
+        orderedTitle.classList.add('hidden')
+        orderedNull.classList.remove('hidden')
+    }else {
+        headOfTable.classList.remove('hidden')
+        orderedTitle.classList.remove('hidden')
+        orderedNull.classList.add('hidden')
+
+    }
+}
+var orderedContent = document.getElementsByClassName("ordered-content")[0];
+var orderedBtn = document.getElementById("orderedBtn");
+
+    orderedBtn.onclick = function orderMenu() {
+    orderedContent.classList.toggle("ordered-content-active");
+    orderedBtn.classList.toggle("ordered-button-active");
+}
+
+
+
+
+
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -533,8 +537,6 @@ function cartIsEmpty() {
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
     var redCircle = document.getElementById('redCircle')
-    var dropbtn = document.getElementById("cartbtn");
-    var dropupmenu1 = document.getElementById("cart-content");
     var cartRow2 = document.getElementById('cart-row')
 
     if (cartItems.children.length > 0) {

@@ -2317,7 +2317,7 @@ h3 {
 }
 
 .ordered-content {
-    bottom: 162px;
+    bottom: 90px;
     position: fixed;
     max-width: 390px;
     padding: 10px;
@@ -2328,7 +2328,7 @@ h3 {
     border-radius: 15px;
     border-bottom-right-radius: 0px;
     text-align: left;
-    z-index: 0;
+    z-index: 99999;
     opacity: 0;
     pointer-events: none;
     transition-duration: 200ms;
@@ -2337,7 +2337,7 @@ h3 {
 }
 
 .ordered-content-active {
-    bottom: 72px;
+    bottom: 70px;
     position: fixed;
     max-width: 390px;
     padding: 12px;
