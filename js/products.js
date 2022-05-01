@@ -511,7 +511,7 @@ function savedCartCall(){
     var folder = document.getElementById('orderedFolder')
 
     cartItems.innerHTML = savedCart;
-    folder.innerHTML=orderedItemSession;
+    // folder.innerHTML=orderedItemSession;
 }
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
