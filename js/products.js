@@ -184,6 +184,8 @@ function hideCircle(){
         redCircle.style.transform = "scale(0)"
     } else {
         redCircle.style.transform = "scale(1)"
+        orderButton.style.pointerEvents = "none";
+
     }
 }
 
@@ -522,7 +524,15 @@ var orderedBtn = document.getElementById("orderedBtn");
     orderedBtn.classList.toggle("ordered-button-active");
 }
 
+function pointerEventsPrevent(){
+    var dropupmenu1 = document.getElementById("cart-content");
 
+    if (dropupmenu1.classList.contains(("cart-content-active")) || cartItems.children.length < 1 ){
+        orderButton.style.pointerEvents = "visible";
+    } else {
+        orderButton.style.pointerEvents = "none";
+    }
+}
 
 
 
