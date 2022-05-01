@@ -2177,6 +2177,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:wheat;
 }
 
 .ordered-button img{
@@ -2190,6 +2191,7 @@ h3 {
     width: 70px;
     height: 70px;
     border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
     background: #f1f1a38a;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
@@ -2212,7 +2214,7 @@ h3 {
     border-top-right-radius: 0;
     border-top: none;
     border: 0.5px solid rgba(68, 66, 178, 0.2);
-    background: rgb(58 229 192 / 66%);
+    background: rgb(6 100 48);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
     position: fixed;
@@ -2245,16 +2247,15 @@ h3 {
     transition-duration: 200ms;
     transition: all 0.3s ease 0s;
     transform: rotateX(-5deg) rotateY(25deg) translateX(40px);
-    pointer-events: none;
 }
 
 .ordered-content-active {
-    bottom: 72px;
+    bottom: 68px;
     position: fixed;
     max-width: 390px;
     padding: 12px;
     left: 14px;
-    background: rgb(58 229 192 / 66%);
+    background: rgb(6 100 48);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(30px);
     border-radius: 15px;
@@ -2266,7 +2267,6 @@ h3 {
     transition-duration: 200ms;
     transition: all 0.3s ease 0s;
     transform: rotateX(0deg) rotateY(0deg);
-    pointer-events: none;
 }
 
 .ordered-item{
@@ -2275,7 +2275,7 @@ h3 {
 }
 
 table{
-    color: black;
+    color: wheat;
     width: 380px;
     padding: 15px;
     padding-top: 20px;
@@ -2552,6 +2552,7 @@ padding-top: 10px;}
     transition-duration: 200ms;
     border: none;
     opacity: 70%;
+    pointer-events: visible;
 }
 
 .order-button:hover {
@@ -2937,12 +2938,10 @@ padding-top: 10px;}
         transform: rotateX(-5deg) rotateY(-25deg) translateX(-20px);
     }
     .cart-content-active {
-        transform: rotateX(0deg) rotateY(0deg) scale(0.9);
-        transform-origin: bottom left;
-        
+        min-width: 370px;
+        transform: none;
     }
     .ordered-content-active{
-        bottom: 68px;
         transform: rotateX(0deg) rotateY(0deg) scale(0.9);
         transform-origin: bottom left;
     }
