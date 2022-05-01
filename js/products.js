@@ -158,7 +158,7 @@ function cartIsEmpty() {
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
     var redCircle = document.getElementById('redCircle')
-    var cartRow2 = document.getElementById('emptycart')
+    var cartRow2 = document.getElementById('cart-row')
 
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "flex";
