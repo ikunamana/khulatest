@@ -2245,6 +2245,7 @@ h3 {
     transition-duration: 200ms;
     transition: all 0.3s ease 0s;
     transform: rotateX(-5deg) rotateY(25deg) translateX(40px);
+    pointer-events: none;
 }
 
 .ordered-content-active {
@@ -2265,6 +2266,7 @@ h3 {
     transition-duration: 200ms;
     transition: all 0.3s ease 0s;
     transform: rotateX(0deg) rotateY(0deg);
+    pointer-events: none;
 }
 
 .ordered-item{
