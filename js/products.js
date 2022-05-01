@@ -503,6 +503,15 @@ var dropbtn = document.getElementById("cartbtn");
     hideCircle()
 }
 }
+var orderedContent = document.getElementsByClassName("ordered-content")[0];
+var orderedBtn = document.getElementById("orderedBtn");
+
+    orderedBtn.onclick = function orderMenu() {
+    orderedContent.classList.toggle("ordered-content-active");
+    orderedBtn.classList.toggle("ordered-button-active");
+    
+}
+
 
 function savedCartCall(){
     var cartItems = document.getElementById('cartItems');
