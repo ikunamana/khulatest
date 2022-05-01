@@ -151,17 +151,15 @@ function ready() {
 
 // როცა კალათაში არ არის პროდუქტი, კალათის შიგთავსი იცლება Div-ით, რომელიც ატყობინებს მომხმარებელს, რომ კალათა ცარიელია.
 function cartIsEmpty() {
-    var dropupmenu1 = document.getElementById("cart-content");
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var emptyCart = document.getElementById('emptycart')
     var orderButton = document.getElementById('orderButton')
-    var redCircle = document.getElementById('redCircle')
     var cartRow2 = document.getElementById('cart-row')
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
-        orderButton.style.pointerEvents = "auto";
+        // orderButton.style.pointerEvents = "visible";
         redCircle.style.transform = "scale(1)";
         cartRow2.style.display ="flex"
     } else {
@@ -182,6 +180,8 @@ function hideCircle(){
 
     if (dropupmenu1.classList.contains(("cart-content-active")) || cartItems.children.length < 1 ){
         redCircle.style.transform = "scale(0)"
+        orderButton.style.pointerEvents = "visible";
+
     } else {
         redCircle.style.transform = "scale(1)"
         orderButton.style.pointerEvents = "none";
@@ -536,6 +536,8 @@ function pointerEventsPrevent(){
 
 
 
+
+
 function cartNumber() {
     var redCircle = document.getElementById('redCircle');
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -552,7 +554,7 @@ function cartIsEmpty() {
     if (cartItems.children.length > 0) {
         emptyCart.style.display = "none";
         orderButton.classList.remove('order-clear');
-        orderButton.style.pointerEvents = "auto";
+        // orderButton.style.pointerEvents = "visible";
         redCircle.style.transform = "scale(1)";
         cartRow2.style.display ="flex"
     } else {
