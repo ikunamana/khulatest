@@ -2941,6 +2941,7 @@ padding-top: 10px;}
         
     }
     .ordered-content-active{
+        bottom: 68px;
         transform: rotateX(0deg) rotateY(0deg) scale(0.9);
         transform-origin: bottom left;
     }
