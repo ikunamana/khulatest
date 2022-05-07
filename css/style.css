@@ -1128,9 +1128,9 @@ select {
     -webkit-transform: scale(0.98);
     -ms-transform: scale(0.98);
     transform: scale(0.98);
-    -webkit-transition-duration: 100ms;
-    -o-transition-duration: 100ms;
-    transition-duration: 100ms;
+    -webkit-transition-duration: 200ms;
+    -o-transition-duration: 200ms;
+    transition-duration: 200ms;
 }
 
 .productimg1 {
