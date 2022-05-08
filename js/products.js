@@ -226,7 +226,7 @@ function orderClicked() {
                 }, 5000)
 
 
-            ordered()
+            ordered(orderedItems)
         
 
 
