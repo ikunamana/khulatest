@@ -406,16 +406,14 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
 
 
 }
-
-function ordered(){
-
 var cartItems = document.getElementsByClassName('cart-items')[0]
 var cartRow = cartItems.getElementsByClassName('cart-row')
-
 for(i = 0; i <  cartRow.length; i++){
-var cartrowF = cartRow[i]
-
+    var cartrowF = cartRow[i]
 var orderedItems = cartrowF.getElementsByClassName('cart-item-name')[0].innerHTML
+
+function ordered(orderedItems){
+
 var orderedQuantity = cartrowF.getElementsByClassName('item-quantity')[0].value
 var orderedType = cartrowF.getElementsByClassName('cart-item-type')[0].innerHTML
 var orderedPrice = cartrowF.getElementsByClassName('cart-item-price')[0].innerHTML
@@ -425,28 +423,47 @@ var total = 0
         total = total + (price * orderedQuantity)
     // ჯამური ფასის .00 - მდე დამრგვალება.
     total = Math.round(total * 100) / 100
-var order =
-`<td>`+orderedItems+`</td>
-<td>`+orderedID+`</td>
-<td>`+orderedQuantity+orderedType+`</td>
-<td>`+orderedPrice+`</td>
-<td class="orderedTotal">`+total+`</td>
-`
-    var folder = document.getElementById('orderedFolder')
-    var newFolder = document.createElement('tr')
-
-    var quantSpan = document.createElement('td')
-
-    newFolder.innerHTML = order
-    folder.append(newFolder)
-    var number = folder.children.length-1
-
-    quantSpan.setAttribute('class', 'product' + '#-'+ number)
-    quantSpan.innerText=number
-    newFolder.prepend(quantSpan)
-    var folderIn = folder.innerHTML
-    sessionStorage.setItem('ordered', folderIn)
+    let cartItems=localStorage.getItem('Items')
+    cartItems=JSON.parse(cartItems)
+    if(cartItems != null){
+        if(cartItems[orderedItems] == undefined){
+            cartItems={
+                ...cartItems,
+                [orderedItems]:productItems
+            }
+        }
+        cartItems[orderedItems].inCart+=1
+    }else{
+        productItems.inCart=1;
+        cartItems={
+            [orderedItems]:productItems
+        }
+    }
+    
+    localStorage.setItem('Items',JSON.stringify(cartItems));
 }
+// var order =
+// `<td>`+orderedItems+`</td>
+// <td>`+orderedID+`</td>
+// <td>`+orderedQuantity+orderedType+`</td>
+// <td>`+orderedPrice+`</td>
+// <td class="orderedTotal">`+total+`</td>
+// `
+//     var folder = document.getElementById('orderedFolder')
+//     var newFolder = document.createElement('tr')
+
+//     var quantSpan = document.createElement('td')
+
+//     newFolder.innerHTML = order
+//     folder.append(newFolder)
+//     var number = folder.children.length-1
+
+//     quantSpan.setAttribute('class', 'product' + '#-'+ number)
+//     quantSpan.innerText=number
+//     newFolder.prepend(quantSpan)
+//     var folderIn = folder.innerHTML
+//     sessionStorage.setItem('ordered', folderIn)
+// }
 orderedFolderEmpty()
 }
 
