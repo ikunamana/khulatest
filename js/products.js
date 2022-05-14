@@ -455,9 +455,9 @@ var order = [{
 
 
   return [...order, order]  
-
-  console.log(order)
 }
+  console.log(order)
+
 orderedFolderEmpty()
 }
 
