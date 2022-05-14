@@ -454,9 +454,10 @@ var order = [{
 }]
 
 
-  return [...order, order]  
+var arr1 = [...order, order]  
+console.log(arr1)
+
 }
-  console.log(order)
 
 orderedFolderEmpty()
 }
