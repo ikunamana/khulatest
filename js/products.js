@@ -457,7 +457,7 @@ function addToArr(a, order){
     var orderedArr = []
 
   return [...orderedArr, order]  
-  sessionStorage.setItem('order', orderedArr)
+  console.log(orderedArr)
 }
 
 }
