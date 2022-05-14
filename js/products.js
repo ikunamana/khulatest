@@ -406,14 +406,16 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
 
 
 }
-var cartItems = document.getElementsByClassName('cart-items')[0]
-var cartRow = cartItems.getElementsByClassName('cart-row')
-for(i = 0; i <  cartRow.length; i++){
-    var cartrowF = cartRow[i]
-var orderedItems = cartrowF.getElementsByClassName('cart-item-name')[0].innerHTML
 
 function ordered(orderedItems){
 
+var cartItems = document.getElementsByClassName('cart-items')[0]
+var cartRow = cartItems.getElementsByClassName('cart-row')
+
+for (i = 0; i < cartRown.length; i++){
+    cartrowF = cartRow[i]
+
+var orderedItems = cartrowF.getElementsByClassName('cart-item-name')[0].innerHTML
 var orderedQuantity = cartrowF.getElementsByClassName('item-quantity')[0].value
 var orderedType = cartrowF.getElementsByClassName('cart-item-type')[0].innerHTML
 var orderedPrice = cartrowF.getElementsByClassName('cart-item-price')[0].innerHTML
@@ -423,25 +425,7 @@ var total = 0
         total = total + (price * orderedQuantity)
     // ჯამური ფასის .00 - მდე დამრგვალება.
     total = Math.round(total * 100) / 100
-    let cartItems=localStorage.getItem('Items')
-    cartItems=JSON.parse(cartItems)
-    if(cartItems != null){
-        if(cartItems[orderedItems] == undefined){
-            cartItems={
-                ...cartItems,
-                [orderedItems]:productItems
-            }
-        }
-        cartItems[orderedItems].inCart+=1
-    }else{
-        productItems.inCart=1;
-        cartItems={
-            [orderedItems]:productItems
-        }
-    }
-    
-    localStorage.setItem('Items',JSON.stringify(cartItems));
-}
+
 // var order =
 // `<td>`+orderedItems+`</td>
 // <td>`+orderedID+`</td>
@@ -464,8 +448,20 @@ var total = 0
 //     var folderIn = folder.innerHTML
 //     sessionStorage.setItem('ordered', folderIn)
 // }
+var order = [{
+    'name': orderedItems,
+    'price': orderedPrice
+}]
+
+function addToArr(a, order){
+    var orderedArr = [...a, order]
+    sessionStorage.setItem('order', orderedArr)
+}
+
+}
 orderedFolderEmpty()
 }
+
 
 // კალათაში არსებული პროდუქტების ჯამური ფასის განახლება.
 function updateCartTotal() {
