@@ -412,7 +412,7 @@ function ordered(){
 var cartItems = document.getElementsByClassName('cart-items')[0]
 var cartRow = cartItems.getElementsByClassName('cart-row')
 
-for (i = 0; i < cartRown.length; i++){
+for (i = 0; i < cartRow.length; i++){
     cartrowF = cartRow[i]
 
 var orderedItems = cartrowF.getElementsByClassName('cart-item-name')[0].innerHTML
