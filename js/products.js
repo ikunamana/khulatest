@@ -226,7 +226,7 @@ function orderClicked() {
                 }, 5000)
 
 
-    ordered()
+    ordered(a)
         
 
 
@@ -407,7 +407,7 @@ function addItemToCart(title, price, imageSrc, productID, productItemType) {
 
 }
 
-function ordered(){
+function ordered(a){
 
 var cartItems = document.getElementsByClassName('cart-items')[0]
 var cartRow = cartItems.getElementsByClassName('cart-row')
@@ -454,8 +454,8 @@ var order = [{
 }]
 
 }
-var arr1 = [...order, order]  
-console.log(arr1)
+return [...a, order]
+console.log( order)
 
 
 
