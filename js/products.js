@@ -457,8 +457,9 @@ function addToArr(a, order){
     var orderedArr = []
 
   return [...orderedArr, order]  
-  console.log(orderedArr)
 }
+  console.log(orderedArr)
+
 addToArr()
 
 }
