@@ -453,14 +453,10 @@ var order = [{
     'price': orderedPrice
 }]
 
-function addToArr(order){
 
   return [...order, order]  
 
   console.log(order)
-}
-addToArr()
-
 }
 orderedFolderEmpty()
 }
