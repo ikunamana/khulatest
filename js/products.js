@@ -453,11 +453,11 @@ var order = [{
     'price': orderedPrice
 }]
 
-
+}
 var arr1 = [...order, order]  
 console.log(arr1)
 
-}
+
 
 orderedFolderEmpty()
 }
