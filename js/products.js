@@ -454,12 +454,11 @@ var order = [{
 }]
 
 function addToArr(a, order){
-    var orderedArr = []
 
-  return [...orderedArr, order]  
+  return [...a, order]  
+
+  console.log(a)
 }
-  console.log(orderedArr)
-
 addToArr()
 
 }
