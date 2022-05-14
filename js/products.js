@@ -453,11 +453,11 @@ var order = [{
     'price': orderedPrice
 }]
 
-function addToArr(a, order){
+function addToArr(order){
 
-  return [...a, order]  
+  return [...order, order]  
 
-  console.log(a)
+  console.log(order)
 }
 addToArr()
 
