@@ -459,6 +459,7 @@ function addToArr(a, order){
   return [...orderedArr, order]  
   console.log(orderedArr)
 }
+addToArr()
 
 }
 orderedFolderEmpty()
