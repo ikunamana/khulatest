@@ -206,8 +206,13 @@ function orderClicked() {
     <span class="successText">თქვენი შეკვეთა წარმატებით გაიგზავნა!</span>
     <span id="warningX" class="warningX">&times;</span>
     </div>`
-    notification.innerHTML = succsesMessage;
-    notification.style.top = "40px"
+    var notificationDiv = document.createElement('div')
+    notificationDiv.innerHTML = succsesMessage
+    notificationDiv.setAttribute('class', 'notification')
+    notification.append(notificationDiv);
+    notificationDiv.style.top = "40px";
+    notification.style.top = "40px";
+
     var x = document.getElementById("warningX");
 
     // შეტყობინების Div-ის დახურვა X ღილაკზე კლიკით.
