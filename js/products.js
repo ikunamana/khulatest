@@ -211,9 +211,10 @@ function orderClicked() {
     notificationDiv.setAttribute('class', 'notification')
     notification.append(notificationDiv);
     notificationDiv.style.top = "40px";
-    notification.style.top = "40px";
+    notification.style.display = "flex";
 
     var x = document.getElementById("warningX");
+    for( i = 0; i<x.length; i++)
 
     // შეტყობინების Div-ის დახურვა X ღილაკზე კლიკით.
         x.onclick = function warningClose(){
