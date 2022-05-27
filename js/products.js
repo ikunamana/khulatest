@@ -217,7 +217,7 @@ function orderClicked() {
 
     var x = document.getElementById("warningX");
     for(var i = 0; i < x.length; i++){
-     var   xLooped = x[i];
+      xLooped = x[i];
 
     // შეტყობინების Div-ის დახურვა X ღილაკზე კლიკით.
         xLooped.onclick = function warningClose(){
