@@ -204,7 +204,7 @@ function orderClicked() {
     var succsesMessage = `<div class="succsesNotification" id="succsesNotification">
     <img class="notificationImg" src="../images/success.png" >
     <span class="successText">თქვენი შეკვეთა წარმატებით გაიგზავნა!</span>
-    <span id="warningX" class="warningX">&times;</span>
+    <span  class="warningX">&times;</span>
     </div>`
     var notificationDiv = document.createElement('div')
     notificationDiv.innerHTML = succsesMessage
@@ -215,7 +215,7 @@ function orderClicked() {
     notification.style.flexDirection = "column";
 
 
-    var x = document.getElementById("warningX");
+    var x = document.getElementsByClassName("warningX");
     for(var i = 0; i < x.length; i++){
        xLooped = x[i];
 
