@@ -224,12 +224,12 @@ function orderClicked() {
     // შეტყობინების Div-ის დახურვა სქროლით.
         window.onscroll = function notificationCloseViaScroll() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
-                notification.style.top = "-300px"
+                notificationDiv.style.top = "-300px"
             }
         }
     // შეტყობინების Div-ის დახურვა ავტომატურად, 5 წამში.
         setTimeout(() => {
-                notification.style.top = "-300px"
+                notificationDiv.style.top = "-300px"
                 }, 5000)
 
 
