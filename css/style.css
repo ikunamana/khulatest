@@ -2232,7 +2232,7 @@ h3 {
     border-top-right-radius: 0;
     border-top: none;
     border: 0.5px solid rgba(68, 66, 178, 0.2);
-    background: rgb(6 100 48);
+    background: rgba(6, 100, 48, 0.466);
     backdrop-filter: blur(40px);
     -webkit-backdrop-filter: blur(40px);
     position: fixed;
