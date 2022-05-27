@@ -212,6 +212,8 @@ function orderClicked() {
     notification.append(notificationDiv);
     notificationDiv.style.top = "40px";
     notification.style.display = "flex";
+    notification.style.flexDirection = "column";
+
 
     var x = document.getElementById("warningX");
     for(var i = 0; i < x.length; i++){
