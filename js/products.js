@@ -426,36 +426,36 @@ var total = 0
     // ჯამური ფასის .00 - მდე დამრგვალება.
     total = Math.round(total * 100) / 100
 
-// var order =
-// `<td>`+orderedItems+`</td>
-// <td>`+orderedID+`</td>
-// <td>`+orderedQuantity+orderedType+`</td>
-// <td>`+orderedPrice+`</td>
-// <td class="orderedTotal">`+total+`</td>
-// `
-//     var folder = document.getElementById('orderedFolder')
-//     var newFolder = document.createElement('tr')
+var order =
+`<td>`+orderedItems+`</td>
+<td>`+orderedID+`</td>
+<td>`+orderedQuantity+orderedType+`</td>
+<td>`+orderedPrice+`</td>
+<td class="orderedTotal">`+total+`</td>
+`
+    var folder = document.getElementById('orderedFolder')
+    var newFolder = document.createElement('tr')
 
-//     var quantSpan = document.createElement('td')
+    var quantSpan = document.createElement('td')
 
-//     newFolder.innerHTML = order
-//     folder.append(newFolder)
-//     var number = folder.children.length-1
+    newFolder.innerHTML = order
+    folder.append(newFolder)
+    var number = folder.children.length-1
 
-//     quantSpan.setAttribute('class', 'product' + '#-'+ number)
-//     quantSpan.innerText=number
-//     newFolder.prepend(quantSpan)
-//     var folderIn = folder.innerHTML
-//     sessionStorage.setItem('ordered', folderIn)
-// }
-var order = [{
-    'name': orderedItems,
-    'price': orderedPrice
-}]
-
+    quantSpan.setAttribute('class', 'product' + '#-'+ number)
+    quantSpan.innerText=number
+    newFolder.prepend(quantSpan)
+    var folderIn = folder.innerHTML
+    sessionStorage.setItem('ordered', folderIn)
 }
-return [...a, order]
-console.log( order)
+// var order = [{
+//     'name': orderedItems,
+//     'price': orderedPrice
+// }]
+
+// }
+// return [...a, order]
+// console.log( order)
 
 
 
