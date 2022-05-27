@@ -214,12 +214,13 @@ function orderClicked() {
     notification.style.display = "flex";
 
     var x = document.getElementById("warningX");
-    for( i = 0; i<x.length; i++)
+    for( i = 0; i<x.length; i++){
 
     // შეტყობინების Div-ის დახურვა X ღილაკზე კლიკით.
         x.onclick = function warningClose(){
             notification.style.top = "-300px"
                     }
+                }
     // შეტყობინების Div-ის დახურვა სქროლით.
         window.onscroll = function notificationCloseViaScroll() {
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
