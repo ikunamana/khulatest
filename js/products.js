@@ -218,7 +218,7 @@ function orderClicked() {
 
     // შეტყობინების Div-ის დახურვა X ღილაკზე კლიკით.
         x.onclick = function warningClose(){
-            notification.style.top = "-300px"
+            notificationDiv.style.top = "-300px"
                     }
                 }
     // შეტყობინების Div-ის დახურვა სქროლით.
