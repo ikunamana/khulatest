@@ -214,10 +214,11 @@ function orderClicked() {
     notification.style.display = "flex";
 
     var x = document.getElementById("warningX");
-    for( i = 0; i<x.length; i++){
+    for(var i = 0; i < x.length; i++){
+        xLooped = x;
 
     // შეტყობინების Div-ის დახურვა X ღილაკზე კლიკით.
-        x.onclick = function warningClose(){
+        xLooped.onclick = function warningClose(){
             notificationDiv.style.top = "-300px"
                     }
                 }
