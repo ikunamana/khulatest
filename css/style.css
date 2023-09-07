@@ -2562,6 +2562,11 @@ td {
     width: 20%;
 }
 
+
+.cart-quantity-plus:hover {
+    scale: 1.1;
+}
+
 .cart-quantity {
     width: 35%;
 }
